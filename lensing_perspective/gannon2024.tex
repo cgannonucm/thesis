@@ -1,0 +1,930 @@
+
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,
+ amssymb,
+ aps,
+%pra,
+prd,
+twocolumn,
+superscriptaddress,
+preprintnumbers,
+floatfix,
+nofootinbib
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\def\gal{{\tt galacticus}~}
+\def\galns{{\tt galacticus}}
+\def\pyh{{\tt PyHalo}~}
+\def\pyhns{{\tt PyHalo}}
+\def\cat{Caterpillar }
+\def\catns{Caterpillar}
+\def\symphony{Symphony }
+\def\symphonyns{Symphony}
+\def\col{{\tt colossus}~}
+\def\colns{{\tt colossus}}
+\def\astropy{{\tt astropy}~}
+\def\astropyns{{\tt astropy}}
+\def\subgen{{\tt subgen}~}
+\def\subgenns{{\tt subgen}}
+\def\sigsub{{$\Sigma_{\mathrm{sub}}$}}
+\def\fssigsub{{$f_{\mathrm{s}} \cdot \Sigma_{\mathrm{sub}}$}}
+\def\hanetal{\citet{10.1093/mnras/stv2900}~}
+\def\hanetalns{\citet{10.1093/mnras/stv2900}}
+
+\newcommand{\note}[1]{\textcolor{red}{\uppercase{#1}}}
+
+\newcommand{\reffig}[1]{Figure \ref{#1}}
+
+\newcommand{\refsec}[1]{Section \ref{#1}}
+\newcommand{\refappendix}[1]{Appendix \ref{#1}}
+\newcommand{\reftable}[1]{Table \ref{#1}}
+\newcommand{\refeq}[1]{Eq. \ref{#1}}
+
+\begin{document}
+
+\preprint{APS/123-QED}
+
+\title{Dark Matter Substructure: A Lensing Perspective}
+
+\author{Charles Gannon}
+ \altaffiliation{University of California, Merced, 5200 N Lake Road, Merced, CA, 95341, USA}
+ \email{cgannon@ucmerced.edu}
+\author{Anna Nierenberg}
+ \affiliation{University of California, Merced, 5200 N Lake Road, Merced, CA, 95341, USA}
+\author{Andrew Benson}
+ \affiliation{Carnegie Observatories, 813 Santa Barbara Street, Pasadena, CA 91101, USA}
+\author{Ryan Keeley}
+ \affiliation{University of California, Merced, 5200 N Lake Road, Merced, CA, 95341, USA}
+\author{Xiaolong Du}
+ \affiliation{Department of Physics and Astronomy, University of California, Los Angeles, CA 90095, USA}
+ \affiliation{Carnegie Observatories, 813 Santa Barbara Street, Pasadena, CA 91101, USA}
+\author{Daniel Gilman}
+ \affiliation{Department of Astronomy \& Astrophysics, University of Chicago, Chicago, IL 60637 USA}
+
+
+
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+The study of dark matter substructure through strong gravitational lensing has shown enormous promise in probing the properties of dark matter on sub-galactic scales.
+This approach has already been used to place strong constraints on a wide range of dark matter models including self-interacting dark matter, fuzzy dark matter and warm dark matter.
+One major uncertainty in these studies is the strength of tidal stripping experienced by subhalos.
+We study theoretical predictions for the statistical properties of subhalos in strong gravitational lenses using the semi-analytic galaxy formation toolkit: \galns.
+We present a large suite of dark matter only \gal models, spanning nearly two orders of magnitude in host halo mass (from Milky Way to group mass halos between redshifts from $0.2$ to $0.8$).
+Additionally, to address potential shortcomings of including only dark matter physics we include a smaller set of \gal runs with the potential of a central massive elliptical to complement our dark matter only suite of models.
+We place particular focus on quantities relevant to strong gravitational lensing; namely the projected number density of substructure near the Einstein radius as function of host stellar mass and redshift.
+In the innermost region in projection, we find that our \gal models agree with N-body simulations within a factor of $\sim 2$ within the Einstein radius.
+We find that the addition of a central galaxy suppresses the projected number density of subhalos within the Einstein radius by around $15\%$ relative to dark matter only simulations.
+
+\end{abstract}
+
+%\keywords{Suggested keyworrds}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+
+\section{Introduction}\label{sec:introduction}
+Cold dark matter (CDM) provides an excellent description of the matter distribution on the largest scales
+For example, the CDM model has had tremendous success explaining the Cosmic Microwave Background \citep{2020} and the mass function and spatial distribution of luminous galaxies \citep[e.g.][]{white1978core,white1991galaxy,de2008high,weinberg2015cold}.
+Recently, probes of dark matter have begun pushing the frontier to subgalactic scales without the need for luminous tracers.
+In this regime, stellar streams \citep[e.g.][]{bonaca2019spur,10.1093/mnras/stab210,banik2021novel,bovy2017linear,banik2018probing} promise to provide constraints within the Local Group.
+Outside the Local Group, strong gravitational lensing probes the properties of low mass halos~\citep[e.g.][]{vegetti2018constraining,minor2021unexpected,powell2023lensed, mao1998evidence,keeley2024jwst,dike2023strong,gilman2019probing, 10.1093/mnras/stz3480, gilman2022primordial, gilman2023constraining}.%,nadler2021constraints} provide competitive constraints on dark matter physics
+
+One source of uncertainty in gravitational lensing analyses of dark matter is the normalization of the subhalo mass function (SHMF).
+Halos can be considered in two categories: 1) isolated (field) halos and 2) halos halo (subhalos). 
+Both categories contribute to the lensing observables.
+While the properties of field halos can be robustly predicted for a given dark matter model, subhalos, undergo complex interactions with the host including tidal heating, tidal stripping and dynamical friction, which all occur within the evolving potential of the host halo. 
+These physical effects map the subhalos at infall (the so-called \emph{unevolved} population) to the subhalos at a later time (referred to as the \emph{evolved} population).
+An increase in tidal stripping results in a decrease in the normalization of the evolved SHMF.
+It is the \emph{evolved} population of subhalos that have been affected by tidal interactions with the host that is observed during strong gravitational lensing measurements, whereas the unevolved population depends only on subhalo infall masses.
+Mass loss due to tidal stripping is spatially dependent \cite{10.1093/mnras/stv2900} with some subhalos having evolved masses which are $1 \%$ or less of their infall masses \cite{errani2021asymptotic}.
+In the case of a subhalo with $1 \%$ of its original infall mass remaining, the potential lensing signal (percent change in image magnification) can be reduced by a factor of $\sim 4$ \cite{du2025faster} compared to the signal that would be observed absent tidal interactions.
+
+The subhalo to field halo ratio is strongly dependent on the lens and source redshift. 
+N-body simulations suggest that subhalos account for $5$--$20\%$ of the total number of halos near the lensed images in projection \citep{10.1093/mnras/stu2673, 10.1093/mnras/sty159}. 
+Although subhalos are subdominant in number, \citet{gilman2024turbocharging} showed that uncertainty in tidal stripping is a major source of degeneracy in strong gravitational lensing studies.  
+Current forward modeling pipelines do not have variable models of tidal stripping strength; instead, the normalization of the unevolved SHMF (\sigsub) is allowed to vary. 
+This serves as a proxy for varying tidal stripping strength. 
+To study the impact of the \sigsub~prior on lensing inferences, \citet{gilman2024turbocharging} simulated 25 mock lenses with warm dark matter (WDM) with a half-mode-mass ($m_{\mathrm{hm}} = 10^{7.5}~\mathrm{M}_\odot$) as a ground truth.
+Using a Gaussian prior on \sigsub~with width 0.2 dex lowered bound on the half-mode-mass by 2 dex relative to when a uniform prior with width of 1.5 dex was used.
+We aim to investigate whether a narrower prior on \sigsub~can be used given current theoretical uncertainties.
+
+%This work focuses on studying the statistical properties of low-mass subhalos with a focus on observables related to quadruply lensed quasars, with lenses on the group scale.
+%{\bf
+%Current pipelines used in anomalous flux ratio constraints on dark matter empirically forward model line of sight subhalo populations.
+%These empirical forward models have a set of parameters describing the statistics of subhalo populations, which need priors which reflect the theoretical parameter uncertainties.
+%Keeley et al. \cite{keeley2024jwst} uses a factor of $30$ uncertainty for the prior on the normalization of the subhalo mass function which is intended to conservatively account for theoretical uncertainties in the tidal evolution of subhalos.
+%A potential way to break degeneracies and improve constraining power is to use a narrower prior based directly on predictions from N-Body simulations.
+
+%}
+
+We highlight that caution must be exercised: a large body of work has drawn attention to artificial disruption present in N-body simulations \citep{10.1093/mnras/stx2956,10.1093/mnras/stz2767,10.1093/mnras/stz3349,2022MNRAS.517.1398B}.
+Even in high resolution simulations, such as the \cat \citep{griffen2016caterpillar} suite of N-body simulations of Milky Way mass halos with a per particle mass of $\sim 10^{4} ~\mathrm{M}\odot$ artificial disruption can lead to a $10 - 20 \%$ suppression of the SHMF over the entire viral volume \citep{2022MNRAS.517.1398B}.
+Additionally, Benson \& Du \citep{2022MNRAS.517.1398B} found a significant spatial dependence in the effects of artificial disruption, with the SHMF in the inner $2 \%$ of the virial radius spuriously suppressed by nearly a factor of $3$.
+Due to the geometry of projection, subhalos at small radial displacement from the host are overrepresented in the populations of subhalos probed by lensing, making the effects of artificial disruption more pronounced when compared to the total subhalo population.
+
+
+Due to their computational cost, zoom-in simulations are not conducive to studying population level statistics of subhalos over the large range of parameter space of host halo masses and redshift representative of lenses used to study dark matter.
+Analytic and semi-analytic models of subhalo interactions provide a path forward.
+These methods must account for the complex interactions between the subhalos and their host. %and it's host including tidal heating, tidal stripping and dynamical friction all occurring within the evolving potential of the host halo.
+Developing fast and accurate models of the impact of environment on subhalos remains an area of active study.
+In particular, models of tidal stripping have recently received a great deal of attention, with much recent work focused on understanding the tidal tracks of subhalo evolution \citep{2020MNRAS.491.4591E, errani2021asymptotic,2022MNRAS.517.1398B,2024arXiv240309597D}.
+
+%% This paper
+In light of the improved understanding of artificial disruption in N-Body simulations, this study revisits the predictions for the joint spatial and mass distribution of subhalos in CDM, with emphasis on quantities related to gravitational lensing.
+We use semi-analytic models as our primary mode of emulating dark matter subhalos.
+In particular, we use the \galns
+\footnote{https://github.com/galacticusorg/galacticus , we use revisions 723170fb1690257be9b0588c0a83c9e559a584ae and 0e3a5adea6e3b32b9eaaa3a6c4896bbe63fb0cb1 }
+\citep{BENSON2012175} galaxy formation toolkit.
+The \gal galaxy formation toolkit is a modular and open source semi-analytic model of galaxy formation with an extensive library of both dark matter and baryonic physics.%Though semi-analytic models are commonly thought to trade speed for accuracy when compared to the N-body simulations they are tuned off of, we note that they have proven less susceptible to the effects of artificial disruption \citep{10.1093/mnras/sty084, 10.1093/mnras/stx2956, 10.1093/mnras/stab1215}..
+
+
+We present a large suite of \gal subhalo realizations, spanning nearly two decades in host halo mass (from Milky Way mass to group mass halos at redshifts $0.2$--$0.8$).
+We use our suite of \gal runs to study quantities relevant to strong gravitational lensing, with particular focus placed on the subhalo population within a $20$ kpc aperture.
+A $20 ~\text{kpc}$ aperture is chosen to be small enough to be comparable to the Einstein radius of a typical SLACS lens \citep{shu2017sloan} ($\sim 1 ~\text{arcsec}$ corresponding to $\sim 8 ~\text{kpc}$ for a lens at redshift $z = 0.5$), but large enough to obtain reasonable statistics from our \gal models.
+To complement our \gal models, we include a comparison with the \symphony suite of N-body simulations and the \hanetal analytic model of the spatial and mass distribution of subhalos.  
+Similar to previous works focusing on the subhalo populations of strong gravitational lenses, our main suite of models is limited to dark matter only physics.
+We make a preliminary study of baryonic effects by studying a smaller suite of models that include the potential of a central galaxy.
+We take an empirical approach to modeling the evolution of the central galaxy using the {\tt UniverseMachine } \citep{Behroozi_2019} correlation between galaxy growth and dark matter halo assembly. 
+
+
+
+
+In \refsec{sec_methods}, we discuss the parameters chosen for our \gal models and the methods used in our analysis.
+Next, in \refsec{sec_results} we present our results and provide discussion in \refsec{sec_discussion}.
+Finally, we summarize our results in \refsec{sec_conclusion}.
+For this work, we assume cosmological parameters from the Planck Collaboration \citep{2020}, $(H_0, \Omega_m, \Omega_\Lambda) = (67.36, 0.31530, 0.68470)$.
+A combination of \astropy \citep{astropy:2013,astropy:2018,astropy:2022}, \col \citep{diemer2018colossus} and \gal \citep{BENSON2012175} software packages are used for cosmological calculations.
+To calculate halo concentrations the \citet{diemer2019accurate} model is used.
+All quantities are reported in physical units unless otherwise specified.
+
+\section{Methods}\label{sec_methods}
+In this section we discuss the methods used in this work.
+We discuss our semi-analytic models in \refsec{sec_methods_models}.
+In \refsec{sec_methods_analytic} we provide an overview of theoretical expectations for the spatial distribution and mass function of subhalos.
+
+\subsection{Semi-Analytic Models}\label{sec_methods_models}
+We utilize semi-analytic models as our primary mode of studying the population level statistics of dark matter substructure.
+Semi-analytic models have the advantage of speed when compared to N-body simulations, and are chosen to be the primary focus of this work to enable fast exploration of the population level statistics of the substructure of dark matter halos.
+In particular, we use \galns, an open source and extensible galaxy formation framework.
+The \gal toolkit is particularly well suited to the study of subhalo properties due to it's extensive library of subhalo physics and its recent calibration to high resolution idealized simulations provided in \citet{2024arXiv240309597D}.
+
+Here, we give a brief summary of the algorithms used to generate realizations of dark matter substructure.
+We use \gal to generate merger trees and then subsequently evolve the trees forward in time using a set of analytic models for the evolution of subhalo density profiles and orbits (orbit initialization, dynamical friction, tidal stripping and tidal heating).
+In \galns, dark matter merger trees are built using Monte Carlo algorithms presented in \citet{10.1046/j.1365-8711.2000.03879.x} and \citet{parkinson2008generating}.
+In this algorithm, merger trees are evolved backwards in time, with branching rates calculated at each using extensions \citep{bond1991excursion, bower1991evolution}
+to Press \& Schechter \citep{press1974formation} formalism.
+Merger tree nodes are then evolved forward in time.
+First, orbits are initialized using the potential of the host halo \citep{jiang2015orbital}.
+After initialization, subhalo orbits are then evolved using models for dynamical friction \citep{chandrasekhar1943dynamical}, tidal stripping \citep{zentner2005physics} and tidal heating \citep{gnedin1999tidal}.
+
+
+\subsubsection{Tidal Physics}
+    As a subhalo evolves within its host halo, it gradually loses mass due to tidal stripping, i.e. particles are removed over time by the tidal forces exerted by the host.
+    In addition, tidal shocks heat the subhalo, causing the density profile of the subhalo to expand and become less dense, causing further mass loss.
+    For massive subhalos (subhalos with subhalo-to-host halo mass ratios close to 1), the trajectories of host particles are bent by the gravity of subhalos, creating an overdensity behind the subhalo.
+    This results in a net drag force known as dynamical friction, which causes the subhalo's orbital radius to decay and eventually leads to its merger with the host.
+    As the subhalo moves closer to the host's center, it experiences increasingly stronger tidal forces, accelerating mass loss. 
+    In our work, we model subhalo evolution using the model described in Refs \citep{10.1093/mnras/staa2496, 2022MNRAS.517.1398B, 2024arXiv240309597D} within the \gal framework. 
+
+
+We use subhalo physics tuned to high resolution idealized simulations provided by \citet{2024arXiv240309597D} in which subhalos are evolved in an analytic host potential.
+Compared to tradition cosmological zoom-in simulations, these simulations have the advantage of resolving subhalos at much higher resolution for less computational cost.
+For example, in the idealized simulations used by \citet{2024arXiv240309597D}, subhalos start with $N \approx 10^7$ particles and are tracked until $N \approx 10^4$ particles remain.
+This is in contrast to high resolution cosmological simulations such as \cat \citep{griffen2016caterpillar}, where the lowest mass subhalos are tracked to $N \approx 20$ particles.
+The high resolution minimizes the effects of numerical issues traditionally associated with N-body simulations, such as artificial disruption \citep{10.1093/mnras/sty084}.
+Additionally, the challenges associated with halo finding in cosmological simulations is not present in idealized simulations.
+However, we note that our idealized simulations have several limitations; idealized simulations lack cosmological context and use simplified, spherically symmetric analytic profiles to describe the host halo and infalling subhalo.
+
+\subsubsection{Merger Radius}\label{sec_methods_galacticus_merger}
+Probes of strong gravitational lensing are sensitive to subhalos appearing in projection near lensed images which appear near the Einstein radius.
+For a typical group mass lens at redshift $z=0.5$, this aperture has a radius of $\sim 1$ arcsecond ($\sim 7 ~\text{kpc}$) \citep[][]{shu2017sloan}.
+Due to effects of projection, strong lensing probes are especially sensitive to subhalos at small spatial separation to the host.
+The \gal galaxy formation model automatically destroys subhalos within a minimum radius.
+We select the minimum radius to simulate subhalos by running convergence tests.
+We find convergence for the spatial distribution at $10$ kpc for a merging radius of $0.01~r_{\mathrm{v}}$.
+For a $10^{13.5} \mathrm{M}_{\odot}$ mass halo at redshift, z = 0.2, $0.01~r_{\mathrm{v}}$ corresponds to a radial separation from the center of the host of $0.7$ kpc.
+Unless otherwise noted, when considering projected quantities, we include subhalos within an annulus with an inner and outer radius of $10$ and $20$ kpc respectively.
+This ensures that the subhalo population within $10$ kpc, which may be incomplete, is excluded.
+We run our models with a tree (infall mass) floor of $8 \times 10^7 \
+\mathrm{M}_\odot$.
+To ensure the completeness of the subhalo population, we track subhalos to arbitrarily low bound mass.
+% Equation here
+
+\subsubsection{Host Halo Properties}
+
+% More here ?
+We model across a broad range of masses and redshifts to capture the evolution of the projected number density and to facilitate comparison with observational works as well as other simulations.
+Our suite of \gal models consists of a 10 by 10 grid of \gal outputs spanning the range of host halo masses $12.0 \leq \log_{10}\left( M_{\mathrm{h}}/ \mathrm{M}_\odot \right ) \leq 13.5$ and redshifts $0.2 \leq z \leq 0.8$ with 224 host halos per grid point.
+
+\subsubsection{Central Galaxy Properties}
+In addition to our dark matter only models, we include a smaller suite of \gal models spanning $13.0 \leq \log_{10} (M_{\mathrm{h}} / \mathrm{M}_\odot) \leq 13.5$ with the inclusion of the potential of a central massive elliptical.
+Along with the increased tidal heating and stripping due to the potential of the central galaxy, we include a model of baryonic contraction due to the central potential \citep{gnedin2004response}.
+The morphology of the central massive elliptical is modeled using a Hernquist \citep{hernquist1990analytical} profile.
+We take care to accurately model the evolution of the stellar mass and scale radius of the central galaxy; the evolution of the central galaxy is modeled using the stellar mass to halo mass relation of \citet{Behroozi_2019}, Equation J3.
+For our work, we use the best fit parameters provided in the first row of table J1.
+For simplicity, we do not include intrinsic scatter in the stellar mass to halo mass relation.
+We use empirical power law fits provided by \citet{2003MNRAS.343..978S} for the stellar mass to radius relationship for early type galaxies in the Sloan Digital Sky Survey \citep{york2000sloan} to evolve the Hernquist radius of the central galaxy.
+Similarly, we do not include scatter in this relationship.
+We provide further discussion of the evolution of the central galaxy in \refappendix{sec:appendix}.
+
+\subsection{Analytic Models}\label{sec_methods_analytic}
+Here, we discuss theoretical expectations for the subhalo population. 
+We place particular emphasis on the spatial and mass distribution of subhalos.
+Two cases of the spatial-mass distribution can be considered, using two definitions of subhalo mass: the mass at infall and the gravitationally bound mass of the subhalo at the time of observation.
+The former is known as the ``unevolved'' distribution and the latter the ``evolved'' distribution.
+By definition, no mass loss due to tidal stripping is considered in the unevolved distribution, while the evolved distribution includes tidal mass loss.
+Due to the extreme mass loss undergone by some subhalos, the unevolved distribution is not an observable quantity.
+Instead, the unevolved distribution provides a powerful tool to study the properties of subhalos, allowing the complicated physics of tidal stripping to be separated from orbital physics.
+A useful picture is that the evolved distribution can be approximately thought of as being derived from the unevolved distribution and a model of tidal mass loss \citep{10.1093/mnras/stv2900,du2025faster}.
+However, we note that this picture is not exact. 
+For example, physics of tidal stripping cannot be completely separated from orbital physics as tidal mass loss can affect dynamical friction (\gal uses the bound mass in dynamical friction calculations).
+
+
+We compare the predictions from N-body simulations and semi-analytic models with the analytic prescription presented by \hanetal. 
+Here, we describe the \hanetal model and discuss some of its physical assumptions.
+\hanetal first assume that the unevolved spatial-mass distribution of subhalos is separable (the spatial and mass function can be separated into a mass function and spatial distribution with the mass function only dependent on the subhalo's mass and the spatial distribution only dependent on the subhalo's radial separation from the host). 
+Then \hanetal combine this assumption with the assumption that the unevolved spatial distribution of subhalos traces the density profile of the host to arrive at the unevolved spatial and mass distribution:
+\begin{equation}\label{eq_han_unevolved}
+    \frac{\mathrm{d}^{2}N}{\mathrm{d}V\mathrm{d}m} \propto \Tilde{\rho}(r) \frac{\mathrm{d}N}{\mathrm{d}m}(m),
+\end{equation}
+where $\frac{\mathrm{d}^{2}N}{\mathrm{d}V\mathrm{d}m}$ is the unevolved subhalo spatial and mass function, $\tilde{\rho}$ is the normalized density profile of the host, $\mathrm{d}N/\mathrm{d}m$ is the unevolved mass function and $m$ is the unevolved (infall) mass of the subhalo.
+The unevolved mass function is then approximated as a power law
+\begin{equation}\label{eq_mf_unevolved}
+    \frac{dN}{dm} \propto m^{\alpha}, 
+\end{equation}
+with $\alpha \sim -2$ being the logarithmic slope of the subhalo mass function. 
+Next, \hanetal assume that the gravitationally bound (evolved) mass of a subhalo can be related to the unevolved mass of the subhalo on average using a transfer function dependent only on the distance from center of the host 
+\begin{equation}\label{eq_han_transfer_1}
+    \frac{m_{b}}{m} = T(r), 
+\end{equation}
+where $T(r)$ is the spatially dependent transfer function and $m_b$ is the evolved mass of the subhalo.
+In their analysis, \hanetal take $T(r)$ to be a power law
+\begin{equation}\label{eq_han_transfer}
+    T(r) \propto \left(\frac{r}{r_{\mathrm{v}}}\right)^{\beta},
+\end{equation}
+where $\beta \sim 1$ is a free parameter.
+
+
+Plugging Equations \ref{eq_mf_unevolved} and \ref{eq_han_transfer_1} into \refeq{eq_han_unevolved} gives the evolved spatial and mass function
+\begin{equation}\label{eq_han_evolved}
+    \frac{\mathrm{d}^{2}N}{\mathrm{d}V\mathrm{d}m_{\mathrm{b}}} \propto \hat{T}(r) \Tilde{\rho}(r) m_{b}^{\alpha},
+\end{equation}
+where $\frac{\mathrm{d}^{2}N}{\mathrm{d}V\mathrm{d}m_{\mathrm{b}}}$ is the evolved spatial and mass function and $\hat{T}(r) =\left( T(r) \right)^{-(\alpha + 1)}$  is substituted for brevity.
+We note that for $\alpha \sim -2$, $\hat{T}(r) \approx T(r)$.
+Furthermore, substituting the form of $T(r)$ used by \hanetal (\refeq{eq_han_transfer}) gives 
+\begin{equation}\label{eq_han_evolved_2}
+    \frac{\mathrm{d}^{2}N}{\mathrm{d}V\mathrm{d}m_{\mathrm{b}}} \propto r^{\gamma} \Tilde{\rho}(r) m_{b}^{\alpha},
+\end{equation}
+where $\gamma = - \beta (\alpha + 1) \sim 1$. 
+\hanetal  fit $\gamma$ to various N-body simulations finding $\gamma = 0.95$ for Milky Way mass Aquarius halos \citep{10.1111/j.1365-2966.2008.14066.x} and $\gamma = 1.33$ for group mass halos in the Phoenix suite \citep{2016ApJ...824..144F}, indicating a dependence on host halo mass.
+
+
+
+To analyze our \gal results, we fit the \hanetal models to the \gal predictions for the spatial and mass function in \refsec{sec_results}.
+To provide an additional point of comparison to our \gal results in the context of gravitational lensing, we spatially project the \hanetal into 2d.
+An immediate consequence of the separability assumed by the  \hanetal model is a prediction that the logarithmic slope of the SHMF should be identical between the projected and unprojected distributions.
+Additionally, we study the predictions of the model for the scaling of the projected subhalo mass function (PSHMF) within the Einstein radius, an important quantity for gravitational lensing.
+We estimate the scaling of the projected spatial and mass function as a function of host halo mass utilizing the host halo mass scaling relations discussed in \hanetalns.
+However, redshift dependent scaling is not considered by \hanetal, who derived their model for a single snapshot in time at $z = 0$.
+Typical lensing galaxies are found at redshifts $0.2 \lesssim z \lesssim 0.8$, so understanding the scaling of the SHMF with redshift is essential.
+Therefore, we discuss extending the \hanetal model over these range of redshifts in the following sections.
+
+
+\section{Results}\label{sec_results}
+
+Here, we analyze our suite of \gal models.
+In \refsec{sec_radial} we discuss the spatial distribution predicted by \galns.
+Next, in \refsec{sec_norm} we calculate the normalization of the PSHMF of our dark matter only (DMO) simulations, and repeat the calculations for our models with the potential of a central massive elliptical in \refsec{sec_galaxy_norm}.
+Next, in \refsec{sec_scaling} we predict the scaling of the PSHMF as a function of host halo mass and redshift using our dark matter simulations. 
+Finally, we discuss the impact of a central galactic potential on the scaling of the PSHMF.
+
+\subsection{Spatial Distribution}\label{sec_radial}
+
+\begin{figure*}
+    \includegraphics[width=0.7\linewidth]{plots/spatial_3d.pdf}
+    \caption{
+                The differential spatial distributions ($n_{\mathrm{sub}}$) from our \gal models and Symphony for subhalos with mass $9 < \log_{10}\left (m_{b}/\mathrm{M}_{\odot} \right ) < 10$ plotted as a function of the virial radius fraction ($r / r_{\mathrm{v}}$).
+                Results are for halos with mass $M_{\mathrm{h}} = 10^{13} \mathrm{M}_\odot$ at redshift $z=0.5$ 
+                In red: the unevolved spatial distribution from our \gal models, in orange: the evolved spatial distribution for \gal and in green with a central galaxy.
+                The \gal and Symphony spatial distributions shown are a result of averaging over the spatial distributions of each individual halo in the suite at each bin over all halos in the suite.
+                The halo to halo scatter is calculated in a similar way; taking the standard deviation of the values of the spatial distributions of each of the host halos calculated at each radial bin. 
+                The shaded regions show the $1 \sigma$ halo to halo scatter for the \gal evolved and unevolved case, scatter for the other distributions is not shown for visual clarity.                
+                The best fit of the Han (2016) model to the \gal DMO unevolved spatial distribution is shown in purple.
+                In blue: the spatial distribution for Symphony.
+                 We find there is no significant difference in the spatial distribution of subhalos when running models with or without a central galaxy.
+            }
+    \label{fig_spatial_3d}
+\end{figure*}
+
+\begin{figure*}
+  \includegraphics[width=\textwidth]{plots/spatial_ratio.pdf}
+  \caption{%%include host to host scatter, state the number of hosts in the figure.
+        The ratio of the spatial distribution of subhalos ($n_{\mathrm{sub}}$) to the host's density profile ($\rho_{\mathrm{h}}$) for subhalos with $8 < \log_{10}(m_{b} / \mathrm{M}_\odot) < 9$ normalized to $1$ at $r = r_{\mathrm{v}}$ for the evolved distribution (left) and $8 < \log_{10}(m / \mathrm{M}_\odot) < 9$ unevolved distribution (right).
+        A horizontal line of 1 (black dotted) shows the host halos density profile.
+        Results are plotted for \gal over a range of host halo masses and redshifts and for Symphony for a single mass and redshift ($\log_{10} \left ( M_{\mathrm{h}} / \mathrm{M}_\odot \right ) = 13, z=0.5$).    
+        The relative decrease towards the center in the evolved case is a result of tidal stripping (see \refsec{sec_methods_analytic}), while the relative increase in the unevolved case is likely a result of dynamical friction (see \refsec{sec_discuss_pop}).
+        Over our range of redshifts explored by our \gal simulations, the slope of the evolved spatial distribution $n_{\mathrm{sub}} / \rho_{\mathrm{h}}$ has a mild dependence on halo mass, with almost no dependence on redshift.
+        For the unevolved case, there appears to be no significant dependence one either redshift or host halo mass.
+   }
+  \label{fig_spatial_ratio}
+\end{figure*}
+
+\reffig{fig_spatial_3d} shows the spatial distribution predicted by \gal for a $10^{13} \mathrm{M}_\odot$ halo at $z=0.5$, with both the evolved and unevolved distributions plotted.
+In addition to the \gal predictions, results are shown for \symphony \citep{nadler2023symphony} and \hanetal model of the spatial distribution.
+We plot the ratio of the radial distribution of subhalos to the host's dark matter density in \reffig{fig_spatial_ratio}.
+For a $10^{13} \mathrm{M}_\odot$ halo at $z=0.5$ we find the best fit to the \gal spatial distribution with a value of $\gamma = 0.98$ (shown in \reftable{tab_han_fits}).
+Additionally, fits provided by \hanetal to Aquarius \citep{10.1111/j.1365-2966.2008.14066.x} and Phoenix~\citep{2016ApJ...824..144F} are included for comparison in \reftable{tab_han_fits}.
+
+
+The fits to the $10^{12.0} ~\mathrm{M}_\odot$ \gal halos agree well with fits to Aquarius halos ($\approx 10^{12.0} ~\mathrm{M}_\odot$).
+We find a trend of decreasing $\gamma$ with host halo mass in our suite of \gal models. 
+This is opposite of the trend of increasing $\gamma$ with halo mass found by \hanetal when comparing the Aquarius and Phoenix simulations ($\approx 7 \times 10^{14} \mathrm{M}_\odot$).
+Over the range of redshifts probed $0.2 \leq z \leq 0.8$, and at a fixed halo mass we find that $\gamma$ is nearly constant.
+Further discussion of the \hanetal model is provided in \refsec{sec_discuss_pop}.
+
+
+\begin{table}
+    \centering
+    \begin{tabular}{cccc}
+        \hline
+        Simulation                          & $\log_{10}(M_{\mathrm{h}} / \mathrm{M}_\odot)$    & $z$   & $\gamma$  \\
+        \hline
+        \gal                                & $12.0$                        & 0.2   & 1.01      \\
+                                            & $12.0$                        & 0.8   & 1.06      \\
+                                            & $13.0$                        & 0.5   & 0.82      \\
+                                            & $13.5$                        & 0.2   & 0.67      \\
+                                            & $13.5$                        & 0.8   & 0.75      \\
+        \hline
+        Aquarius                     & $12.0$                        & 0.0   & 0.95      \\
+        Phoenix                      & $14.8$                        & 0.0   & 1.33      \\
+        \hline
+    \end{tabular}
+    \caption{
+        Table of best fits to \hanetal model of the spatial distribution (see \refeq{eq_han_evolved}).
+        We include fits spanning the range of halo masses and redshifts included in our suite of \gal models, as well as at  the redshift and host halo mass, $M_h = 10^{13} \mathrm{M}_\odot$ and redshift, $z = 0.5$ where $\Sigma_{\mathrm{sub}}$ is defined.
+        For comparison, we include fits to Aquarius and Phoenix halos provided by \hanetal.
+    }
+    \label{tab_han_fits}
+\end{table}
+
+\begin{figure}
+    \includegraphics[width=\linewidth]{plots/spatial_2d.pdf}
+    \caption{
+                The projected number density within the inner 20 kpc for both the unevolved (upper red), evolved with central galaxy (green dotted) and evolved (lower orange) subhalo distributions.
+                Predictions from \gal are shown for subhalos with mass $> 10^{8} \mathrm{M}_\odot$ in a $10^{13} \mathrm{M}_\odot$ halo, with scatter shown for 76 kpc$^2$ bins.
+                In brown (dotted) the Einstein radius for a typical SLACS lens is shown.
+                The evolved number density is constant within the innermost region of the halo for both DMO and central galaxy models.
+                The solid line shows the mean, while the shaded region shows $1 \sigma$ halo to halo scatter (see \ref{sec_radial} for more details).
+                Scatter is not shown for the case with a central galaxy for visual clarity. 
+                The projected spatial distribution with the inner $20 ~\mathrm{kpc}$ is nearly independent of projected distance.
+                Additionally, for our group scale simulations, we find that the addition of a central massive elliptical has a negligible impact on the projected number density of subhalos.}
+    \label{fig_spatial_2d_multihalo}
+\end{figure}
+
+
+\reffig{fig_spatial_2d_multihalo} shows the mean and standard deviation of the projected spatial distributions predicted by \gal for subhalos in the mass range $8 < \log_{10}\left( m / \mathrm{M}_\odot \right) < 9$ for a $10^{13} ~\mathrm{M}_\odot$ halo at $z=0.5$ with projected radii $r_{\mathrm{2d}} < 20 ~\text{kpc}$.
+The mean and standard deviation are shown for each $76 \mathrm{~kpc^2}$ radial bin, combining an aggregate of 3 projected spatial distributions (in the xy, yz, zy planes) per host halo. 
+ 
+
+For reference, we show the median Einstein radius from the sample of SLACS lenses presented by \citet{shu2017sloan}.
+We find that the projected spatial distribution is nearly constant in the innermost region of the host, which is consistent with the findings of \citet{10.1093/mnras/stu2673}. 
+We find that this holds true for both our DMO models and models with a central galaxy.
+
+\subsection{Projected Subhalo Mass Function Normalization: Dark Matter Only}\label{sec_norm}
+
+Of particular interest to lensing studies is the integrated number of subhalos within an aperture near the Einstein radius as a function of the properties of the host halo.
+To measure this, we use the convention of \citet{10.1093/mnras/stz3480} to define the average density of the unevolved projected subhalo mass function (PSHMF) within the Einstein radius as:
+\begin{equation}\label{eq_massfunction_proj}
+    \frac{\mathrm{d}^2N}{\mathrm{d}m\mathrm{d}A} =  \frac{\Sigma_{\mathrm{sub}}}{m_0}\left (\frac{m}{m_0} \right)^{\alpha}F(M_{halo},z),
+\end{equation}
+where $\frac{\mathrm{d}^2N}{\mathrm{d}m\mathrm{d}A}$ is a measure of the projected subhalo number density evaluated at the Einstein radius, $m$ is the mass of a subhalo at infall, $m_{0}$ is a pivot mass, taken by convention to be $10^{8} \mathrm{M}_{\odot}$, and the function $F(M_{halo},z)$ describes the dependence on host halo mass and redshift.
+For convenience, we refer to $\frac{d^2N}{dmdA}$ as the projected subhalo mass function (PSHMF) (instead of ``projected subhalo mass density function'').
+We note that \refeq{eq_massfunction_proj} can be derived by projecting \refeq{eq_han_unevolved}. 
+The scaling term $F(M_h, z)$ is a result of the dependence of the total number of subhalos on halo mass and redshift as well as the dependence of the spatial distribution of subhalos on both halo mass and redshift (for the unevolved case, \hanetal models the spatial distribution of subhalos as following the density profile of the host).
+Factoring out all dependence on redshift and host halo mass into the scaling function $F(M_{halo},z)$ allows a single PSHMF normalization ($\Sigma_{\mathrm{sub}}$) to be measured for all host halos regardless of host halo mass or redshift.
+
+
+To provide further context for \refeq{eq_massfunction_proj}, we can define the evolved PSHMF:
+\begin{equation}\label{eq_massfunction_proj_evolved}
+    \frac{\mathrm{d}^2N}{\mathrm{d}m_{\mathrm{b}}\mathrm{d}A} = \frac{f_{s} \cdot \Sigma_{\mathrm{sub}}}{m_0} \left( \frac{m_{b}}{m_0} \right)^{\alpha_{\mathrm{b}}} F_b(M_{halo},z),
+\end{equation}
+where $f_s$ is the reduction in normalization from the unevolved case, $\alpha_{\mathrm{b}}$ is the logarithmic slope of the evolved SHMF and $F_{b}(M_h,z)$ described the halo mass / redshift scaling of the evolved PSHMF. 
+\refeq{eq_massfunction_proj_evolved} can be derived using a similar procedure to that used by \hanetal : define an average ratio of subhalo bound mass to infall mass for those subhalos within the Einstein radius  $m / m_b = f_m$ and project \refeq{eq_han_evolved}.
+This derivation yields $\alpha_b = \alpha$ and $f_s = f_{m}^{-(\alpha+1)}$, which for $\alpha \sim -2$ can be approximated $f_s \approx f_m$. 
+
+We include best fits for Eq. \ref{eq_massfunction_proj} and \ref{eq_massfunction_proj_evolved} in \reftable{tab_fits}. 
+As shown in \reftable{tab_fits}, we find subhalos of a group scale host that appear near the Einstein radius in projection on average retain $\sim 2\%$ of their infall mass after tidal stripping.
+Similar to the unevolved case, the scaling term ($F_b(M_h, z)$) results from the dependence of the total subhalo count and the spatial distribution of subhalos on both halo mass and redshift. 
+We note the spatial distributions differ in the evolved and unevolved case; therefore we should expect $F_b(M_h,z) \ne F(M_h,z)$.
+
+
+
+Eq. \ref{eq_massfunction_proj} and \ref{eq_massfunction_proj_evolved} can be derived by spatially projecting the \hanetal models of spatial and mass distribution into 2d.
+The \hanetal model predicts that the logarithmic slopes of the evolved and unevolved mass functions should be identical, as well as that the logarithmic slopes of the total and projected mass functions should be identical.
+We check these assumptions against our model results in \reftable{tab_scaling}. 
+Furthermore, we discuss why this assumption may be inaccurate (at least inaccurate for the $> 10^8 M_\odot$ halos considered here) due to mass segregation from dynamical friction in the unevolved distribution in section \refsec{sec_discuss_pop}.
+For simplicity, in the remainder of this work we assume $\alpha = \alpha_{\mathrm{b}} = -1.97$ to remain consisistent with the \gal results for the evolved distribution (see \reftable{tab_scaling}).
+
+%If we assume that tidal stripping is a subhalo mass independent re-scaling of the evolved subhalo mass function than $\alpha_{\mathrm{b}} = \alpha$.
+%
+All dependence on halo mass and redshift in \refeq{eq_massfunction_proj} and \refeq{eq_massfunction_proj_evolved} is captured in $F$ and $F_b$ respectively, making $\Sigma_{\mathrm{sub}}$ and $f_{\mathrm{s}}$ independent of halo mass and redshift.
+Fits of the \hanetal model to the \gal spatial distribution are given in \reftable{tab_han_fits}.
+Best fits for $\Sigma_{\mathrm{sub}}$, $f_{\mathrm{s}}$ and $\alpha$ for subhalos within an annulus with inner and outer radii of $10$ kpc and $20$ kpc are given in \reftable{tab_fits}.
+We choose a $10-20$ kpc annulus to exclude the innermost subhalo population which may be subject to destruction due to satellite merging implemented in \galns, as is discussed in \refsec{sec_methods_galacticus_merger}.
+
+Note that because the evolved projected spatial distribution is nearly independent of radius near the center of the host, the normalization of the evolved mass (density) function (\fssigsub) will be nearly independent of the choice of aperture radius.
+We compare \fssigsub~to the PonosV~\citep{2016ApJ...824..144F} and PonosQ~\citep{2016ApJ...824..144F} simulations in \reftable{tab_fits_external}. 
+
+\subsection{Projected Subhalo Mass Function Normalization: Impact of Central Galaxy}\label{sec_galaxy_norm}
+\reffig{fig_spatial_3d} shows the impact of the galaxy on the spatial distribution, while \refappendix{sec:appendix} gives more information on the evolution of the central galaxy in our \gal models.
+Our \gal models predict the central galaxy has a minimal impact on the SHMF, as shown in \reffig{fig_massfunction}. Within the inner $20$ kpc in projection, both the DMO and galactic potential results have no dependence on radius as shown in \reffig{fig_spatial_2d_multihalo}. For low mass halos, our models predict the central galaxy introduces a mass independent rescaling of the SHMF, with no change in slope. The rescaling of the SHMF is dependent on the distance from the host, with the SHMF in the inner region more heavily suppressed when compared to the DMO predictions.
+For a $10^{13} \mathrm{M}_\odot$ halo, the SHMF is suppressed at the $ < 5\%$ level over the entire virial volume when compared to DMO predictions.
+In the inner $10-20$ kpc annulus the suppression increases to $\sim 15\%$.
+We find the impact of the central galaxy is minor when compared to theoretical uncertainties in the SHMF, the difference in normalization between \gal and Symphony is greater than the difference between \gal with and without a central galaxy.
+
+\subsection{Projected Subhalo Mass Function Scaling: Dark Matter Only}\label{sec_scaling}
+
+To parameterize $F$ and $F_b$ we follow the convention of \citet{gilman2019probing} and use the power law expansion \begin{equation}\label{eq_dnda_scaling}
+    F(M_{halo},z) = \left(\frac{M_{halo}}{10^{13}\mathrm{M}_{\odot}}\right)^{k_1}\left(z+0.5\right)^{k_2}
+\end{equation}
+defined to be normalized to $1$ at the host halo mass and redshift of a typical lens ($M_{\mathrm{h}} = 10^{13} \mathrm{M}_\odot$ and $z=0.5$).
+A powerlaw is a natural aproximation due to the nearly scale-free evolution expected in CDM.
+
+We fit $k_1$ and $k_2$ using our suite of \gal models.
+We plot the scaling relation in \reffig{fig_scaling}, and give scaling coefficients in \reftable{tab_scaling}.
+We find best fit values of $k_1 = 0.55$ (halo mass scaling coefficient) and $k_2 = 0.37$ (redshift scaling coefficient) for the unevolved distribution and $k_1 = 0.37$ and $k_2 = 1.05$ for the evolved distribution.
+
+The scaling of the PSHMF depends on both the spatial and mass distributions.
+To model the PSHMF scaling analytically, we project the~\hanetal model. 
+To scale the normalization of the total SHMF (over the entire virial volume) as a function of host halo mass and redshift we use the relations provided by \citet{10.1111/j.1365-2966.2005.08964.x} for the evolved case and \citet{10.1111/j.1365-2966.2004.08360.x} for the unevolved case.
+We project \refeq{eq_han_unevolved} and \ref{eq_han_evolved} according to the projection equation:
+\begin{equation}
+    \frac{\mathrm{d}^2N}{\mathrm{d}A \mathrm{d}m}(r_{2d}) = 2 \int_{r_{2d}}^{r_{\mathrm{v}}} \frac{u}{\sqrt{u^2 + r_{2d}^2}} \frac{\mathrm{d}^2 N}{\mathrm{d}V\mathrm{d}m}(u) \mathrm{d}u,
+\end{equation}
+assuming a spherically symmetric distribution of subhalos, so that the number density of subhalos depends only on the distance from the center of the host, $r$.
+Using the formula provided in \citet{10.1111/j.1365-2966.2005.08964.x}, the amplitude of the total unevolved SHMF scales as a function of mass and redshift according to the relation:
+\begin{equation}\label{eq_scaling_unevolved}
+     \frac{\mathrm{d}N}{\mathrm{d}(m / M_{\mathrm{h}})} = C_u \left(\frac{m}{M_{\mathrm{h}}}\right)^{\alpha},
+\end{equation}
+where $m$ is the mass of the subhalo (at the time of accretion), $M_{\mathrm{h}}$ is the mass of the host halo, $ \alpha $ is the logarithmic slope and $ C_u $ is the normalization of the unevolved SHMF.
+For the evolved SHMF, we scale the amplitude using the empirical formula provided by \citet{10.1111/j.1365-2966.2004.08360.x}:
+\begin{equation}\label{eq_scaling_evolved}
+    \frac{\mathrm{d}N}{\mathrm{d}m_{\mathrm{b}}} = C_\mathrm{e} M_{\mathrm{h}} f(m_{\mathrm{b}},z) m_{\mathrm{b}}^\alpha,
+\end{equation}
+where $C_\mathrm{e}$ is the normalization of the evolved SHMF, $m_{\mathrm{b}}$ is the bound mass of the subhalo and $f(m_{\mathrm{b}},z)$ abundance of halos with mass $m_{\mathrm{b}}$ at redshift $z$ per unit mass in the universe.
+We compute $f(M_{\mathrm{h}}, z)$  using the Sheth \& Tormen \citep{sheth1999large} mass function.
+
+To calculate the projected scaling relation, we numerically integrate \refeq{eq_han_evolved}.
+We first fix $\gamma$  as constant for all host halo masses, and calculate the projected scaling relations in halo mass and redshift.
+The range $0.8 \leq \gamma \leq 2.0$ is chosen to represent a reasonable range of possible values of $\gamma$, since $\gamma \approx 1$ is expected.
+The limit as $\gamma$ goes to 0 gives a NFW profile (which is the same as the unevolved case).
+For $\gamma > 3$, the spatial distribution is increasing as a function of r for all values of r, which is nonphysical.
+In addition to a static value of $\gamma$, we consider an additional case where $\gamma$ varies as a function of halo mass (``$\gamma$ interp'').
+In this case, we linearly interpolate $\gamma$ as a function of halo mass, using fits to the spatial distribution predicted by \gal (see \reftable{tab_han_fits}).
+We summarize our scaling models by providing fits to  \refeq{eq_dnda_scaling} in \reftable{tab_fits}. We also use these scaling relations in \reftable{tab_fits_external} to compare our measured values to results from the Aquarius \citep{10.1111/j.1365-2966.2008.14066.x} and Phoenix \citep{10.1111/j.1365-2966.2012.21564.x} simulations as well as the Milky Way prior used \citet{nadler2021dark}.
+
+
+\begin{figure*}
+    \includegraphics[width=\textwidth]{plots/scaling.pdf}
+    \caption{
+        The scaling shows the ratio of number of subhalos with mass $8 < \log_{10} m < 9$ projected within an annulus with an inner and outer radius of $10$ and $20$ kpc respectively to the number of these subhalos in a $10^{13} M_\odot$ host halo at $z=0.5$ as a function of host halo mass and redshift.
+        The scaling value and its scatter are calculated by using the mean and standard deviation over all host halos.
+        The left panels show the unevolved subhalo scaling, while the right panel shows the scaling of the evolved distribution.
+        Upper panels show the halo mass scaling relation for host halos at redshift $z=0.2$ (blue) and $z=0.8$ (orange).
+        Lower panels show the redshift scaling relation for a host halo mass of $10^{12.0} \mathrm{M}_\odot$ (olive) and $10^{13.5} \mathrm{M}_\odot$ (pink).
+        Shaded regions show the $1 \sigma$ halo to halo scatter.d
+        The unevolved scaling is compared to the scaling of the host's density profile (adjusted to the definition of halo mass used here) in blue (dashed).
+        The scaling relations derived from the \hanetal analytic number density distribution (Eq. \ref{eq_han_unevolved} and \ref{eq_han_evolved}) are shown for $\gamma = 0.6$ (purple, dot dashed) and $\gamma = 2.0$ (brown, dot dashed).
+        These values of $\gamma$ span a range of physically plausible values.
+    }
+    \label{fig_scaling}
+\end{figure*}
+\subsection{Projected Subhalo Mass Function Scaling: Impact of central galaxy}\label{sec_galaxy_scaling}
+
+
+We find the central galaxy has only a minor impact on the scaling of the amplitude of the PSHMF in redshift and host halo mass (see \reftable{tab_scaling}).
+For more massive halos ($M_{h} > 10^{13} \mathrm{M}_\odot$), the difference when compared to the Dark Matter Only (DMO) model decreases, which is expected due to the decreasing baryon fraction of the central galaxy (see \reffig{fig_um_evolution}).
+Unless otherwise stated, for the remainder of this work we use the DMO scaling relation. 
+
+
+\begin{figure*}
+    \includegraphics[width=\textwidth]{plots/massfunction.pdf}
+    \caption{
+             Upper left: the SHMF over the entire virial volume, right: the SHMF for subhalos projected within $50$ kpc.
+            Results are shown for group mass halos ($M_h \sim 10^{13} ~\mathrm{M}_\odot$) at redshift $z = 0.5$.
+             The \gal DMO predictions are shown in orange, \gal predictions for the central galaxy are shown in green, and results for the Symphony suite are shown in blue.
+             Lower left and right show the ratios to the \gal DMO predictions.
+             The effect of the central galaxy can be seen as a reduction in normalization of the SHMF no significant change to the logarithmic slope, at least for low mass halos.
+             The \gal and Symphony mass function and its halo to halo scatter are calculated by taking the mean and standard deviation of the value of the mass functions of every halo at every mass bin (in the upper panel, only the the \gal DMO scatter is shown for clarity).
+              For the lower panels, the values of the ratio and its scatter are calculated by dividing the average mass function and its scatter by the average value of the \gal DMO mass function at each mass bin.
+             Note that the difference in normalization for \gal with and without a central galaxy is significantly less than the difference between our \gal models and the Symphony dark matter only simulation suite. 
+     }
+    \label{fig_massfunction}
+\end{figure*}
+
+
+\begin{table*}
+
+ \begin{tabular}{ccccc}
+  \hline
+    Parameters               & Description & Value     & Halo-to-Halo Scatter      & Units                     \\
+  \hline
+    $\Sigma_{\mathrm{sub}}$           & Unevolved PSHMF amplitude          & 420       & 73.5                      & $10^{-3}$ kpc$^{-2}$                \\
+    $f_{\mathrm{s}}$                  & PSHMF tidal stripping coefficient     & 0.0282    & 0.0105                    & -                         \\
+    $f_{\mathrm{m}}$                  & Average subhalo mass loss fraction     & 0.0252    & 0.0095  & -                         \\
+    $f_{\mathrm{s}} \cdot \Sigma_{\mathrm{sub}}$ & Evolved PSHMF amplitude            &11.6      & 3.99                      & $10^{-3}$ kpc$^{-2}$                \\
+    $\alpha$                 & Unevolved logarithmic PSHMF slope  &-1.94    & -                         & -                         \\
+    $\alpha_{\mathrm{b}}$               & Evolved logarithmic PSHMF slope    &-1.97    & -                         & -                         \\
+    \hline
+  \end{tabular}
+  \caption{
+        Table of best fits for the projected subhalo mass function (PSHMF, Eq. \ref{eq_massfunction_proj} and \ref{eq_massfunction_proj_evolved}).
+        Fitting coefficients are averaged over 224 host halos per redshift and host halo mass (22,400 host halos in total).
+        Projections are taken within a $10-20$ kpc annulus, and averaged over 3 projections in the xy, yz, and xz planes.
+        Due to the low number of halos in the aperture, halo to halo scatter for the SHMF slope cannot be calculated.
+ }
+ \label{tab_fits}
+
+\end{table*}
+
+\begin{table*}
+    \centering
+    \begin{tabular}{cccccc}
+        \hline
+         Simulation & M$_{h}$ [$\mathrm{M}_{\odot}$] & z & PSHMF Amplitude [$10^{-3}\times$~kpc$^{-2}$] & scaled [$10^{-3}\times$~kpc$^{-2}$]& source \\
+         \hline
+         \gal & $1.0 \cdot 10^{13.0}$ & $0.5$ & $11$ & $11$ &this work \\
+         PonosV & $1.2 \cdot 10^{13.0}$ & $0.7$ & $6$ & $5$ &\cite{2016ApJ...824..144F} \\
+         PonosQ & $6.5 \cdot 10^{12.0}$ & $0.7$ & $6$ & $6$  &\cite{2016ApJ...824..144F} \\
+         Milky Way Satellites Prior & $1.7 \cdot 10^{13.0}$ & $0.0$ & $1-2$  & $4-8$  & \cite{nadler2021dark} \\
+         %Milky Way Satellites Prior (upper bound) & $1.7 \cdot 10^{13.0}$ & $0.0$ & $2$ & $8$ &\cite{nadler2021dark} \\
+         Symphony & $1.0 \cdot 10^{13.0}$ & $0.5$ & $5$ & $5$  &\cite{nadler2023symphony} \\
+         \hline
+    \end{tabular}
+    \caption{
+        Amplitude of the evolved PSHMF, given in terms of the $f_{\mathrm{s}} \cdot \Sigma_{\mathrm{sub}}$ (see \refeq{eq_massfunction_proj_evolved}).
+        In the ``scaled'' column, the number density has been extrapolated to a $10^{13} \mathrm{M}_{\odot}$ halo at redshift $z=0.5$ using the scaling relations presented in this work. 
+        A logarithmic slope of the subhalo mass function $\alpha = -1.97$ was assumed.
+    }
+    \label{tab_fits_external}
+\end{table*}
+
+\begin{table*}
+ \begin{tabular}{lcc}
+  \hline
+    %Star & Mass & Luminosity\\
+    %& $M_{\sun}$ & $L_{\sun}$\\
+    Model & $k_1$ (mass scaling) & $k_2$ (redshift scaling)\\
+  \hline
+        \gal (unevolved)                                             & 0.55 & 0.37   \\
+    host density profile                                             & 0.58 & 0.30   \\
+  \hline
+        \gal (evolved)                                               & 0.37 & 1.05   \\
+        \gal with central galaxy (evolved)                           & 0.43 & 1.06   \\  
+        \hanetal ($\gamma = 0.8$)                                    & 0.37 & 0.77   \\
+        \hanetal ($\gamma = 1.0$)                                    & 0.34 & 0.86   \\
+        \hanetal ($\gamma = 2.0$)                                    & 0.30 & 1.12   \\
+        \hanetal ($\gamma$ Interp)                                   & 0.50 & 0.83   \\
+    \hline
+ \end{tabular}
+ \caption{
+            The best fits to power law scaling relations predicted by our \gal models and estimates using the \hanetal model.
+            The upper section gives the scaling for the unevolved case, while the lower section gives the scaling results for the evolved case.
+            We compare the scaling relation for the unevolved case for the scaling relation which would be obtained if the scaling was entirely determined by the host's density profile evolution (\refeq{eq_han_unevolved}).
+            For the evolved case, we compare the PSHMF scaling prediction to that of the \hanetal model (\refeq{eq_han_evolved}).
+            The transfer function from the host's smooth dark matter density profile is parameterized as a power law, with logarithmic slope $\gamma$ (\refeq{eq_han_transfer}).
+            We consider two possibilities for $\gamma$, one where $\gamma$ is a constant and the other with $\gamma$ a function of halo mass.
+            For the case of mass independent $\gamma$, we compute the scaling coefficients for a range of physically meaningful values of $\gamma$.
+            Finally, to study the effect of $\gamma$ varying systematically with mass, we linearly interpolate the best-fit $\gamma$ values as a function of mass (\reftable{tab_han_fits}) to compute the scaling relations (``$\gamma$ interp'').
+           }
+  \label{tab_scaling}
+\end{table*}
+
+
+%\subsection\label{sub_normalization}
+%In addition to the scaling relation we report on the overall normaliation for both the
+
+\section{Discussion}\label{sec_discussion}
+
+
+% \subsection{Subhalo Mass Function}\label{sec_massfunction}
+%TODO: Explain what dN/dA / dN/dV mean
+
+\subsection{Subhalo Populations of a Halo at Fixed Mass and Redshift}\label{sec_discuss_pop}
+
+Here we discuss properties of the subhalo populations of group mass ($M_h \sim 10^{13} ~\mathrm{M}_\odot$) halos at redshift $z \sim 0.5$.
+The \gal predictions for the unevolved SHMF agree with findings of \citet{10.1111/j.1365-2966.2005.08964.x}, that the unevolved SHMF can be written in a universal form (\refeq{eq_scaling_unevolved}). 
+Furthermore, we find that \gal agrees with the empirical formula of \citet{10.1111/j.1365-2966.2004.08360.x}, that for the unevolved case the SHMF scales as a function of host halo mass and the abundance of halos in the universe as a whole (\refeq{eq_scaling_evolved}). 
+Comparing the \gal  and \symphony group halo suite predictions for the normalization of the subhalo mass function within the inner $50$ kpc, we find that \gal predicts on average nearly twice the subhalos in this region.
+Over the entire virial volume we find similar results, with \symphony predicting around $40\%$ the number of subhalos as \galns.
+We note that \symphony and \gal agree within halo to halo scatter, and N-body simulations such as \symphony and \cat disagree on the $25\%$ level \citep{nadler2023symphony}.
+We also find that the suppression of the subhalo mass function due to the potential of the central galaxy is negligible when compared to the current theoretical uncertainty. 
+Similarly, we find that \hanetal \citep{10.1093/mnras/stv2900} is in reasonable, although not perfect, agreement with \gal on the spatial distribution as well as the halo mass and redshift scaling in projection. 
+Here, we provide further discussion for each of these results.
+
+Here, we discuss the expectations for the spatial distributions from the \hanetal model and how they compare to predictions from \galns. 
+The \hanetal model describes the unevolved spatial distribution of subhalos as following the dark matter density distribution of the host halo.
+As shown in \reffig{fig_spatial_ratio}, our \gal models show a difference between the unevolved subhalo spatial distribution and the host's smooth dark matter density profile (normalized to $1$ at $r = r_{\mathrm{v}}$).
+
+At first glance, this is difficult to explain with dynamical friction, as the dynamical friction time scale is proportional to the subhalo to host halo mass mass ratio ($m / M_\mathrm{h}$) and is longer than age of the universe for sub-halos with with less than $1 / 20$ the mass of the host halo \citep{boylan2008dynamical}.
+However, older subhalo will have fallen into a much less massive host (in which $m / M_\mathrm{h}$ is much closer to $1$), and therefore they would experience a much smaller dynamical friction timescale.
+
+To determine if dynamical friction is the cause of this difference, \gal could be run with and without dynamical friction enabled. 
+We leave this to future work.
+The \hanetal model does not include effects of dynamical friction, while the \gal models does.
+For the evolved case, \hanetal use a power law profile to model the ratio of evolved spatial distribution to the host's dark matter density profile. 
+\reffig{fig_spatial_ratio} shows that \gal does not follow this expectation exactly, with deviations from a power law near the virial radius.
+
+When comparing our \gal models to the Symphony Group suite at redshift $z = 0.5$, we find that \gal predicts a normalization of the projected SHMF a factor of $\sim 2$ times higher than Symphony.
+We note that this difference remains within $1 \sigma$ halo to halo scatter and caution should be taken when interpreting this result due to the small number of subhalos in this volume which makes obtaining good statistics challenging.
+If the difference is statistically significant, there are several possible explanations for the discrepancy.
+A large body of works has drawn attention to artificial disruption present in N-body simulations \citep{10.1093/mnras/stx2956,2022MNRAS.517.1398B,10.1093/mnras/stz2767,10.1093/mnras/stz3349}.
+An estimate for spurious suppression due to artificial disruption is $10\text{--}20\%$ over the entire virial volume, only increasing to a maximum factor of $3$ within the inner $2 \%$ of the virial radius \citep{2022MNRAS.517.1398B}.
+Another possibile explanation is inaccuracies in halo finding algorithms.
+In our work, we use results based on the \symphony subhalo catalogs extracted using the Rockstar \citep{behroozi2012rockstar} halo finder.
+Recent work using a new halo finding algorithm by \citet{mansfield2024symfind} has identified $15\text{--}40 \%$ more subhalos within the virial radius when compared to the Rockstar results, increasing to $35\text{--}120\%$ within $r < r_{\mathrm{v}} / 4$.
+Another possibility may be the \gal physics models.
+Our \gal model does not include a model of pre-infall tidal stripping \citep{behroozi2014mergers}.
+We do not make a determination if the discrepancy is numerical in nature and leave studying the underlying cause(s) of the differences to future work.
+We find subhalos of a group scale host that appear near the Einstein radius in projection on average retain $\sim 4\%$ of their infall mass after tidal stripping. 
+
+
+\subsection{Subhalo Population Dependence on Host Properties}
+We discuss the scaling the projected SHMF as a function of halo mass and redshift.
+For the evolved case, our scaling relations from \gal and our analytic models predict that for a factor of $10$ increase in host halo mass the evolved PSHMF function will increase by a factor $\sim 2$.
+This is similar to the factor of $\sim 3$ used in the extrapolation performed in \citet{10.1093/mnras/stu2673}, but differs from the factor of $\approx 8$ used \citet{10.1093/mnras/stz3480}.
+Differences from \citet{10.1093/mnras/stz3480} are likely due to a change in \galns, in particular an update to the treatment of higher order substructure.
+The change in higher order substructure treatment had a large impact on the spatial distributions, with the previous spatial distributions of subhalos being more cuspy. 
+
+
+
+Next, We compare our scaling results from \gal to the \hanetal model of the spatial transfer functions.
+Three forms of the tidal stripping transfer function, $\hat{T}$ are considered (see Equations \ref{eq_han_evolved} and \ref{eq_scaling_evolved}), with fits to the projected scaling relation fits provided in table \ref{tab_scaling}.
+All cases considered result in host halo mass scaling similar to \galns, with a $10$ times increase in mass resulting in a roughly $\approx$ 2 times increase in the normalization of the PSHMF.
+Fixing $\hat{T}(r / r_{\mathrm{v}})$ (see equations \ref{eq_han_evolved} and \ref{eq_han_transfer}) to be invariant in halo mass ($\gamma = 0.6, 1.0, 2.0$ and ``\gal interp'' cases in \reftable{tab_scaling}) results in a best fit of $k_1 \approx 0.3$.
+The redshift scaling results ($k_2$) range from $0.83$ to $1.12$, which is in agreement with the $k_2 = 1.05$ predicted by \gal.
+Allowing $\gamma$ to vary with halo mass (linearly interpolating between $\gamma = 1.06$ and $\gamma = 0.67$) does not increase agreement with the \gal models.
+
+
+
+
+
+ \subsection{Impact of Central Galaxy}
+ Finally, we discuss the impacts of the central galaxy. 
+ We find that the central galaxy impacts the subhalo mass function normalization on the less than $5 \%$ level over the entire virial volume and the less than $15 \%$ level within a projected aperture near the Einstein radius. 
+ We note that studies on the effects of an analytic potential on the subhalos in Milky Way like systems have found a more significant reduction in the subhalo mass function that what we have found here \citep{d2010substructure, webb2020high}.
+ \citet{webb2020high} simulate individual dark matter only subhalos in evolving external tidal fields with and without baryonic disk and bulge components finding that the inclusion of these baryonic components reduces the number of subhalos by $65 \%$.
+ We highlight two possible reasons why the impact of a group scale massive central elliptical may be less significant than that of a Milky Way–like central galaxy.
+ First, the ratio of central galaxy mass to halo mass is, on average, nearly a factor of two lower at the group scale \citep{Behroozi_2019}.
+ Secondly, the systems are physically distinct: the Milky Way contains contains a disk component which is not found in massive ellipticals.
+
+
+
+\subsection{Recommendations for Future $\Sigma_{\mathrm{sub}}$ Priors}\label{sec_discuss_sigsub_prior}
+Here, we discuss our recommendations for future priors on the number density of subhalos within the Einstein radius.
+To ensure matching of observable quantities, we use our \gal models to recommend a prior on the amplitude of the evolved halo mass function $f_{\mathrm{s}} \cdot \Sigma_{\mathrm{sub}}$, instead of $\Sigma_{\mathrm{sub}}$ directly. 
+Our \gal models predict an average evolved number density of $f_{\mathrm{s}} \cdot \Sigma_{\mathrm{sub}} \sim 10^{-2} \text{~kpc}^{-2}$, while the Symphony suite predicts $f_{\mathrm{s}} \cdot \Sigma_{sub} \sim 5 \cdot 10^{-3} \text{~kpc}^{-2}$ (additional results are given in \reftable{tab_fits_external}).
+Here, we do not investigate the possible reasons for the differences, and instead treat each result as equally likely so we can estimate a theoretical uncertainty.
+Across works compared here, we find that the value of \fssigsub~ varies from $10^{-3} \text{--} 10^{-2} \text{~kpc}^{-2}$, spanning approximately an order of magnitude, with more recent works in the $5 \cdot 10^{-3} \text{--} 10^{-2} \text{~kpc}^{-2}$ range.
+In a $100 \text{~kpc}^2$ aperture, this approximately corresponds to $0.1$ to $1$ subhalos with bound mass $8 < \log_{10} (m / \mathrm{M}_\odot)  \leq 9$ (or equivalently a number density of $10^{-3} \text{--} 10^{-2} ~\text{kpc}^2$).
+For reference, an average Einstein radius of $1 \text{~arcsecond}$ at redshift $z=0.5$ corresponds to a $\sim 150 \text{~kpc}^2$ aperture. 
+We note that this is well within the allotted uncertainty of previous lensing studies.
+Furthermore, we estimate that the impact of a central galaxy (reduction in $f_{\mathrm{s}} \cdot \Sigma_{\mathrm{sub}}$ by a factor of $\sim 10\%$) is negligible compared to the current theoretical uncertainty between different models.
+
+We recommend a prior centered around $f_s \cdot \Sigma_{\mathrm{sub}} = 10^{-2} ~\text{kpc}^{-2}$ and allowing for at least a factor of $2$ ($\sim 0.3$ dex) uncertainty.
+We note that this is a similar prior to the tighter prior considered by \citet{gilman2024turbocharging}.
+
+When \citet{gilman2024turbocharging} compared dark matter inferences using a 1.5 dex log-uniform prior (similar to that used in previous lensing studies) with an inference using a tighter Gaussian prior with width of 0.2 dex, the lower bound on the half-mode-mass improved by 2 dex.
+We recommend the continued use of a log-uniform prior as N-body simulations have consistently lower values of $f_s \cdot \Sigma_{sub}$ when compared to our \gal models; a log-uniform prior treats both cases as equally likely.
+By implementing a 0.3 dex log-uniform prior we expect similar improvements on constraining power to those observed by \citet{gilman2024turbocharging}.
+
+
+
+
+
+
+\section{Summary}\label{sec_conclusion}
+In this work we study predictions for the population level statistics of subhalos of group mass halos at small projected distances.
+Particular focus is placed on the normalization of the projected SHMF, where we give recommendations for a more informed prior on this quantity than previous lensing studies. 
+Here we provide a summary of key results in our paper:
+\begin{itemize}
+    \item
+    We present a new suite of \gal models of the substructure of host halos with masses $12 \leq \log_{10}(M_{h}/\mathrm{M}_{\odot}) \leq 13.5$ and redshifts $0.2 \leq z \leq 0.8$.
+    \item
+    Using these simulations, we measure the projected number density of subhalos near the Einstein radius.
+    The scaling in halo mass and redshift is well described with a power law with coefficients $k_{1}=0.55$ (halo mass) and $k_{2}=0.37$ (redshift) for the unevolved case and $k_{1}=0.37$ and $k_{2}=1.05$ for the evolved case.
+
+     The projected scaling differs from the scaling of the total number of satellites within the virial volume (total subhalo count scales nearly linearly with the mass of the host and is almost independent of redshift in both the evolved and unevolved cases).      
+
+    \item
+    The evolved and unevolved projected SHMF amplitude scales differently as a function of halo mass and redshift due to different spatial distributions between the two cases. 
+    For the evolved case, the projected SHMF amplitude approximately scales with the cube root of the host halos mass and nearly linearly in redshift.
+    We find the scaling of the PSHMF in redshift and mass to be in excellent agreement match between simulations and analytic models.
+
+     Our analytic models show the scaling of the PSHMF can be explained in terms of two factors: 1) the scaling of the total number of subhalos within the virial volume of the host and 2) the spatial distribution of subhalos.
+
+    \item
+    On the group scale, a central galaxy reduces the normalization of the evolved SHMF by $< 5\%$ over the entire virial volume, increasing to $15 \%$ for the PSHMF within the inner $20$ kpc.
+    This is much less than the current theoretical uncertainty between different models/N-body simulations.
+
+     For future lensing studies with group mass lenses, we find that the effects from a central galaxy have a negligible impact on the strength of tidal stripping experienced by subhalos and does not need to be considered when setting a prior \sigsub.
+     
+
+    \item 
+    We find subhalos of a group scale host that appear near the Einstein radius in projection on average retain $\sim 2\%$ of their infall mass after tidal stripping. 
+
+
+    \item 
+    We compare the projected number density of subhalos in a variety of N-body simulations to our \gal models.
+    We find that all models/simulations considered agree on the projected SHMF normalization well within a factor of $\sim 2$.
+    Additionally, we find that \gal and \symphony agree within the $1 \sigma$ halo to halo scatter for subhalos halos in the bound  mass range $9 < \log_{10}(m_b/\mathrm{M}_\odot) \leq 10$.
+
+    We recommend using a stronger prior on \fssigsub~when compared to previous lensing studies; specifically a log-uniform prior centered around $f_s \cdot \Sigma_{\mathrm{sub}} = 10^{-2} ~\text{kpc}^{-2}$ and allowing for at least a factor of $2$ uncertainty.
+    Compared to previous lensing studies, we expect a significant reduction in uncertainty on parameters like half-mode-mass when using this tighter prior.
+
+
+
+\end{itemize}
+
+
+\begin{acknowledgments}
+We thank Ethan Nadler and Risa Wechsler for thoughtful comments and suggestions.
+
+This research was conducted using Pinnacles (NSF MRI, \# 2019144) at the Cyberinfrastructure and Research Technologies (CIRT) at University of California, Merced.
+
+This research was supported in part by grant NSF PHY-2309135 to the Kavli Institute for Theoretical Physics (KITP).
+
+AN and CG acknowledge support from the NSF through AST-
+2206315 “Collaborative Research: Measuring the physical properties of DM with strong gravitational lensing” and through JWST-GO program \#2046 which was provided by NASA
+through a grant from the Space Telescope Science Institute, which is
+operated by the Association of Universities for Research in Astronomy, Inc., under NASA contract NAS 5-03127.
+
+%AN and TT acknowledge support from the NSF through AST-2205100 "Collaborative Research: Measuring the physical properties of DM with strong gravitational lensing".
+%The work of LAM and DS was carried out at Jet Propulsion Laboratory, California Institute of Technology, under a contract with NASA. TA acknowledges support from the Millennium Science Initiative ICN12\_009, the ANID BASAL project FB210003 and ANID FONDECYT project number 1240105. DS acknowledges the support of the Fonds de la Recherche Scientifique-FNRS, Belgium, under grant
+%No. 4.4503.1. K.K.G. thanks the Belgian Federal Science Policy Office (BELSPO) for the provision of financial support in the framework of the PRODEX Programme of the European Space Agency (ESA). VM acknowledges support from ANID FONDECYT Regular grant number 1231418 and Centro de Astrof\'{\i}sica de Valpara\'{\i}so. 
+%VNB gratefully acknowledges assistance from a National Science Foundation (NSF) Research at Undergraduate Institutions (RUI) grant AST-1909297. Note that findings and conclusions do not necessarily represent views of the NSF.
+%KNA is partially supported by the U.S. National Science Foundation (NSF) Theoretical Physics Program, Grants PHY-1915005 and PHY-2210283. AK was supported by the U.S. Department of Energy (DOE) Grant No. DE-SC0009937, by the UC Southern California Hub, with funding from the UC National Laboratories division of the University of California Office
+%of the President,  by  the World Premier International Research Center Initiative (WPI),  MEXT,  Japan, and by Japan Society for the Promotion of Science (JSPS) KAKENHI Grant No. JP20H05853.
+%SB acknowledges support from Stony Brook University. 
+DG acknowledges support for this work provided by the Brinson Foundation through a Brinson Prize Fellowship grant, and from the Schmidt Futures organization through a Schmidt AI in Science Fellowship.
+
+
+
+\end{acknowledgments}
+
+\appendix
+
+%%{\bf
+%%
+%%\section{Tidal Physics}\label{sec_appendix_tidal}
+%%Three main processes affect a subhalo as it evolves in the potential of its host: tidal stripping, tidal heating, and dynamical friction. 
+%%Here we give an overview of how these processes are modeled in our \gal models.
+%%
+%%\subsection{Tidal Stripping}
+%%The mass loss of subhalos in our \gal models is governed by the equation 
+%%\begin{equation}
+%%\frac{dm_{\rm sub}}{dt}=-\alpha_\mathrm{s} \frac{m_{\rm sub}-m_{\rm{sub}}(<r_\mathrm{t})}{T_{\rm loss}},
+%%\label{eq_tidal_mass_loss}
+%%\end{equation}
+%%where $\alpha_s=3.8$ determines tidal stripping strength, $r_\mathrm{t}$ is the tidal radius, and $T_{\rm loss}$ is the mass loss time scale. 
+%%The tidal radius ($r_\mathrm{t}$) is computed using the equation
+%%\begin{equation}
+%%r_\mathrm{t}=\left(\dfrac{G m_{\mathrm{sub}}(<r_\mathrm{t})}{\gamma_\mathrm{c}\omega^2-\left.\frac{\mathrm{d}^2\Phi}{\mathrm{d}r^2}\right\vert_{r_{\mathrm{sub}}}}\right)^{1/3},
+%%\label{eq_tidal_rt}
+%%\end{equation}
+%%where $\gamma_c$ determines the contribution of the centrifugal force and $\Phi$ is the value of the gravitational potential at the center of the subhalo.
+%%Following \citet{2024arXiv240309597D}, we use the dynamical time on scale $r_t$:  $T_{\rm dyn}=2\pi\sqrt{r_\mathrm{t}^3/16 \mathrm{G} m_{\rm sub}(<r_\mathrm{t})}$ as the subhalo mass lost time scale ($T_{\rm loss}$).
+%%
+%%\subsection{Tidal Heating}
+%%While evolving in the potential of the host halo, the subhalo's particles gain energy due to tidal interactions with the host, known as tidal heating.
+%%As the subhalo is heated, its density profile evolves.
+%%For a mass shell with an initial radius of $r_i$ the heating energy is computed as~\cite{2022MNRAS.517.1398B}
+%%\begin{eqnarray}
+%%\Delta \epsilon(r_i) &=& \Delta \epsilon_1 (r_i) + \Delta \epsilon_2 (r_i) \nonumber \\
+%%&=& \Delta \epsilon_1 (r_i) + \sqrt{2} f_2 (1+\chi_v) \sqrt{\Delta \epsilon_1(r_i) \sigma^2_r(r_i)},
+%%\label{eq:heating_improve}
+%%\end{eqnarray}
+%%where $\Delta \epsilon_1$ and $\Delta \epsilon_2$ are the contributions from the first-order and second-order terms, respectively, $f_2=0.554$ is the coefficient of the second-order term, $\chi_{v}=-0.333$ is the position-velocity correlation, and $\sigma_r$ is the radial velocity dispersion of subhalo.
+%%The first-order term is computed by integrating the differential equation
+%%\begin{equation}
+%%\Delta\dot{\epsilon}(r) = \frac{\epsilon_\mathrm{h}}{3} \left[1+(\omega_\mathrm{p} T_{\rm shock})^2\right]^{-\gamma_\mathrm{h}} r^2 g_\mathrm{ab} G^\mathrm{ab},
+%%\label{eq:heating_rate}
+%%\end{equation}
+%%where $\epsilon_\mathrm{h}=0.0732$ is a coefficient, $\omega_\mathrm{p}$ is the angular frequency of particles at the half-mass radius of the subhalo, $T_{\rm shock}=r_{\rm sub}/V_{\rm sub}$ is the time scale of tidal shock, $\gamma_\mathrm{h}$ is the adiabatic index, $g_{ab}$ is the tidal tensor, and $G_{ab}$ is the time integral of $g_{ab}$ \cite{pullen2014evolution, 10.1093/mnras/staa2496}:
+%%\begin{equation}
+%%G_{ab}(t)=\int_0^t dt' \left[ g_{ab}(t)-\beta_\mathrm{h}\frac{G_{ab}(t)}{T_{\rm orbit}}\right].
+%%\label{eq:Gab}
+%%\end{equation}
+%%We use $\gamma_h=0$ and $\beta_h=0.275$.
+%%After obtaining the heating energy, the mass shell will expand to a new radius $r_f$. 
+%%Therefore, assuming virial equilibrium we have
+%%\begin{equation}
+%%\Delta \epsilon = \frac{\mathrm{G} M_\mathrm{i}}{2 r_\mathrm{i}}-\frac{\mathrm{G} M_\mathrm{i}}{2 r_\mathrm{f}}.
+%%\label{eq:r_i_r_f}
+%%\end{equation}
+%%The density than can be computed as
+%%\begin{equation}
+%%\rho_\mathrm{f} = \rho_\mathrm{i} \frac{r_\mathrm{i}^2}{r_\mathrm{f}^2} \frac{\mathrm{d}r_\mathrm{i}}{\mathrm{d}r_\mathrm{f}}.
+%%\label{eq:rho_f}
+%%\end{equation}
+%%
+%%\subsection{Dynamical Friction}
+%%In our \gal  model, the position of the subhalo is evolved according to the equations
+%%\begin{equation}
+%%\frac{d^2\mathbf{x}}{dt^2}=\mathbf{a}_\mathrm{g} + \mathbf{a}_\mathrm{df},
+%%\end{equation}
+%%where $\mathbf{a}_\mathrm{g}$ is the gravitational acceleration from the host and $\mathbf{a}_\mathrm{df}$ is the acceleration due to dynamical friction~\cite{chandrasekhar1943dynamical}
+%%\begin{eqnarray}
+%%\mathbf{a}_{\rm{df}}=-4\pi \mathrm{G}^2 \ln\Lambda m_{\rm{sub}}\rho_{\rm{host}}(r_{\rm{sub}})\dfrac{\mathbf{V}_{\rm{sub}}}{V_{\rm{sub}}^3}\nonumber \\
+%%\left[{\rm erf}(X_v)-\dfrac{2X_v}{\sqrt{\pi}}\exp\left(-X_v^2\right)\right].
+%%\label{eq:dyn_friction}
+%%\end{eqnarray}
+%%where $\rho_{\rm host}$ is the host density at the subhalo position, $r_{\rm sub}$ is the distance to the host center, $X_v=V_{\rm{sub}} / \sqrt{2}\sigma_v$ with $V_{\rm{sub}}$ the velocity of subhalo, $\sigma_v$ is the velocity dispersion of host particles, and $\ln\Lambda$ is the Coulomb logarithm.
+%%Following \citet{10.1093/mnras/staa2496} we take $\ln\Lambda=1.5$.
+%%
+%%This work focuses on subhalos with negligible mass compared to the host halo's mass at the time of output $m/M_{h} < 10^3$.
+%%For these subhalos, the dynamical friction timescale at the time of output is much greater than the Hubble time \cite{boylan2008dynamical}. 
+%%However, the host halo is not static and instead grows over cosmic time. 
+%%For early infalling subhalos, the subhalo to host host halo mass ratio will be much smaller; therefore, dynamical friction may not be negligible for some subhalos considered in this work.
+%%
+%%}
+%%
+
+\section{Evolution of the Central Galaxy}\label{sec:appendix}
+ In our models with a central galaxy, we model the evolution of the potential of a central massive elliptical using empirical relations from \citet{Behroozi_2019}.
+We plot properties of the central galaxy in our \gal models in \reffig{fig_um_evolution}.
+
+\begin{figure*}
+    \includegraphics[width=\textwidth]{plots/um_evolution.pdf}
+    \caption{
+               Our \gal model predictions for the evolution of a $10^{13} \mathrm{M}_\odot$ halo and its central galaxy.
+               Stellar masses are determined using the \citet{Behroozi_2019}. relation between halo mass and stellar mass, while galactic radii are determined using empirical fits to the stellar mass to stellar radius relation provided by \citet{2003MNRAS.343..978S}.
+               For simplicity, no scatter has been included in either of these relationships.
+               The top left panel gives the evolution of the mass of the central halo while the top right panel gives the evolution of the virial radius of the halo.
+               The middle left panel shows the evolution of the stellar mass, while the middle right panel shows the evolution of the Hernquist radius of the central galaxy.  
+               Finally, the lower left and right panels show the evolution of the ratio of stellar mass to halo mass and Hernquist radius to virial radius, respectively.
+               The curve shows the mean value, while the shaded region shows $1 \sigma$ scatter. 
+     }
+    \label{fig_um_evolution}
+\end{figure*}
+
+
+
+\bibliography{gannon2024}
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******

@@ -1,0 +1,29 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.synctex(busy)
+*.nav
+*.snm
+*.vrb
+
+# Compiled output
+*.pdf
+*.dvi
+*.ps
+
+# EPS conversions
+*-eps-converted-to.pdf
+
+# Editor / OS
+*.swp
+*~
+.DS_Store
