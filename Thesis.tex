@@ -16,6 +16,7 @@
 
 
 \documentclass[12pt,chapterheads]{UCMerced}
+\usepackage{pdfpages}
 % documentclass options: default is 11pt, oneside, final.
 % fonts: 10pt, 11pt, 12pt -- are valid for UCSD dissertations (now UC Merced).
 % sides: oneside, twoside -- note that two-sided theses are not accepted by OGS
@@ -207,6 +208,7 @@
 
 %% DISSERTATION
 
+
 % A common strategy here is to include files for each of the chapters. I.e.,
 %   \include{chapter1.tex}
 %   \include{chapter2.tex}
@@ -214,31 +216,15 @@
 %   \chapter{My First Chapter Name}
 % and start typing away.  
 \chapter{Introduction}
-This is only a test.
-\section{A section}
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla odio
-sem, bibendum ut, aliquam ac, facilisis id, tellus. Nam posuere pede
-sit amet ipsum. Etiam dolor. In sodales eros quis pede.  Quisque sed
-nulla et ligula vulputate lacinia. In venenatis, ligula id semper
-feugiat, ligula odio adipiscing libero, eget mollis nunc erat id orci.
-Nullam ante dolor, rutrum eget, vestibulum euismod, pulvinar at, nibh.
-In sapien. Quisque ut arcu. Suspendisse potenti. Cras consequat cursus
-nulla \cite{Goodman}.
-\subsection{More Stuff}
-Blah
+\include{chapter_intro.tex}
 
-\begin{figure}[h] 
-  \begin{center}*\end{center}
-    \caption{A figure of Vonnegut.\index{Vonnegut}} 
-\end{figure}
 
-\chapter{Title}
-This is only a test.
-\section{A section}
+\chapter{A Lensing Perspective}
+\include{chapter_alp.tex}
 
-\chapter{Title}
-This is only a test.
-\section{A section}
+\chapter{T1DES in SIDM}
+\include{chapter_tides.tex}
+
 
 \appendix
 \chapter{Final notes}
