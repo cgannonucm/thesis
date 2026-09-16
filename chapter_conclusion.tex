@@ -1,3 +1,28 @@
 \chapter{Conclusion}
-In this work, we study the substructure of group mass lensing like halos.
-We work toward developing informed priors on 
+In this work, we study the substructure of group mass lensing like halos and work towards developing informed priors of the populations of these subhalos in both CDM and alternate dark matter models.
+In \refchap{chap:intro} we gave a background of gravitational lensing probes {\color{red} finish sentence}
+Then in \refchap{chap:alp} we analyze state of the art galacticus simulations tuned to high resolution N-body simulations and develop a priors on the normalization of the subhalo mass function, it's scaling and estimate how this normalization is effected by tidal forces from a central galaxy. 
+Next, in \refchap{chap:tides} we develop a novel, computationally efficient pipeline to develop priors core collapse rates of SIDM halos across a wide range of cross sections.
+Here, we summarize each of these chapters and provide final remarks.
+
+The fundemental question we adress in \refchap{chap:alp} is ``how can we develop informed priors on the normalization of the subhalo mass function for lensing subhalos to break degeneracies with the half mode mass"?
+With recent works have highlighted the potential for artifitial disruption in N-body artifictially defalting subhalo counts in N-body simulations, this question is particularly pressing.
+We start by running \gal models with tidal physics tuned to ultra high resolution N-body simulations that are resistant to artificial disruption. 
+Compare results from our \gal model to a wide selection of N-body shows that our model agrees within a factor of $\sim 2 $ with the N-body simulations.
+Additionally, motivated by the fact a central galaxy have been found to effect the subhalo normalization of Milky Way like galaxies on the factor of $\sim 2$, we investigate a potential shortcomming of previous studies of lensing like group halos: the absensce of the potential of a central galaxy.
+We run a secondary suite of \gal models including the potential of a realisticly evolving central galaxy and find that the potential of a central galaxy reduces the normalization on the $15\%$ level, well within the systematic uncertainties of current lensing studies.
+Additionally, we recalibrate the projected redshift and halo mass scaling relations of the normalization of the projected subhalo mass function and compare it to predictions from analaytic models.
+Finally, we suggest future anomolous flux ratio surveys incorporate a factor of $\sim 2$ uncertainty in their priors on the normalization of the subhalo mass function; we find that uncertainty in tidal stripping is the dominant uncertainty and that any effect from a central galaxy is negligible for current surveys.
+
+Next, in \refchap{chap:tides} we develop a computationally efficient pipeline for simulating SIDM subhalos in the core collapse regime. 
+We implement a linear tidal field in the 1-D N-body code \nsphere and set it's strength by calculating the tidal field to match the mass loss rate of a target halo in a CDM first pass. 
+In this way, we are able to realistically model tidal physics in 1D, greatly reducing the computational requirments of simulating SIDM subhalos enabling previosly infeasible studies of large numbers of subhalos. 
+We run our pipeline for multiple realizations of \gal halos and compare core collapse rates with analytic models; we find that core collapse of SIDM subhalos in the absencse of evaporation is accelerated when compared to field halo counterparts; at some cross sections in our study nearly $4 \times$ as many subhalos collapse when compared to field halo counterparts.
+In future works we plan to investigate velocity dependent SIDM cross sections as well as include subhalo evaporation.
+
+In this work, we work to develop informative priors for subhalos in CDM as well as alternative dark matter models. 
+We use and develop computationally efficient models able to sample the large volume of parameter space explored by parameter space. 
+The informed priors we have developed in this work have been applied in lensing studies to break key degeneracies with observables. 
+Additionally, as lensing studies move from the low data regime to having athoulsands of lensed that are anticipated to be discovered by the Rubin, Euclid and Roman missions these priors will transition into testable predictions of the dark matter models themselves.
+Our work explores sets a benchmark for this new era of gravitational lensing constraints on dark matter: we explore systematic uncertanties in dark matter model predictions and lays out a new framework to computationally efficient exploration of the predictions of a large space of SIDM models.
+
