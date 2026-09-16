@@ -15,8 +15,15 @@
 %     to work with ucsd.cls
 
 
+
 \documentclass[12pt,chapterheads]{UCMerced}
+
+
+
 \usepackage{pdfpages}
+\usepackage{natbib}
+
+ 
 % documentclass options: default is 11pt, oneside, final.
 % fonts: 10pt, 11pt, 12pt -- are valid for UCSD dissertations (now UC Merced).
 % sides: oneside, twoside -- note that two-sided theses are not accepted by OGS
@@ -73,29 +80,63 @@
 % \usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=black, citecolor=black, urlcolor=black,plainpages=false,pdfpagelabels]{hyperref}
 % \hypersetup{ pdfauthor = {Your Name Here}, pdftitle = {The Title of The Dissertation}, pdfkeywords = {Keywords for Searching}, pdfcreator = {pdfLaTeX with hyperref package}, pdfproducer = {pdfLaTeX}}
 
+\def\gal{{\tt galacticus}~}
+\def\tides{{\tt T1DES}~}
+\def\nsphere{{\tt NSphere}~}
+\def\galns{{\tt galacticus}}
+\def\pyh{{\tt PyHalo}~}
+\def\pyhns{{\tt PyHalo}}
+\def\cat{Caterpillar }
+\def\catns{Caterpillar}
+\def\symphony{Symphony }
+\def\symphonyns{Symphony}
+\def\col{{\tt colossus}~}
+\def\colns{{\tt colossus}}
+\def\astropy{{\tt astropy}~}
+\def\astropyns{{\tt astropy}}
+\def\subgen{{\tt subgen}~}
+\def\subgenns{{\tt subgen}}
+\def\sigsub{{$\Sigma_{\mathrm{sub}}$}}
+\def\fssigsub{{$f_{\mathrm{s}} \cdot \Sigma_{\mathrm{sub}}$}}
+\def\hanetal{\citet{10.1093/mnras/stv2900}~}
+\def\hanetalns{\citet{10.1093/mnras/stv2900}}
+
+\newcommand{\note}[1]{\textcolor{red}{\uppercase{#1}}}
+
+\newcommand{\reffig}[1]{Figure \ref{#1}}
+
+\newcommand{\refsec}[1]{Section \ref{#1}}
+\newcommand{\refchap}[1]{Chapter \ref{#1}}
+\newcommand{\refappendix}[1]{Appendix \ref{#1}}
+\newcommand{\reftable}[1]{Table \ref{#1}}
+\newcommand{\refeq}[1]{Eq. \ref{#1}}
+
+
+
 \begin{document}
 
 %% REQUIRED FIELDS -- Replace with the values appropriate to you
-\title{Investigation on an Alien World}
+\title{Dark Matter Substructure}
 % No symbols, formulas, superscripts, or Greek letters are allowed
 % in your title.
 
-\author{Your Name}
+\author{Charles Gannon}
 \degreeyear{2017}
 \degree{Doctor of Philosophy} 
 % Master's Degree theses will NOT be formatted properly with this
 % file.
 
-\field{Applied Mathematics}
+\field{Physics}
 
-\numberofmembers{3} % |chair|  + |othermembers| (do not count co-chair) % change here
+\numberofmembers{4} % |chair|  + |othermembers| (do not count co-chair) % change here
 
-\chair{Professor First Name Last Name}
+\chair{Dr. Sarah R. Loebman}
 % Uncomment the next line iff you have a Co-Chair
 %\cochair{Professor Cochair Semimaster} 
 
-\memberone{Professor First Name Last Name 1}
-\membertwo{Professor First Name Last Name 2}
+\memberone{Dr. Anna Nierenber}
+\membertwo{Dr. Andrew  Benson}
+\memberthree{Dr. Lin Tian}
 
 % Uncomment the next line iff you have more member
 %\memberthree{Professor First Name Last Name 3}
@@ -121,7 +162,7 @@
 
 
 \begin{dedication} % The style file will format this for you.
-  To two.
+  
 \end{dedication}
 
 % \begin{mydedication} % You are responsible for formatting here.
@@ -201,34 +242,61 @@
 % Manual: ``The abstract may continue on to a second page.''
 
 \begin{abstract}
-  This dissertation will be abstract. 
+ Dark matter is thought to comprise the majority of the mass budget of the universe, with dark matter estimated to account for nearly $85\%$ of the total mass of the universe \cite{collaboration2020planck}. 
+ Despite it's abundance, the nature of dark matter remains elusive.
+ While Large scale cosmological probes such as Planck \cite{collaboration2020planck} and surveys of the spatial and mass function distributions of galaxies \cite{white1978core,white1991galaxy,de2008high,weinberg2015cold} have provided decisive evidence for an empirical model of dark matter that is cold and collisionless on the largest scale (CDM), the behavior of dark matter on the sub-galactic scale remains an area of active investigation and vigorous debate; one may hope that hints towards the underlying nature of dark matter can be found in this regime.
+ A promising way to probe the physics of dark matter on the sub-galactic dark matter halos is by using anomalous flux ratios of quadruply lensed quasars. 
+ In these systems, a light from a quasar passes through a central galaxy and is gravitationally lensed, producing four observable images. 
+ Due to the non-linear nature of the dependence of flux ratios on the second derivative of the potential, information about dark matter on the sub galactic can be extracted from the flux ratios \cite{10.1093/mnras/stz3480}; several studies have used these methods to place constraints on Warm Dark Matter \cite{10.1093/mnras/stz3480, nadler2021dark} as well as self-interaction of dark matter \cite{2023PhRvD.107j3008G} without the need for luminous tracers required by many other dark matter probes.  
+ In this work, study simulations and models of dark matter to develop informed priors on dark matter models to support strong gravitational lensing studies.
+ We split this in two sections: first we explore developing informed priors on the projected number density of subhalos within lensing halos, then we explore developing a new simulation pipeline for 
+ 
+ Perturbations in the density of dark matter gravitationally collapse into objects known as dark matter halos \cite{press1974formation}; understanding how these perturbations grow and evolve is important for placing constrains on dark matter models.  
+ In this work, we focus in particular on subhalos: halos evolving under the gravitational field of a host. 
+ N-body simulations suggest that subhalos account for $5$--$20\%$ of the total number of halos near the lensed images in projection with the subhalo to isolated halo ratio depending strongly on redshift \citep{10.1093/mnras/stu2673, 10.1093/mnras/sty159}; although subhalos are subdominant in , \citet{gilman2024turbocharging} showed that uncertainty in tidal stripping of models is a major source of uncertainty in strong gravitational lensing studies. 
+ Subhalos can be numerically challenging to study: subhalos can lose $>99\%$ of their mass due to tidal stripping, leaving the subhalo prone to artificial noise in N-body simulations and possibly artificially disrupting, which would fictitiously lower the number of subhalos predicted by these simulations {\color{red} CITE THE CDM REMMENANTS PAPER HERE}.
+ To overcome these challenges we use the state-of-the-art semi-analytic \gal {\color{red} CITATION HERE} model tuned to ultra high resolution N-body simulations that minimize the effects of artificial disruption.
+ Using this model we develop informed priors on the projected halo mass function expected by lensing studies, develop models for the scaling of the halo mass function with redshift and halo mass and explore the tidal effects of a realistically evolving potential of a central galaxy. 
+ We find that a factor of $\sim 2$ accounts for theoretical uncertainties in the subhalos mass function and find that for current lesning studies the central galaxy has a currently negligible impact on the projected number density of substructure. 
+
+ Recent inferences on the sub-galactic from direct gravitational imaging the potential of lenses \cite{vegetti2010detection, minor2021unexpected, tajalli2025sharp} have provided evidence for anomalously dense dark matter halos compared to CDM predictions.
+ Although these results have been hotly debated and solutions within the CDM framework have been proposed \cite{he2025not}, the intriguing possibility remains that these results hint at physics beyond CDM; possible explanations include a class of alternate dark matter models with non-negligible self-interaction on the sub-galactic scales, called self-interacting dark matter (SIDM).
+ In these models, dark matter self-interaction facilitates the conduction of heat within the halo; due to the negative heat capacity of self-gravitating systems, runaway heat transfer can occur leading to the halo gravothermally collapsing, leading to extremely dense collapsed remnants at the end of their evolution \cite{tulin2018dark,adhikari2025astrophysical}.
+ 3-D N-body simulations, which are traditionally the primary method of studying dark matter halos are computationally expensive especially in the core collapse regime; tidal mass loss amplifies this challenge by requiring a larger number of particles to resolve the halo initially, often requiring tens of thousands of core hours to properly resolve core collapse  even in idealized simulations. 
+ In this work, we develop a pipeline to simulate the evolution of idealized SIDM subhalos in 1-D with realistic tidal evolution; by simulating subhalos evolution in 1-D, we are able to simulate SIDM physics much more computationally efficiently than the 3D case, resulting in over an order of magnitude speed up in some case enabling previously infeasible exploration of SIDM model space. 
+ Using our models we explore the core collapse rates for a wide range for a wide range of SIDM cross sections for a realistic population of halos. 
+ 
+
+ 
+ %In \refchap{chap:alp}
+ 
+ 
+ 
+ 
+
+    
 \end{abstract}
 \end{frontmatter}
 
 
 %% DISSERTATION
-
-
-% A common strategy here is to include files for each of the chapters. I.e.,
-%   \include{chapter1.tex}
-%   \include{chapter2.tex}
-% etc.  Of course, if you prefer, you can just start with
-%   \chapter{My First Chapter Name}
-% and start typing away.  
 \chapter{Introduction}
 \include{chapter_intro.tex}
 
-
-\chapter{A Lensing Perspective}
+\chapter{A Lensing Perspective}\label{chap:alp}
 \include{chapter_alp.tex}
 
 \chapter{T1DES in SIDM}
 \include{chapter_tides.tex}
 
+\chapter{Conclusion}
+\include{chapter_conclusion.tex}
+
+
 
 \appendix
-\chapter{Final notes}
-  Remove me in case of abdominal pain.
+%\chapter{Final notes}
+  %Remove me in case of abdominal pain.
 
 %% END MATTER
 % \printindex %% Uncomment to display the index
