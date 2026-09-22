@@ -587,18 +587,45 @@ on microfilm and electronically: }}\\
      \phantomsection
      \addcontentsline{toc}{chapter}{\protect\numberline{}Vita and Publications}}
 % Special label for the vita list
-%
 \def\vitalabel#1{#1\hfill}
 \def\vita{\begin{center}VITA\end{center}
      \list{}{\ssp \leftmargin 2in \labelwidth 1.7in \let\makelabel\vitalabel
            \labelsep 0.3in}}
 \let\endvita\endlist
 
+\def\skills{\begin{center}Skills\end{center}
+     \list{}{\ssp \leftmargin\z@}}
+\let\endskills\endlist
+
+\def\edu{\begin{center}Education\end{center}
+     \list{}{\ssp \leftmargin 2in \labelwidth 1.7in \let\makelabel\vitalabel
+           \labelsep 0.3in}}
+\let\endedu\endlist
+
+\def\presentations{\begin{center}Conferences \& Presentations \end{center}
+     \list{}{\ssp \leftmargin 2in \labelwidth 1.7in \let\makelabel\vitalabel
+           \labelsep 0.1in}}
+\let\endpresentations\endlist
+
+\def\jobs{\begin{center}Professional Experience\end{center}
+     \list{}{\ssp \leftmargin\z@}}
+\let\endjobs\endlist
+
+\def\leadership{\begin{center} Outreach and Awards \end{center}
+     \list{}{\ssp \leftmargin\z@}}
+\let\endleadership\endlist
+
+
+\newcommand{\makerubric}[1]{\textcolor{red}{\uppercase{#1}}}
+
 % For making "bibliographic-like" entries on the Vita page
 %
-\def\publications{\medskip\begin{center}PUBLICATIONS\end{center}
-     \list{}{\ssp \leftmargin\z@}}
-\let\endpublications\endlist
+
+
+
+
+
+
 
 % ABSTRACT
 %
@@ -1130,7 +1157,7 @@ University of California {\@campus}, \@degreeyear \par
 %
 % The thebibliography environment executes the following commands:
 %
-%  \def\newblock{\hskip .11em plus .33em minus .07em} --
+\def\newblock{\hskip .11em plus .33em minus .07em} 
 %      Defines the `closed' format, where the blocks (major units of
 %      information) of an entry run together.
 %

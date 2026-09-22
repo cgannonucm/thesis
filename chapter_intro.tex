@@ -1,2 +1,51 @@
 \chapter{Introduction}\label{chap:intro}
-Chapter 1 test
+ Dark matter is thought to comprise the majority of the mass budget of the universe, with dark matter estimated to account for nearly $85\%$ of the total mass of the universe \cite{2020}. 
+ Despite it's abundance, the nature of dark matter remains elusive.
+ While Large scale cosmological probes such as Planck \cite{2020} and surveys of the spatial and mass function distributions of galaxies \cite{white1978core,white1991galaxy,de2008high,weinberg2015cold} have provided decisive evidence for an empirical model of dark matter that is cold and collisionless on the largest scale (CDM).  
+ Currently, innovative techniques using phenomena such as gravitational lensing and stellar streams are being used to test CDM on a new scale: the sub-galactic regime.
+ The behavior of dark matter on the scale remains an area of active investigation and vigorous debate; one may hope that hints towards the underlying nature of dark matter can be found in this regime.    
+
+ Gravitational lensing has emerged as a promising way to probe the sub-galactic regime, allowing low mass halos to be studied without the need for luminous tracers and their associated uncertainties. 
+ Two main approaches have been successful in constraining dark matter using gravitational lensing: direct gravitational imaging and anomalous flux ratio methods 
+ In this work we mainly focus on flux ratios constraints using quadruply lensed quasars: in these systems, light from a quasar passes through a central galaxy and is gravitationally lensed, producing four observable images. 
+ The lensed light is lensed by the mass along it's line of site and due to the non-linear nature of the dependence of flux ratios on the second derivative of the potential, information on small scale dark matter substructure can be extracted from the from the flux ratios \cite{gilman2019warm}. 
+ To constrain dark matter models, forward realizations of dark matter halos are generated across varying dark matter properties and a posterior is generated based on the relative likelihood of a particular set of dark matter parameters matching the observed flux ratios in a teqnique know as approximate Beysian computing.
+ Several studies have used these methods to place some of the strongest constraints on Warm Dark Matter \cite{gilman2019warm, nadler2021dark, keeley2024jwst} as well as the self-interaction cross sections of dark matter \cite{gilman2023constraining} and the primordial power spectrum \cite{gilman2022primordial}.
+ In this work, study simulations and models of dark matter substructure of group mass ($\sim 10^{13} M_{\odot}$) to develop informed priors on dark matter models to support strong gravitational lensing studies.
+ We split this in two sections: first we explore developing informed priors on the projected number density of subhalos within mass lensing halos, then we explore developing a new ultra fast simulation pipeline for simulating the evolution of dark matter halos in alternative dark matter models. 
+ 
+ Perturbations in the density of dark matter gravitationally collapse into objects known as dark matter halos \cite{press1974formation}; understanding how these perturbations grow and evolve is important for placing constrains on dark matter models.  
+ Dark matter halos merge hierarchically and remnants from previous mergers known as subhalos can remain gravitationally bound and continue to evolve within the host; these subhalos are effected by tidal forces from the host and undergo mass loss due to tidal stripping and profile expansions due to tidal heating. 
+ N-body simulations suggest that subhalos account for $5$--$20\%$ of the total number of halos near the lensed images in projection with the subhalo to isolated halo ratio depending strongly on redshift \cite{10.1093/mnras/stu2673, 10.1093/mnras/sty159}; although subhalos are subdominant, \citet{gilman2024turbocharging} showed that uncertainty in tidal stripping of models is a major source of uncertainty in strong gravitational lensing studies. 
+ Subhalos can be numerically challenging to study: subhalos can lose $>99\%$ of their mass due to tidal stripping, leaving the subhalo prone to artificial noise in N-body simulations and possibly artificially disrupting, which would fictitiously lower the number of subhalos predicted by these simulations \cite{errani2021asymptotic}.
+ To account for this, lensing studies have in the past, adopted wide priors on this normalization; however, this creates degeneracy when constraining properties of dark matter models such as any potential cutoff in the halo mass function. 
+ Many alternate dark matter models (such as warm dark matter or WDM) predict cutoff masses in differential number of halos per mass (the halo mass function); that is there is a mass scale below which the number of halos is significantly reduced.
+ Therefore, implementing a narrower prior, informed by better understanding of tidal stripping could significantly increase the constraining of lensing studies. 
+ 
+ 
+ In \refchap{chap:alp},  we use a state-of-the-art semi-analytic \gal \cite{BENSON2012175} model tuned to ultra high resolution N-body to study populations of lensing like halos with the effects of artificial disruption minimized. 
+ We run a suite of \gal models to study the substructure of lensing like halos; our spanning over an order of magnitude in halo mass and covering the redshift ranges gravitational lenses are expected at ($0.2 \leq z \leq 0.8$). 
+ Comparing our \gal models to N-body simulations we estimate theoretical uncertainties and develop informed priors on the projected halo mass function expected by lensing studies. 
+ We study how this quantity can vary lens to lens; specifically we develop models for the scaling of the halo mass function with redshift and host halo using a combination of analytic and semi-analytic models. 
+ Finally, we investigate a potential shortcoming of many lensing specific dark matter simulations: the lack of baryonic potential. 
+ We implement a realistic model in \gal for a central massive elliptical using the Universe Machine \cite{Behroozi_2019} model and study a suite of halos with this potential switched on. 
+ Driven by the difference between our Galacticus models and N-body simulations, we find that a factor of $\sim 2$ accounts for theoretical uncertainties in the subhalos mass function; this theoretical uncertainty is much than the nearly unbounded prior used by previous lensing studies. 
+ We provide a recalibration for the scaling of the projected subhalo mass function, and provide an explanation for this relation based on the geometry of the projection.
+ Finally, we find that a central galactic potential causes a $\sim 15 \%$ reduction in the normalization of the subhalo mass function of lens like systems, which is negligible for current lensing surveys. 
+
+
+ Recent inferences on the sub-galactic from direct gravitational imaging the potential of lenses \cite{vegetti2010detection, minor2021unexpected, tajalli2025sharp} have provided evidence for anomalously dense dark matter halos compared to CDM predictions.
+ Although these results have been hotly debated and solutions within the CDM framework have been proposed \cite{he2025not}, the intriguing possibility remains that these results hint at physics beyond CDM; possible explanations include a class of alternate dark matter models with non-negligible self-interaction on the sub-galactic scales, called self-interacting dark matter (SIDM).
+ In these models, dark matter self-interaction facilitates the conduction of heat within the halo; due to the negative heat capacity of self-gravitating systems, runaway heat transfer can occur leading to the halo gravothermally collapsing, leading to extremely dense collapsed remnants at the end of their evolution \cite{tulin2018dark,adhikari2025astrophysical}.
+ 3-D N-body simulations, which are traditionally the primary method of studying dark matter halos are computationally expensive especially in the core collapse regime; tidal mass loss amplifies this challenge by requiring a larger number of particles to resolve the halo initially, often requiring tens of thousands of core hours to properly resolve core collapse  even in idealized simulations. 
+ Additionally, tidal forces from the host halo can alter the core collapse rates: in some cases decreasing the time for core collapse by up to or greater than a factor of $3$ \cite{nishikawa2020accelerated} or in some cases prevent it entirely \cite{zeng2022core}, depending on the specifics of the SIDM model.
+ Understanding the effects of tidal forces on core collapse times in therefore critical to placing constraints on SIDM models. 
+ 
+ In \refchap{chap:tides}, we develop a pipeline to simulate the evolution of idealized SIDM subhalos in 1-D with realistic tidal evolution. 
+ By simulating subhalos evolution in 1-D, we are able to simulate SIDM physics much more computationally efficiently than the 3D case, resulting in over an order of magnitude speed up in some case enabling previously infeasible exploration of SIDM model space. 
+ To accomplish this, we augment the 1-D N-body code \nsphere \cite{kamionkowski2026numerical, kamionkowski2026evolution} with a new method of simulating tidal physics in 1-D; we use a linear tidal field, with a strength dynamically calculated to reproduce the mass loss of a target halo. 
+ Our model is not only able accurately matches mass loss rates from N-body simulations, but also agrees well with internal properties of the halo such as the maximum circular velocity and the radius at which it occurs.
+ Additionally, to further speed up our models we implement a model for adaptively calculating time steps based on scattering probabilities. 
+ We implement a pipeline to simulate SIDM evolution for a wide range for SIDM cross sections spanning an order of magnitude for a realistic population of $91$ halos.
+ Our longest running halos only take $\sim 600$ core hours to simulate, an order of magnitude speed up when compared to full 3-D simulations. 
+ We find that halos up to $\sim 4$ times as many halos collapse as subhalos when compared to identical at infall field halos if evaporation is negligible. 
