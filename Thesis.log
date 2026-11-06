@@ -1,116 +1,1367 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 APR 2017 13:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.6.9)  6 NOV 2026 00:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Thesis.tex
 (./Thesis.tex
-LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-(./UCMerced.cls
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(/usr/share/texmf-dist/tex/latex/latex-lab/documentmetadata-support.ltx
+(/usr/share/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanagement-testphas
+e.sty
+Package: pdfmanagement-testphase 2026-01-23 v0.96y LaTeX PDF management bundle
+ (/usr/share/texmf-dist/tex/latex/tagpdf/tagpdf-base.sty
+Package: tagpdf-base 2026-01-29 v0.99y part of tagpdf - provide base, no-op ver
+sions of the user commands 
+\c@g__tag_MCID_abs_int=\count275
+\c@g__tag_struct_abs_int=\count276
+)
+(/usr/share/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanagement.ltx
+File: pdfmanagement.ltx 2026-01-23 v0.96y PDF management code
+\g__pdfmanagement_EmbeddedFiles_int=\count277
+\l__pdfmeta_xmp_indent_int=\count278
+\g_pdffile_embed_pdfa_int=\count279
+\g_pdffile_embed_nonpdfa_int=\count280
+)))
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count281
+)
+(/usr/share/texmf-dist/tex/latex/pdfmanagement-testphase/l3backend-testphase-pd
+ftex.def
+File: l3backend-testphase-pdftex.def 2026-01-23 v0.96y LaTeX PDF management bun
+dle backend support:PDFoutput(pdfTeX)
+\l__pdf_backend_tmpa_box=\box53
+\l__pdf_backend_tmpb_box=\box54
+\g__pdf_backend_resourceid_int=\count282
+\g__pdf_backend_name_int=\count283
+\g__pdf_backend_page_int=\count284
+)
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-latest.sty
+Package: latex-lab-testphase-latest 2025-09-13 v0.1d latex-lab modules
+
+(/usr/share/texmf-dist/tex/latex/tagpdf/tagpdf.sty
+Package: tagpdf 2026-01-29 v0.99y  LaTeX kernel code for PDF tagging 
+\l__tag_tmpa_int=\count285
+\l__tag_tmpa_box=\box55
+\l__tag_tmpb_box=\box56
+\l__tag_loglevel_int=\count286
+\g__tag_unique_cnt_int=\count287
+\l__tag_tag_stop_int=\count288
+
+(/usr/share/texmf-dist/tex/latex/tagpdf/tagpdf-mc-code-generic.sty
+Package: tagpdf-mc-code-generic 2026-01-29 v0.99y part of tagpdf - code related
+ to marking chunks - generic mode
+\g__tag_mc_marks=\marks4
+)
+\g__tag_tree_id_pad_int=\count289
+\c@g__tag_parenttree_obj_int=\count290
+
+Package tagpdf Info: reading namespace definitions tagpdf-ns-pdf.def
+
+
+Package tagpdf Info: reading namespace definitions tagpdf-ns-pdf2.def
+
+
+Package tagpdf Info: reading namespace definitions tagpdf-ns-mathml.def
+
+
+Package tagpdf Info: reading namespace definitions tagpdf-ns-latex-book.def
+
+
+Package tagpdf Info: reading namespace definitions tagpdf-ns-latex.def
+
+
+Package tagpdf Info: reading namespace definitions tagpdf-ns-latex-lab.def
+
+
+Package tagpdf Info: reading namespace definitions tagpdf-ns-pdf.def
+
+
+Package tagpdf Info: reading namespace definitions tagpdf-ns-pdf2.def
+
+\g__tag_struct_AFobj_int=\count291
+\g__tag_para_begin_int=\count292
+\g__tag_para_end_int=\count293
+\g__tag_para_main_begin_int=\count294
+\g__tag_para_main_end_int=\count295
+)
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-names.sty
+Package: latex-lab-testphase-names 2025-08-14 v0.8f Code related to the names o
+f tags
+)
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-new-or-2.sty
+Package: latex-lab-testphase-new-or-2 2025-05-10 v0.86d Changes to the output r
+outine
+
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-footnotes.ltx
+File: latex-lab-footnotes.ltx 2025-07-04 v0.8o changes to the footnote interfac
+es
+\footnotemargin=\dimen148
+\g_fnote_id_int=\count296
+))
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-block.sty
+Package: latex-lab-testphase-block 2025-07-26 v0.9k blockenv implementation
+
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-kernel-changes.sty
+Package: latex-lab-kernel-changes 2025-07-09 v0.85i General kernel and class ch
+anges
+
+(/usr/share/texmf-dist/tex/latex/latex-lab/glyphtounicode-cmex.tex))
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-context.sty
+Package: latex-lab-testphase-context 2025-10-09 v0.5b Providing context for ins
+tance, etc.
+)
+
+LaTeX template Info: Declaring template type 'blockenv' taking 1 argument(s)
+(template)           on line 96.
+
+
+LaTeX template Info: Declaring template type 'block' taking 1 argument(s) on
+(template)           line 97.
+
+
+LaTeX template Info: Declaring template type 'para' taking 1 argument(s) on
+(template)           line 98.
+
+
+LaTeX template Info: Declaring template type 'list' taking 1 argument(s) on
+(template)           line 99.
+
+
+LaTeX template Info: Declaring template type 'item' taking 1 argument(s) on
+(template)           line 100.
+
+\c@maxblocklevels=\count297
+\l__par_start_skip=\skip49
+\l__block_botsep_skip=\skip50
+\l__block_parbotsep_skip=\skip51
+\l__block_parindent_dim=\dimen149
+\l__block_counter_start_int=\count298
+\l__block_one_label_box=\box57
+\g__block_labels_box=\box58
+\l__block_tmpa_skip=\skip52
+\l__block_topsepadd_skip=\skip53
+\l__block_effective_top_skip=\skip54
+LaTeX Info: Redefining \centering on input line 1476.
+LaTeX Info: Redefining \raggedleft on input line 1477.
+LaTeX Info: Redefining \raggedright on input line 1478.
+)
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-sec.sty
+Package: latex-lab-testphase-sec 2025-10-20 v0.84k Code related to the tagging 
+of sectioning commands
+)
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-toc.sty
+Package: latex-lab-testphase-toc 2025-07-02 v0.85h  Code related to the tagging
+ of toc-like lists
+\g__tag_toc_level_int=\count299
+)
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-minipage.sty
+Package: latex-lab-testphase-minipage 2025-05-10 v0.81g Code related to the tag
+ging of minipages and parboxes
+
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-new-or-1.sty
+Package: latex-lab-testphase-new-or-1 2025-05-10 v0.85d Temporary output patche
+s for tagging and better link support -- no longer active
+))
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-graphic.sty
+Package: latex-lab-testphase-graphic 2025-09-25 v0.80i Code related to the tagg
+ing of graphics
+\g__tag_graphic_int=\count300
+)
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-float.sty
+Package: latex-lab-testphase-float 2025-10-17 v0.81l Code related to the taggin
+g of floats
+\g__tag_float_int=\count301
+)
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-bib.sty
+Package: latex-lab-testphase-bib 2025-05-09 v0.81c Code related to the tagging 
+of bibliography and cite command
+)
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-text.sty
+Package: latex-lab-testphase-text 2025-05-10 v0.85f Code related to the tagging
+ of various small text commands
+LaTeX Info: Redefining \mbox on input line 84.
+)
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-marginpar.sty
+Package: latex-lab-testphase-marginpar 2025-07-23 v0.85h Changes related to the
+ tagging of the margin notes
+\g__kernel_marginpar_int=\count302
+)
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-title.sty
+Package: latex-lab-testphase-title 2025-03-08 v0.85d Changes related to the tag
+ging of the title
+)
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-table.sty
+Package: latex-lab-testphase-table 2025-08-01 v0.85s Code related to the taggin
+g of tables
+
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen150
+\ar@mcellbox=\box59
+\extrarowheight=\dimen151
+\NC@list=\toks17
+\extratabsurround=\skip55
+\backup@length=\skip56
+\ar@cellbox=\box60
+))
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-math.sty
+Package: latex-lab-testphase-math 2025-03-10 v0.8d code related to the math tag
+ging
+
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-math.ltx
+File: latex-lab-math.ltx 2025-10-02 v0.6w Grab all the math(s) and tag it (expe
+riments)
+\l__math_tmpa_skip=\skip57
+\g__math_mathml_total_int=\count303
+\g__math_mathml_int=\count304
+\g__math_math_total_int=\count305
+\g__math_mathml_AF_found_int=\count306
+\g__math_mathml_AF_attached_int=\count307
+\l__math_tmpa_box=\box61
+\l__math_mathstyle_int=\count308
+\g__math_mathchoice_int=\count309
+\l__math_grab_env_int=\count310
+\g__math_postdisplaypenalty_int=\count311
+)
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-mathpkg.ltx
+File: latex-lab-mathpkg.ltx 2025-06-20 v0.1c mathpkg adaptions
+)
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-mathintent.ltx
+File: latex-lab-mathintent.ltx 2025-08-03 v0.1c MathML intent attributes
+))
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-firstaid.sty
+Package: latex-lab-testphase-firstaid 2025-11-03 v2025-11-03 Temporary patches 
+to external packages needed for the tagging project
+)
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-tikz.sty
+Package: latex-lab-testphase-tikz 2025-09-27 v0.80d Code related to the tagging
+ of tikz pictures
+))
+(/usr/share/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanagement-firstaid
+.sty
+Package: pdfmanagement-firstaid 2026-01-23 v0.96y LaTeX PDF management bundle /
+ firstaid-patches
+
+Package pdfmanagement Info: loading pdfmanagement firstaid code for pgf
+
+) (./UCMerced.cls
 Document Class: UCMerced 2008/05/13 V1.1 University of California, San Diego, M
 athematics Dissertation Class
 (./uct12.clo)
-\descriptionmargin=\dimen102
-\c@part=\count79
-\c@chapter=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\@chapterlength=\skip41
-\@subsectionlength=\skip42
-\@subsubsectionlength=\skip43
-\@paragraphlength=\skip44
-\@subparagraphlength=\skip45
-\@figurelength=\skip46
-\@tablelength=\skip47
-\c@figure=\count86
-\c@table=\count87
-) (./Thesis.aux)
+\descriptionmargin=\dimen152
+\c@part=\count312
+\c@chapter=\count313
+\c@section=\count314
+\c@subsection=\count315
+\c@subsubsection=\count316
+\c@paragraph=\count317
+\c@subparagraph=\count318
+\@chapterlength=\skip58
+\@subsectionlength=\skip59
+\@subsubsectionlength=\skip60
+\@paragraphlength=\skip61
+\@subparagraphlength=\skip62
+\@figurelength=\skip63
+\@tablelength=\skip64
+\abovecaptionskip=\skip65
+\belowcaptionskip=\skip66
+\c@figure=\count319
+\c@table=\count320
+) (/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
+
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count321
+\calc@Bcount=\count322
+\calc@Adimen=\dimen153
+\calc@Bdimen=\dimen154
+\calc@Askip=\skip67
+\calc@Bskip=\skip68
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count323
+\calc@Cskip=\skip69
+)
+(/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
+\ESO@tempdima=\dimen155
+\ESO@tempdimb=\dimen156
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+)
+(/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/usr/share/texmf-dist/tex/latex/pdfmanagement-testphase/xcolor-patches-tmp-ltx
+.sty
+Package: xcolor-patches-tmp-ltx 2026-01-23 v0.96y patch xcolor for l3color
+)) (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count324
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\Gin@req@height=\dimen157
+\Gin@req@width=\dimen158
+)
+\AM@pagewidth=\dimen159
+\AM@pageheight=\dimen160
+\AM@fboxrule=\dimen161
+
+(/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count325
+\AM@pagebox=\box62
+\AM@global@opts=\toks19
+\AM@pagecnt=\count326
+\AM@toc@title=\toks20
+\AM@lof@heading=\toks21
+\c@AM@survey=\count327
+\AM@templatesizebox=\box63
+)
+(/usr/share/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip70
+\bibsep=\skip71
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count328
+)
+(/usr/share/texmf-dist/tex/latex/natbib/bibentry.sty
+Package: bibentry 2007/10/30 1.5 (PWD)
+)
+(/usr/share/texmf-dist/tex/latex/multibib/multibib.sty
+Package: multibib 2008/12/10 v1.4 Multiple bibliographies for one document.
+\mb@biblabelwidth=\count329
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip72
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen162
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen163
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count330
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count331
+\leftroot@=\count332
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count333
+\DOTSCASE@=\count334
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box64
+\strutbox@=\box65
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen164
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count335
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count336
+\dotsspace@=\muskip17
+\c@parentequation=\count337
+\dspbrk@lvl=\count338
+\tag@help=\toks23
+\row@=\count339
+\column@=\count340
+\maxfields@=\count341
+\andhelp@=\toks24
+\eqnshift@=\dimen165
+\alignsep@=\dimen166
+\tagshift@=\dimen167
+\tagwidth@=\dimen168
+\totwidth@=\dimen169
+\lineht@=\dimen170
+\@envbody=\toks25
+\multlinegap=\skip73
+\multlinetaggap=\skip74
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(/usr/share/texmf-dist/tex/latex/latex-lab/latex-lab-amsmath.ltx
+File: latex-lab-amsmath.ltx 2025-09-29 v0.1i amsmath adaptions
+LaTeX Info: Redefining \eqref on input line 57.
+)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texmf-dist/tex/latex/docmute/docmute.sty
+Package: docmute 2012/03/22 v1.4 Input stand-alone documents
+)
+(/usr/share/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2025/10/21 v1.06 decimal alignment package (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+)
+(/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen171
+\pgfutil@tempdimb=\dimen172
+)
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box66
+)
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.te
+x
+\pgfkeys@tmptoks=\toks30
+))
+\pgf@x=\dimen173
+\pgf@y=\dimen174
+\pgf@xa=\dimen175
+\pgf@ya=\dimen176
+\pgf@xb=\dimen177
+\pgf@yb=\dimen178
+\pgf@xc=\dimen179
+\pgf@yc=\dimen180
+\pgf@xd=\dimen181
+\pgf@yd=\dimen182
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count342
+\c@pgf@countb=\count343
+\c@pgf@countc=\count344
+\c@pgf@countd=\count345
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
+\pgf@sys@id@count=\count346
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count347
+\pgfsyssoftpath@bigbuffer@items=\count348
+)
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen183
+\pgfmath@count=\count349
+\pgfmath@box=\box67
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
+)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code
+.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.te
+x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics
+.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count350
+))
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen184
+\pgf@picmaxx=\dimen185
+\pgf@picminy=\dimen186
+\pgf@picmaxy=\dimen187
+\pgf@pathminx=\dimen188
+\pgf@pathmaxx=\dimen189
+\pgf@pathminy=\dimen190
+\pgf@pathmaxy=\dimen191
+\pgf@xx=\dimen192
+\pgf@xy=\dimen193
+\pgf@yx=\dimen194
+\pgf@yy=\dimen195
+\pgf@zx=\dimen196
+\pgf@zy=\dimen197
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen198
+\pgf@path@lasty=\dimen199
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen256
+\pgf@shorten@start@additional=\dimen257
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box68
+\pgf@hbox=\box69
+\pgf@layerbox@main=\box70
+\pgf@picture@serial@count=\count351
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen258
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.t
+ex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen259
+\pgf@pt@y=\dimen260
+\pgf@pt@temp=\dimen261
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.te
+x
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen262
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen263
+\pgf@sys@shading@range@num=\count352
+\pgf@shadingcount=\count353
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box71
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box72
+)
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen264
+\pgf@nodesepend=\dimen265
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+))
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen266
+\pgffor@skip=\dimen267
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
+x
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count354
+\pgfplotmarksize=\dimen268
+)
+\tikz@lastx=\dimen269
+\tikz@lasty=\dimen270
+\tikz@lastxsaved=\dimen271
+\tikz@lastysaved=\dimen272
+\tikz@lastmovetox=\dimen273
+\tikz@lastmovetoy=\dimen274
+\tikzleveldistance=\dimen275
+\tikzsiblingdistance=\dimen276
+\tikz@figbox=\box73
+\tikz@figbox@bg=\box74
+\tikz@tempbox=\box75
+\tikz@tempbox@bg=\box76
+\tikztreelevel=\count355
+\tikznumberofchildren=\count356
+\tikznumberofcurrentchild=\count357
+\tikz@fig@count=\count358
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count359
+\pgfmatrixcurrentcolumn=\count360
+\pgf@matrix@numberofcolumns=\count361
+)
+\tikz@expandcount=\count362
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+topaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen277
+\pgfarrowlength=\dimen278
+\pgfarrowwidth=\dimen279
+\pgfarrowlinewidth=\dimen280
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+positioning.code.tex
+File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geomet
+ric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+calc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+\@auxoutpublications=\write4
+ (./publications.aux)
+\openout4 = `publications.aux'.
+
+ (./Thesis.aux (./vita.aux) (./abstract.aux) (./chapter_intro.aux) (./chapter_a
+lp.aux) (./chapter_tides.aux)
+(./chapter_conclusion.aux))
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count363
+\scratchdimen=\dimen281
+\scratchbox=\box77
+\nofMPsegments=\count364
+\nofMParguments=\count365
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count366
+\MPscratchDim=\dimen282
+\MPnumerator=\count367
+\makeMPintoPDFobject=\count368
+\everyMPtoPDFconversion=\toks40
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
 
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
+
+(/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+))<<sRGB.icc>>
+\docmute@nestinglevel=\count369
+
+(./Thesis.bbl) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
+/enc/dvips/cm-super/cm-super-t1.enc}] [2]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 194
+.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 194
+.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [3] [4] [5] (./Thesis.toc
+[6])
+\tf@toc=\write5
+\openout5 = `Thesis.toc'.
+
+ [7] (./Thesis.lof
+Overfull \hbox (29.87784pt too wide) in paragraph at lines 3--3
+ [][] [][][]\T1/cmr/m/n/12 The dif-fer-en-tial spa-tial dis-tri-bu-tions ($[][]
+[]\OML/cmm/m/it/12 n[]$[][][]\T1/cmr/m/n/12 ) from our \T1/cmtt/m/n/12 galactic
+us \T1/cmr/m/n/12 mod- 
  []
 
-[1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 108.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 108.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 108.
- [3] [4] [5] (./Thesis.toc)
-\tf@toc=\write3
-\openout3 = `Thesis.toc'.
-
- [6] (./Thesis.lof)
-\tf@lof=\write4
-\openout4 = `Thesis.lof'.
-
- [7] (./Thesis.lot)
-\tf@lot=\write5
-\openout5 = `Thesis.lot'.
-
- [8]
-[9]
-Overfull \hbox (7.02782pt too wide) in paragraph at lines 189--190
-[]\OT1/cmr/m/n/12 Ph. D. in Math-e-mat-ics, Uni-ver-sity of Cal-i-for-nia, Merc
-ed 
+Overfull \hbox (9.50136pt too wide) in paragraph at lines 3--3
+ \T1/cmr/m/n/12 red: the un-evolved spa-tial dis-tri-bu-tion from our \T1/cmtt/
+m/n/12 galacticus \T1/cmr/m/n/12 mod- 
  []
 
-[10] [11]
+
+Overfull \hbox (8.84872pt too wide) in paragraph at lines 3--3
+ \T1/cmr/m/n/12 els, in or-ange: the evolved spa-tial dis-tri-bu-tion for \T1/c
+mtt/m/n/12 galacticus \T1/cmr/m/n/12 and 
+ []
+
+[8] [9]
+Overfull \hbox (0.74908pt too wide) in paragraph at lines 8--8
+ [][] [][][]\T1/cmr/m/n/12 Our \T1/cmtt/m/n/12 galacticus \T1/cmr/m/n/12 model 
+pre-dic-tions for the evo-lu-tion of a $[][][]\OT1/cmr/m/n/12 10[]M[]$[][][] 
+ []
+
+[10]
+Overfull \hbox (15.33202pt too wide) in paragraph at lines 12--12
+ [][] [][][]\T1/cmr/m/n/12 We plot the nor-mal-ized tidal tracks from our \T1/c
+mtt/m/n/12 T1DES \T1/cmr/m/n/12 CDM smoothed 
+ []
+
+[11])
+\tf@lof=\write6
+\openout6 = `Thesis.lof'.
+
+ [12] (./Thesis.lot
+Overfull \hbox (7.17699pt too wide) in paragraph at lines 4--4
+ [][] [][][]\T1/cmr/m/n/12 Table of best fits for the pro-jected sub-halo mass 
+func-tion (PSHMF, 
+ []
+
+
+Overfull \hbox (13.05609pt too wide) in paragraph at lines 6--6
+ \T1/cmtt/m/n/12 galacticus \T1/cmr/m/n/12 mod-els and es-ti-mates us-ing the [
+][][]Han et al. [2016[][][]] model. 
+ []
+
+)
+\tf@lot=\write7
+\openout7 = `Thesis.lot'.
+
+ [13] [14] [15]
+\openout2 = `vita.aux'.
+
+ (./vita.tex
+Overfull \hbox (3.60689pt too wide) in paragraph at lines 20--21
+[][][]\T1/cmr/bx/n/12 Graduate Re-search As-sis-tant: Com-pu-ta-tional As-tro-p
+hysics \T1/cmr/m/n/12 2022 -- Present,
+ []
+
+
+Overfull \hbox (5.67442pt too wide) in paragraph at lines 29--30
+[][][]\T1/cmr/bx/n/12 Team Lead: Data Sci-ence Chal-lenge \T1/cmr/m/n/12 Lawren
+ce Liv-er-more Na-tional Lab (LLNL)[] 
+ []
+
+[16
+
+] (./publications.bbl [17] [18
+
+])
+Overfull \hbox (0.70514pt too wide) in paragraph at lines 49--52
+\T1/cmr/bx/n/12 Meet-ing \T1/cmr/m/n/12 --- Con-tributed Talk: ``Ac-cel-er-ated
+ Core Col-
+ []
+
+
+Overfull \hbox (4.93732pt too wide) in paragraph at lines 58--61
+[][][]\T1/cmr/bx/n/12 American Phys-i-cal So-ci-ety, March Meet-ing 2025
+ []
+
+) [19]
+\openout2 = `abstract.aux'.
+
+ (./abstract.tex [20
+
+
+
+] [21] [22])
+\openout2 = `chapter_intro.aux'.
+
+ (./chapter_intro.tex
 Chapter 1.
 [1
 
-]
+
+
+
+] [2] [3] [4]) [5]
+\openout2 = `chapter_alp.aux'.
+
+ (./chapter_alp.tex
 Chapter 2.
-[2
+(./papers/lensing_perspective/gannon2024.tex [6
 
-]
+
+
+
+] [7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
+[][][][][][][][][][][][][]\T1/cmr/m/n/10 https://github.com/galacticusorg/galac
+ticus , we use re-vi-sions
+ []
+
+[9] [10] [11] [12] [13] [14] [15]
+Floatstructure:845
+<papers/lensing_perspective/plots/spatial_3d.pdf, id=1010, 603.7854pt x 399.360
+14pt>
+
+Package tagpdf Warning: Alternative text for graphic is missing.
+(tagpdf)                Using
+(tagpdf)                'papers/lensing_perspective/plots/spatial_3d.pdf'
+(tagpdf)                instead.
+
+File: papers/lensing_perspective/plots/spatial_3d.pdf Graphic file (type pdf)
+<use papers/lensing_perspective/plots/spatial_3d.pdf>
+Package pdftex.def Info: papers/lensing_perspective/plots/spatial_3d.pdf  used 
+on input line 356.
+(pdftex.def)             Requested size: 293.41507pt x 194.07333pt.
+Floatstructure:858
+<papers/lensing_perspective/plots/spatial_ratio.pdf, id=1026, 1268.92404pt x 40
+4.37117pt>
+
+Package tagpdf Warning: Alternative text for graphic is missing.
+(tagpdf)                Using
+(tagpdf)                'papers/lensing_perspective/plots/spatial_ratio.pdf'
+(tagpdf)                instead.
+
+File: papers/lensing_perspective/plots/spatial_ratio.pdf Graphic file (type pdf
+)
+<use papers/lensing_perspective/plots/spatial_ratio.pdf>
+Package pdftex.def Info: papers/lensing_perspective/plots/spatial_ratio.pdf  us
+ed on input line 372.
+(pdftex.def)             Requested size: 419.16621pt x 133.57246pt.
+[16] [17 <./papers/lensing_perspective/plots/spatial_3d.pdf>] [18 <./papers/len
+sing_perspective/plots/spatial_ratio.pdf>]
+Floatstructure:896
+Floatstructure:959
+<papers/lensing_perspective/plots/spatial_2d.pdf, id=1260, 674.11847pt x 447.27
+351pt>
+
+Package tagpdf Warning: Alternative text for graphic is missing.
+(tagpdf)                Using
+(tagpdf)                'papers/lensing_perspective/plots/spatial_2d.pdf'
+(tagpdf)                instead.
+
+File: papers/lensing_perspective/plots/spatial_2d.pdf Graphic file (type pdf)
+<use papers/lensing_perspective/plots/spatial_2d.pdf>
+Package pdftex.def Info: papers/lensing_perspective/plots/spatial_2d.pdf  used 
+on input line 423.
+(pdftex.def)             Requested size: 419.16621pt x 278.11887pt.
+
+Overfull \hbox (19.5144pt too wide) in paragraph at lines 437--439
+\T1/cmr/m/n/12 tri-bu-tions pre-dicted by \T1/cmtt/m/n/12 galacticus \T1/cmr/m/
+n/12 for sub-ha-los in the mass range $[][][]\OT1/cmr/m/n/12 8 \OML/cmm/m/it/12
+ < [][] [] <
+ []
+
+[19] [20 <./papers/lensing_perspective/plots/spatial_2d.pdf>]
+Overfull \hbox (6.23727pt too wide) in paragraph at lines 445--445
+[][][][][][]\T1/cmr/bx/n/14.4 Projected Sub-halo Mass Func-tion Nor-mal-iza-tio
+n: Dark
+ []
+
+[21] [22] [23] [24]
+Floatstructure:1120
+<papers/lensing_perspective/plots/scaling.pdf, id=1507, 1271.63118pt x 837.0049
+7pt>
+
+Package tagpdf Warning: Alternative text for graphic is missing.
+(tagpdf)                Using 'papers/lensing_perspective/plots/scaling.pdf'
+(tagpdf)                instead.
+
+File: papers/lensing_perspective/plots/scaling.pdf Graphic file (type pdf)
+<use papers/lensing_perspective/plots/scaling.pdf>
+Package pdftex.def Info: papers/lensing_perspective/plots/scaling.pdf  used on 
+input line 540.
+(pdftex.def)             Requested size: 419.16621pt x 275.8932pt.
+Floatstructure:1147
+<papers/lensing_perspective/plots/massfunction.pdf, id=1537, 1114.46367pt x 733
+.24753pt>
+
+Package tagpdf Warning: Alternative text for graphic is missing.
+(tagpdf)                Using
+(tagpdf)                'papers/lensing_perspective/plots/massfunction.pdf'
+(tagpdf)                instead.
+
+File: papers/lensing_perspective/plots/massfunction.pdf Graphic file (type pdf)
+
+<use papers/lensing_perspective/plots/massfunction.pdf>
+Package pdftex.def Info: papers/lensing_perspective/plots/massfunction.pdf  use
+d on input line 563.
+(pdftex.def)             Requested size: 419.16621pt x 275.7839pt.
+
+LaTeX Warning: Float too large for page by 1.60252pt on input line 575.
+
+Floatstructure:1157
+
+Overfull \hbox (85.09073pt too wide) in paragraph at lines 580--597
+[][][][][][][][] 
+ []
+
+Floatstructure:1218
+
+Overfull \hbox (246.46638pt too wide) in paragraph at lines 604--620
+ [][][][][][][][] 
+ []
+
+Floatstructure:1302
+
+Overfull \hbox (21.05267pt too wide) in paragraph at lines 625--651
+[][][][][][][][] 
+ []
+
+[25] [26 <./papers/lensing_perspective/plots/scaling.pdf>] [27 <./papers/lensin
+g_perspective/plots/massfunction.pdf>] [28] [29] [30]
+Overfull \hbox (11.75494pt too wide) in paragraph at lines 684--689
+[][][]\T1/cmr/m/n/12 To de-ter-mine if dy-nam-i-cal fric-tion is the cause of t
+his dif-fer-ence, \T1/cmtt/m/n/12 galacticus \T1/cmr/m/n/12 could
+ []
+
+[31] [32] [33] [34] [35]
+Floatstructure:1575
+<papers/lensing_perspective/plots/um_evolution.pdf, id=2136, 1104.42618pt x 107
+5.68243pt>
+
+Package tagpdf Warning: Alternative text for graphic is missing.
+(tagpdf)                Using
+(tagpdf)                'papers/lensing_perspective/plots/um_evolution.pdf'
+(tagpdf)                instead.
+
+File: papers/lensing_perspective/plots/um_evolution.pdf Graphic file (type pdf)
+
+<use papers/lensing_perspective/plots/um_evolution.pdf>
+Package pdftex.def Info: papers/lensing_perspective/plots/um_evolution.pdf  use
+d on input line 910.
+(pdftex.def)             Requested size: 419.16621pt x 408.25475pt.
+
+LaTeX Warning: Float too large for page by 34.74872pt on input line 921.
+
+)) [36] [37 <./papers/lensing_perspective/plots/um_evolution.pdf>]
+\openout2 = `chapter_tides.aux'.
+
+
+(./chapter_tides.tex
 Chapter 3.
-[3
+(./papers/t1des/t1des.tex [38
+
+
+
+
+] [39] [40]
+Floatstructure:1658
+
+LaTeX Warning: Float too large for page by 91.4695pt on input line 282.
+
+[41] [42] [43] [44] [45]
+Floatstructure:1773
+<papers/t1des/figures/rmax_vmax_mbound_t1h3645.pdf, id=2408, 525.21794pt x 591.
+83107pt>
+
+Package tagpdf Warning: Alternative text for graphic is missing.
+(tagpdf)                Using
+(tagpdf)                'papers/t1des/figures/rmax_vmax_mbound_t1h3645.pdf'
+(tagpdf)                instead.
+
+File: papers/t1des/figures/rmax_vmax_mbound_t1h3645.pdf Graphic file (type pdf)
+
+<use papers/t1des/figures/rmax_vmax_mbound_t1h3645.pdf>
+Package pdftex.def Info: papers/t1des/figures/rmax_vmax_mbound_t1h3645.pdf  use
+d on input line 347.
+(pdftex.def)             Requested size: 419.16621pt x 472.35474pt.
+
+LaTeX Warning: Float too large for page by 99.18196pt on input line 355.
+
+Floatstructure:1786
+<papers/t1des/figures/tidal_tracks_normalized_errani_scratch.png, id=2424, 502.
+9992pt x 430.7292pt>
+
+Package tagpdf Warning: Alternative text for graphic is missing.
+(tagpdf)                Using
+(tagpdf)                'papers/t1des/figures/tidal_tracks_normalized_errani_sc
+ratch.png'
+(tagpdf)                instead.
+
+File: papers/t1des/figures/tidal_tracks_normalized_errani_scratch.png Graphic f
+ile (type png)
+<use papers/t1des/figures/tidal_tracks_normalized_errani_scratch.png>
+Package pdftex.def Info: papers/t1des/figures/tidal_tracks_normalized_errani_sc
+ratch.png  used on input line 358.
+(pdftex.def)             Requested size: 419.16621pt x 358.95764pt.
+[46] [47 <./papers/t1des/figures/rmax_vmax_mbound_t1h3645.pdf>] [48 <./papers/t
+1des/figures/tidal_tracks_normalized_errani_scratch.png>] [49] [50] [51]
+[52] [53]
+Floatstructure:1933
+<papers/t1des/figures/collapse_fraction_vs_sigma_paper_scratch.png, id=2657, 48
+8.5452pt x 343.64384pt>
+
+Package tagpdf Warning: Alternative text for graphic is missing.
+(tagpdf)                Using
+(tagpdf)                'papers/t1des/figures/collapse_fraction_vs_sigma_paper_
+scratch.png'
+(tagpdf)                instead.
+
+File: papers/t1des/figures/collapse_fraction_vs_sigma_paper_scratch.png Graphic
+ file (type png)
+<use papers/t1des/figures/collapse_fraction_vs_sigma_paper_scratch.png>
+Package pdftex.def Info: papers/t1des/figures/collapse_fraction_vs_sigma_paper_
+scratch.png  used on input line 455.
+(pdftex.def)             Requested size: 209.5831pt x 147.42314pt.
+[54 <./papers/t1des/figures/collapse_fraction_vs_sigma_paper_scratch.png>]
+[55] [56])) [57]
+\openout2 = `chapter_conclusion.aux'.
+
+ (./chapter_conclusion.tex
+Chapter 4.
+[58
+
+
+
+
+] [59]) [60] (./Thesis.bbl
+Underfull \hbox (badness 1048) in paragraph at lines 51--57
+[][][]\T1/cmr/m/n/12 Astropy Col-lab-o-ra-tion.  The As-tropy Project: Sus-tain
+-ing and Grow-ing a
+ []
+
+[61
+
+
 
 ]
-Appendix A.
-(./Thesis.bbl [4
+Underfull \hbox (badness 6927) in paragraph at lines 112--119
+[][][]\T1/cmr/m/n/12 Andrew J. Ben-son.  Galacti-cus: A semi-analytic model of 
+galaxy
+ []
 
-]) [5
 
-] (./Thesis.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 112--119
+\T1/cmr/m/n/12 for-ma-tion.  [][][]\T1/cmr/m/it/12 New As-tron-omy[][][]\T1/cmr
+/m/n/12 , 17(2):175--197, 2012.  ISSN 1384-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--119
+\T1/cmr/m/n/12 1076.  doi: https://doi.org/10.1016/j.newast.2011.07.004.  URL
+ []
+
+
+Overfull \hbox (9.46799pt too wide) in paragraph at lines 112--119
+\T1/cmtt/m/n/12 https://www.sciencedirect.com/science/article/pii/S138410761100
+0807\T1/cmr/m/n/12 .[] 
+ []
+
+[62] [63]
+Underfull \hbox (badness 1460) in paragraph at lines 207--215
+\T1/cmr/m/n/12 5442, 01 2018.  ISSN 0035-8711.  doi: 10.1093/mn-ras/sty159.  UR
+L
+ []
+
+[64] [65]
+Underfull \hbox (badness 4242) in paragraph at lines 335--342
+[][][]\T1/cmr/m/n/12 L. Gao, S. D. M. White, A. Jenk-ins, F. Stoehr, and V. Spr
+ingel.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--342
+\T1/cmr/m/n/12 The sub-halo pop-u-la-tions of $[][][]\OT1/cmr/m/n/12 ^^C$[][][]
+\T1/cmr/m/n/12 CDM dark haloes.  [][][]\T1/cmr/m/it/12 Monthly No-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--342
+\T1/cmr/m/it/12 tices of the Royal As-tro-nom-i-cal So-ci-ety[][][]\T1/cmr/m/n/
+12 , 355(3):819--834, 12 2004.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--342
+\T1/cmr/m/n/12 ISSN 0035-8711.  doi: 10.1111/j.1365-2966.2004.08360.x.  URL
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 345--353
+\T1/cmr/m/n/12 White.  The Phoenix Project: the dark side of rich Galaxy clus-t
+ers.
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 345--353
+\T1/cmr/m/n/12 2012.  ISSN 0035-8711.  doi: 10.1111/j.1365-2966.2012.21564.x.  
+URL
+ []
+
+[66] [67]
+Underfull \hbox (badness 1845) in paragraph at lines 457--461
+[][][]\T1/cmr/m/n/12 Lars Hern-quist.  An an-a-lyt-i-cal model for spher-i-cal 
+galax-ies and bulges.
+ []
+
+[68] [69]
+Underfull \hbox (badness 10000) in paragraph at lines 622--629
+[][][]\T1/cmr/m/n/12 Planck Col-lab-o-ra-tion.  Planck2018 re-sults: Vi. cos-mo
+-log-i-cal pa-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 622--629
+\T1/cmr/m/n/12 ram-e-ters.  [][][]\T1/cmr/m/it/12 Astronomy & As-tro-physics[][
+][]\T1/cmr/m/n/12 , 641:A6, Septem-ber 2020a.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 622--629
+\T1/cmr/m/n/12 ISSN 1432-0746.  doi: 10.1051/0004-6361/201833910.  URL
+ []
+
+[70]
+Underfull \hbox (badness 10000) in paragraph at lines 631--638
+[][][]\T1/cmr/m/n/12 Planck Col-lab-o-ra-tion.  Planck2018 re-sults: Vi. cos-mo
+-log-i-cal pa-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--638
+\T1/cmr/m/n/12 ram-e-ters.  [][][]\T1/cmr/m/it/12 Astronomy & As-tro-physics[][
+][]\T1/cmr/m/n/12 , 641:A6, Septem-ber 2020b.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--638
+\T1/cmr/m/n/12 ISSN 1432-0746.  doi: 10.1051/0004-6361/201833910.  URL
+ []
+
+[71] [72]
+Underfull \hbox (badness 2158) in paragraph at lines 759--767
+[][][]\T1/cmr/m/n/12 Frank C. Van den Bosch, Giuseppe Tor-men, and Carlo Gio-co
+li.  The
+ []
+
+
+Underfull \hbox (badness 4072) in paragraph at lines 759--767
+\T1/cmr/m/n/12 mass func-tion and av-er-age mass-loss rate of dark mat-ter sub-
+haloes.
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 759--767
+\T1/cmr/m/n/12 2005.  ISSN 0035-8711.  doi: 10.1111/j.1365-2966.2005.08964.x.  
+URL
+ []
+
+[73] [74]) [75]<<latex-list-css.html>><<latex-align-css.html>> (./Thesis.aux
+(./vita.aux) (./abstract.aux) (./chapter_intro.aux) (./chapter_alp.aux)
+(./chapter_tides.aux) (./chapter_conclusion.aux))
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+
+
+Package tagpdf Info: Finalizing the tagging structure:
+(tagpdf)             Writing out ~2664 structure objects
+(tagpdf)             with ~3315 'MC' leaf nodes.
+(tagpdf)             Be patient if there are lots of objects!
+
+Package tagpdf Info: writing ParentTree
+Package tagpdf Info: writing IDTree
+Package tagpdf Info: writing RoleMap
+Package tagpdf Info: writing ClassMap
+Package tagpdf Info: writing NameSpaces
+Package tagpdf Info: writing StructElems
+
+Package tagpdf Warning: Destination '' has no related structure.
+(tagpdf)                /Ref not updated.
+
+
+Package tagpdf Warning: Destination '' has no related structure.
+(tagpdf)                /Ref not updated.
+
+
+Package tagpdf Warning: Destination '' has no related structure.
+(tagpdf)                /Ref not updated.
+
+
+Package tagpdf Warning: Destination '' has no related structure.
+(tagpdf)                /Ref not updated.
+
+
+Package tagpdf Warning: Destination '' has no related structure.
+(tagpdf)                /Ref not updated.
+
+
+Package tagpdf Warning: Destination '' has no related structure.
+(tagpdf)                /Ref not updated.
+
+
+Package tagpdf Warning: Destination '' has no related structure.
+(tagpdf)                /Ref not updated.
+
+
+Package tagpdf Warning: Destination '' has no related structure.
+(tagpdf)                /Ref not updated.
+
+Package tagpdf Info: writing Root
+ ) 
 Here is how much of TeX's memory you used:
- 322 strings out of 493089
- 3403 string characters out of 6134842
- 57953 words of memory out of 5000000
- 3870 multiletter control sequences out of 15000+600000
- 8847 words of font info for 31 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 22i,7n,22p,249b,216s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmti12.pfb>
-Output written on Thesis.pdf (16 pages, 54590 bytes).
+ 43852 strings out of 469515
+ 1107790 string characters out of 5470808
+ 2251267 words of memory out of 5000000
+ 72004 multiletter control sequences out of 15000+600000
+ 670066 words of font info for 117 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 88i,11n,94p,1623b,12721s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmtt8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam
+10.pfb></usr/share/texmf-dist/fonts/type1/public/pdftex/pdftexspace.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist
+/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
+fbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></u
+sr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-
+dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type
+1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
+er/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb
+>
+Output written on Thesis.pdf (97 pages, 1171166 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 3666 PDF objects out of 4296 (max. 8388607)
+ 3135 compressed objects within 32 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11058 words of extra memory for PDF output out of 12000 (max. 10000000)
 

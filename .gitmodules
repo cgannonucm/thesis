@@ -1,0 +1,6 @@
+[submodule "papers/t1des"]
+	path = papers/t1des
+	url = https://github.com/cgannonucm/T1DES_paper
+[submodule "papers/lensing_perspective_paper"]
+	path = papers/lensing_perspective
+	url = https://github.com/cgannonucm/Sigma-Sub-Paper

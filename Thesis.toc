@@ -1,18 +1,41 @@
-\contentsline {chapter}{\numberline {}Signature Page}{iii}
-\contentsline {chapter}{\numberline {}Dedication}{iv}
-\contentsline {chapter}{\numberline {}Epigraph}{v}
-\contentsline {chapter}{\numberline {}Table of Contents}{vi}
-\contentsline {chapter}{\numberline {}List of Figures}{vii}
-\contentsline {chapter}{\numberline {}List of Tables}{viii}
-\contentsline {chapter}{\numberline {}Acknowledgements}{ix}
-\contentsline {chapter}{\numberline {}Vita and Publications}{x}
-\contentsline {chapter}{\numberline {}Abstract}{xi}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}1}Introduction}{1}
-\contentsline {section}{\numberline {1.1}A section}{1}
-\contentsline {subsection}{\numberline {1.1.1}More Stuff}{1}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}2}Title}{2}
-\contentsline {section}{\numberline {2.1}A section}{2}
-\contentsline {chapter}{\numberline {Chapter\nobreakspace {}3}Title}{3}
-\contentsline {section}{\numberline {3.1}A section}{3}
-\contentsline {chapter}{\numberline {Appendix\nobreakspace {}A}Final notes}{4}
-\contentsline {chapter}{Bibliography}{5}
+\contentsline {chapter}{\numberline {}Signature Page}{iii}{}%
+\contentsline {chapter}{\numberline {}Dedication}{iv}{}%
+\contentsline {chapter}{\numberline {}Epigraph}{v}{}%
+\contentsline {chapter}{\numberline {}Table of Contents}{vi}{}%
+\contentsline {chapter}{\numberline {}List of Figures}{viii}{}%
+\contentsline {chapter}{\numberline {}List of Tables}{xiii}{}%
+\contentsline {chapter}{\numberline {}Acknowledgements}{xiv}{}%
+\contentsline {chapter}{\numberline {}Vita and Publications}{xvi}{}%
+\contentsline {chapter}{\numberline {}Abstract}{xx}{target*.30}%
+\contentsline {chapter}{\numberline {Chapter~1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {Chapter~2}Dark Matter Substructure: A Lensing Perspective}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{7}{target*.32}%
+\contentsline {section}{\numberline {2.2}Methods}{10}{target*.33}%
+\contentsline {subsection}{\numberline {2.2.1}Semi-Analytic Models}{11}{target*.34}%
+\contentsline {subsubsection}{Tidal Physics}{11}{subsubsection*.35}%
+\contentsline {subsubsection}{Merger Radius}{12}{subsubsection*.36}%
+\contentsline {subsubsection}{Host Halo Properties}{13}{subsubsection*.37}%
+\contentsline {subsubsection}{Central Galaxy Properties}{13}{subsubsection*.38}%
+\contentsline {subsection}{\numberline {2.2.2}Analytic Models}{14}{target*.39}%
+\contentsline {section}{\numberline {2.3}Results}{16}{target*.40}%
+\contentsline {subsection}{\numberline {2.3.1}Spatial Distribution}{16}{target*.41}%
+\contentsline {subsection}{\numberline {2.3.2}Projected Subhalo Mass Function Normalization: Dark Matter Only}{21}{target*.42}%
+\contentsline {subsection}{\numberline {2.3.3}Projected Subhalo Mass Function Normalization: Impact of Central Galaxy}{23}{target*.43}%
+\contentsline {subsection}{\numberline {2.3.4}Projected Subhalo Mass Function Scaling: Dark Matter Only}{24}{target*.44}%
+\contentsline {subsection}{\numberline {2.3.5}Projected Subhalo Mass Function Scaling: Impact of central galaxy}{25}{target*.45}%
+\contentsline {section}{\numberline {2.4}Discussion}{30}{target*.46}%
+\contentsline {subsection}{\numberline {2.4.1}Subhalo Populations of a Halo at Fixed Mass and Redshift}{30}{target*.47}%
+\contentsline {subsection}{\numberline {2.4.2}Subhalo Population Dependence on Host Properties}{32}{target*.48}%
+\contentsline {subsection}{\numberline {2.4.3}Impact of Central Galaxy}{33}{target*.49}%
+\contentsline {subsection}{\numberline {2.4.4}Recommendations for Future $\Sigma _{\mathrm {sub}}$ Priors}{33}{target*.50}%
+\contentsline {section}{\numberline {2.5}Summary}{34}{target*.51}%
+\contentsline {section}{\numberline {2.A}Evolution of the Central Galaxy}{36}{target*.59}%
+\contentsline {chapter}{\numberline {Chapter~3}T1DES in SIDM: A New Class of SIDM Subhalo Simulations}{38}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{39}{target*.61}%
+\contentsline {section}{\numberline {3.2}Methods}{41}{target*.62}%
+\contentsline {subsection}{\numberline {3.2.1}Subhalo Realizations}{43}{target*.63}%
+\contentsline {subsection}{\numberline {3.2.2}Gravitational Dynamics}{45}{target*.69}%
+\contentsline {subsection}{\numberline {3.2.3}SIDM Physics}{49}{target*.70}%
+\contentsline {section}{\numberline {3.3}Results}{52}{target*.71}%
+\contentsline {section}{\numberline {3.4}Conclusion and Summary}{54}{target*.72}%
+\contentsline {chapter}{\numberline {Chapter~4}Conclusion}{58}{chapter.4}%

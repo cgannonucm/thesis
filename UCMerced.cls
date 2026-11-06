@@ -126,6 +126,8 @@
 %%% ====================================================================
 
 \NeedsTeXFormat{LaTeX2e}
+
+\newif\if@openright \@openrightfalse % needed by tagged \chapter code
 \ProvidesClass{UCMerced}[2008/05/13 V1.1 University of California, San Diego, Mathematics Dissertation
 Class]
 
@@ -591,29 +593,29 @@ on microfilm and electronically: }}\\
 \def\vita{\begin{center}VITA\end{center}
      \list{}{\ssp \leftmargin 2in \labelwidth 1.7in \let\makelabel\vitalabel
            \labelsep 0.3in}}
-\let\endvita\endlist
+\def\endvita{\endlist}
 
 \def\skills{\begin{center}Skills\end{center}
      \list{}{\ssp \leftmargin\z@}}
-\let\endskills\endlist
+\def\endskills{\endlist}
 
 \def\edu{\begin{center}Education\end{center}
      \list{}{\ssp \leftmargin 2in \labelwidth 1.7in \let\makelabel\vitalabel
            \labelsep 0.3in}}
-\let\endedu\endlist
+\def\endedu{\endlist}
 
 \def\presentations{\begin{center}Conferences \& Presentations \end{center}
      \list{}{\ssp \leftmargin 2in \labelwidth 1.7in \let\makelabel\vitalabel
            \labelsep 0.1in}}
-\let\endpresentations\endlist
+\def\endpresentations{\endlist}
 
 \def\jobs{\begin{center}Professional Experience\end{center}
      \list{}{\ssp \leftmargin\z@}}
-\let\endjobs\endlist
+\def\endjobs{\endlist}
 
 \def\leadership{\begin{center} Outreach and Awards \end{center}
      \list{}{\ssp \leftmargin\z@}}
-\let\endleadership\endlist
+\def\endleadership{\endlist}
 
 
 \newcommand{\makerubric}[1]{\textcolor{red}{\uppercase{#1}}}
@@ -853,14 +855,10 @@ University of California {\@campus}, \@degreeyear \par
 %                               stepped.
 %                               Counter OLDCTR must already be defined.
 
-% Must redefine @startsection so that we always get indentation.
-\def\@startsection#1#2#3#4#5#6{\if@noskipsec \leavevmode \fi
-   \par \@tempskipa #4\relax
-   \@afterindenttrue
-   \ifdim \@tempskipa <\z@ \@tempskipa -\@tempskipa \relax\fi
-   \if@nobreak \everypar{}\else
-     \addpenalty{\@secpenalty}\addvspace{\@tempskipa}\fi \@ifstar
-     {\@ssect{#3}{#4}{#5}{#6}}{\@dblarg{\@sect{#1}{#2}{#3}{#4}{#5}{#6}}}}
+% Always indent the first paragraph after a heading. (This used to be done by
+% redefining \@startsection, which overwrote the kernel's tagging-aware version;
+% this is the approach of the indentfirst package.)
+\let\@afterindentfalse\@afterindenttrue
 
 \newcounter {part}
 \newcounter {chapter}
@@ -1102,8 +1100,7 @@ University of California {\@campus}, \@degreeyear \par
   \addcontentsline{toc}{chapter}{\protect\numberline{}\listfigurename }%
   \begingroup  % This group overloads \numberline to output ``Figure 1.3'' instead of ``1.3''
   \let\ORIG@numberline\numberline
-  \renewcommand*{\numberline}[1]{
-  \ORIG@numberline{\figurename~##1:}}
+  \renewcommand*{\numberline}[1]{\ORIG@numberline{\figurename~##1:}}%
 
    {\ssp\@starttoc{lof}}\if@restonecol
     \twocolumn\fi
@@ -1325,6 +1322,9 @@ University of California {\@campus}, \@degreeyear \par
 %	the \ifdim is for captions above the figure or table;
 %	the strut is for tables below the caption.
 
+% Caption skips; required by the kernel's tagging-aware \@makecaption
+\newlength\abovecaptionskip \setlength\abovecaptionskip{10\p@}
+\newlength\belowcaptionskip \setlength\belowcaptionskip{0\p@}
 \long\def\@makecaption#1#2{% Add space only if something is ...
    \par\ifdim\prevdepth>-\p@ \vskip 10\p@\relax \fi % above the caption
    \setbox\@tempboxa\hbox{\vbox to\topskip{}#1: #2\unskip\strut}% 

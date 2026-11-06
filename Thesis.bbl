@@ -1,9 +1,923 @@
-\begin{thebibliography}{1}
+\providecommand{\noopsort}[1]{}\providecommand{\singleletter}[1]{#1}%
+\begin{thebibliography}{112}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem{Goodman}
-J.~W. Goodman and J.~F. Belsher.
-\newblock Fundamental limitations in linear invariant restoration of
-  atmospherically degraded images.
-\newblock {\em Proc. SPIE}, 0075:141--154, 1976.
+\bibitem[Adhikari et~al.(2025)Adhikari, Banerjee, Boddy, Cyr-Racine, Desmond,
+  Dvorkin, Jain, Kahlhoefer, Kaplinghat, Nierenberg,
+  et~al.]{adhikari2025astrophysical}
+Susmita Adhikari, Arka Banerjee, Kimberly~K Boddy, Francis-Yan Cyr-Racine,
+  Harry Desmond, Cora Dvorkin, Bhuvnesh Jain, Felix Kahlhoefer, Manoj
+  Kaplinghat, Anna Nierenberg, et~al.
+\newblock Astrophysical tests of dark matter self-interactions.
+\newblock \emph{Reviews of Modern Physics}, 97\penalty0 (4):\penalty0 045004,
+  2025.
+
+\bibitem[Ando et~al.(2025)Ando, Hayashi, Horigome, Ibe, and
+  Shirai]{ando2025stringent}
+Shin'ichiro Ando, Kohei Hayashi, Shunichi Horigome, Masahiro Ibe, and Satoshi
+  Shirai.
+\newblock Stringent constraints on self-interacting dark matter using milky-way
+  satellite galaxies kinematics.
+\newblock \emph{arXiv preprint arXiv:2503.13650}, 2025.
+
+\bibitem[Andrade et~al.(2022)Andrade, Fuson, Gad-Nasr, Kong, Minor, Roberts,
+  and Kaplinghat]{andrade2022stringent}
+Kevin~E Andrade, Jackson Fuson, Sophia Gad-Nasr, Demao Kong, Quinn Minor,
+  M~Grant Roberts, and Manoj Kaplinghat.
+\newblock A stringent upper limit on dark matter self-interaction cross-section
+  from cluster strong lensing.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  510\penalty0 (1):\penalty0 54--81, 2022.
+
+\bibitem[{Astropy Collaboration}(2013)]{astropy:2013}
+{Astropy Collaboration}.
+\newblock {Astropy: A community Python package for astronomy}.
+\newblock \emph{Astronomy \& Astrophysics}, 558:\penalty0 A33, October 2013.
+\newblock \doi{10.1051/0004-6361/201322068}.
+
+\bibitem[{Astropy Collaboration}(2018)]{astropy:2018}
+{Astropy Collaboration}.
+\newblock {The Astropy Project: Building an Open-science Project and Status of
+  the v2.0 Core Package}.
+\newblock \emph{The Astronomical Journal}, 156\penalty0 (3):\penalty0 123,
+  September 2018.
+\newblock \doi{10.3847/1538-3881/aabc4f}.
+
+\bibitem[{Astropy Collaboration}(2022)]{astropy:2022}
+{Astropy Collaboration}.
+\newblock {The Astropy Project: Sustaining and Growing a Community-oriented
+  Open-source Project and the Latest Major Release (v5.0) of the Core Package}.
+\newblock \emph{The Astrophysical Journal}, 935\penalty0 (2):\penalty0 167,
+  August 2022.
+\newblock \doi{10.3847/1538-4357/ac7c74}.
+
+\bibitem[Banik et~al.(2018)Banik, Bertone, Bovy, and
+  Bozorgnia]{banik2018probing}
+Nilanjan Banik, Gianfranco Bertone, Jo~Bovy, and Nassim Bozorgnia.
+\newblock Probing the nature of dark matter particles with stellar streams.
+\newblock \emph{Journal of Cosmology and Astroparticle Physics}, 2018\penalty0
+  (07):\penalty0 061, 2018.
+
+\bibitem[Banik et~al.(2021{\natexlab{a}})Banik, Bovy, Bertone, Erkal, and
+  De~Boer]{banik2021novel}
+Nilanjan Banik, Jo~Bovy, Gianfranco Bertone, Denis Erkal, and TJL De~Boer.
+\newblock Novel constraints on the particle nature of dark matter from stellar
+  streams.
+\newblock \emph{Journal of Cosmology and Astroparticle Physics}, 2021\penalty0
+  (10):\penalty0 043, 2021{\natexlab{a}}.
+
+\bibitem[Banik et~al.(2021{\natexlab{b}})Banik, Bovy, Bertone, Erkal, and
+  de Boer]{10.1093/mnras/stab210}
+Nilanjan Banik, Jo~Bovy, Gianfranco Bertone, Denis Erkal, and T~J~L de Boer.
+\newblock {Evidence of a population of dark subhaloes from Gaia and Pan-STARRS
+  observations of the GD-1 stream}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  502\penalty0 (2):\penalty0 2364--2380, 01 2021{\natexlab{b}}.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/stab210}.
+\newblock URL \url{https://doi.org/10.1093/mnras/stab210}.
+
+\bibitem[Behroozi et~al.(2019)Behroozi, Wechsler, Hearin, and
+  Conroy]{Behroozi_2019}
+Peter Behroozi, Risa~H Wechsler, Andrew~P Hearin, and Charlie Conroy.
+\newblock Universemachine: The correlation between galaxy growth and dark
+  matter halo assembly from z=0-10.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  488\penalty0 (3):\penalty0 3143–3194, May 2019.
+\newblock ISSN 1365-2966.
+\newblock \doi{10.1093/mnras/stz1182}.
+\newblock URL \url{http://dx.doi.org/10.1093/mnras/stz1182}.
+
+\bibitem[Behroozi et~al.(2012)Behroozi, Wechsler, and Wu]{behroozi2012rockstar}
+Peter~S Behroozi, Risa~H Wechsler, and Hao-Yi Wu.
+\newblock The rockstar phase-space temporal halo finder and the velocity
+  offsets of cluster cores.
+\newblock \emph{The Astrophysical Journal}, 762\penalty0 (2):\penalty0 109,
+  2012.
+
+\bibitem[Behroozi et~al.(2014)Behroozi, Wechsler, Lu, Hahn, Busha, Klypin, and
+  Primack]{behroozi2014mergers}
+Peter~S Behroozi, Risa~H Wechsler, Yu~Lu, Oliver Hahn, Michael~T Busha, Anatoly
+  Klypin, and Joel~R Primack.
+\newblock Mergers and mass accretion for infalling halos both end well outside
+  cluster virial radii.
+\newblock \emph{The Astrophysical Journal}, 787\penalty0 (2):\penalty0 156,
+  2014.
+
+\bibitem[Benson(2012)]{BENSON2012175}
+Andrew~J. Benson.
+\newblock Galacticus: A semi-analytic model of galaxy formation.
+\newblock \emph{New Astronomy}, 17\penalty0 (2):\penalty0 175--197, 2012.
+\newblock ISSN 1384-1076.
+\newblock \doi{https://doi.org/10.1016/j.newast.2011.07.004}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S1384107611000807}.
+
+\bibitem[{Benson} and {Du}(2022)]{2022MNRAS.517.1398B}
+Andrew~J. {Benson} and Xiaolong {Du}.
+\newblock {Tidal tracks and artificial disruption of cold dark matter haloes}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  517\penalty0 (1):\penalty0 1398--1406, November 2022.
+\newblock \doi{10.1093/mnras/stac2750}.
+
+\bibitem[Bonaca et~al.(2019)Bonaca, Hogg, Price-Whelan, and
+  Conroy]{bonaca2019spur}
+Ana Bonaca, David~W Hogg, Adrian~M Price-Whelan, and Charlie Conroy.
+\newblock The spur and the gap in gd-1: Dynamical evidence for a dark
+  substructure in the milky way halo.
+\newblock \emph{The Astrophysical Journal}, 880\penalty0 (1):\penalty0 38,
+  2019.
+
+\bibitem[Bond et~al.(1991)Bond, Cole, Efstathiou, and
+  Kaiser]{bond1991excursion}
+JR~Bond, Shaun Cole, George Efstathiou, and Nick Kaiser.
+\newblock Excursion set mass functions for hierarchical gaussian fluctuations.
+\newblock \emph{Astrophysical Journal, Part 1 (ISSN 0004-637X), vol. 379, Oct.
+  1, 1991, p. 440-460. Research supported by NSERC, NASA, and University of
+  California.}, 379:\penalty0 440--460, 1991.
+
+\bibitem[Bovy et~al.(2017)Bovy, Erkal, and Sanders]{bovy2017linear}
+Jo~Bovy, Denis Erkal, and Jason~L Sanders.
+\newblock Linear perturbation theory for tidal streams and the small-scale cdm
+  power spectrum.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  466\penalty0 (1):\penalty0 628--668, 2017.
+
+\bibitem[Bower(1991)]{bower1991evolution}
+Richard~G Bower.
+\newblock The evolution of groups of galaxies in the press--schechter
+  formalism.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  248\penalty0 (2):\penalty0 332--352, 1991.
+
+\bibitem[Boylan-Kolchin et~al.(2008)Boylan-Kolchin, Ma, and
+  Quataert]{boylan2008dynamical}
+Michael Boylan-Kolchin, Chung-Pei Ma, and Eliot Quataert.
+\newblock Dynamical friction and galaxy merging time-scales.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  383\penalty0 (1):\penalty0 93--101, 2008.
+
+\bibitem[Chandrasekhar(1943)]{chandrasekhar1943dynamical}
+Subrahmanyan Chandrasekhar.
+\newblock Dynamical friction. i. general considerations: the coefficient of
+  dynamical friction.
+\newblock \emph{Astrophysical Journal}, 97:\penalty0 255--262, 1943.
+
+\bibitem[Cole et~al.(2000{\natexlab{a}})Cole, Lacey, Baugh, and
+  Frenk]{10.1046/j.1365-8711.2000.03879.x}
+Shaun Cole, Cedric~G. Lacey, Carlton~M. Baugh, and Carlos~S. Frenk.
+\newblock {Hierarchical galaxy formation}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  319\penalty0 (1):\penalty0 168--204, 11 2000{\natexlab{a}}.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1046/j.1365-8711.2000.03879.x}.
+\newblock URL \url{https://doi.org/10.1046/j.1365-8711.2000.03879.x}.
+
+\bibitem[Cole et~al.(2000{\natexlab{b}})Cole, Lacey, Baugh, and
+  Frenk]{cole2000formation}
+Shaun Cole, Cedric~G. Lacey, Carlton~M. Baugh, and Carlos~S. Frenk.
+\newblock {Hierarchical galaxy formation}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  319\penalty0 (1):\penalty0 168--204, 11 2000{\natexlab{b}}.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1046/j.1365-8711.2000.03879.x}.
+\newblock URL \url{https://doi.org/10.1046/j.1365-8711.2000.03879.x}.
+
+\bibitem[Correa(2021)]{correa2021constraining}
+Camila~A Correa.
+\newblock Constraining velocity-dependent self-interacting dark matter with the
+  milky way’s dwarf spheroidal galaxies.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  503\penalty0 (1):\penalty0 920--937, 2021.
+
+\bibitem[De~Blok et~al.(2008)De~Blok, Walter, Brinks, Trachternach, Oh, and
+  Kennicutt]{de2008high}
+WJG De~Blok, Fabian Walter, Elias Brinks, C~Trachternach, SH~Oh, and Robert~C
+  Kennicutt.
+\newblock High-resolution rotation curves and galaxy mass models from things.
+\newblock \emph{The Astronomical Journal}, 136\penalty0 (6):\penalty0 2648,
+  2008.
+
+\bibitem[Despali et~al.(2018)Despali, Vegetti, White, Giocoli, and van~den
+  Bosch]{10.1093/mnras/sty159}
+Giulia Despali, Simona Vegetti, Simon D~M White, Carlo Giocoli, and Frank~C
+  van~den Bosch.
+\newblock {Modelling the line-of-sight contribution in substructure lensing}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  475\penalty0 (4):\penalty0 5424--5442, 01 2018.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/sty159}.
+\newblock URL \url{https://doi.org/10.1093/mnras/stky159}.
+
+\bibitem[Diemer(2018)]{diemer2018colossus}
+Benedikt Diemer.
+\newblock Colossus: A python toolkit for cosmology, large-scale structure, and
+  dark matter halos.
+\newblock \emph{The Astrophysical Journal Supplement Series}, 239\penalty0
+  (2):\penalty0 35, 2018.
+
+\bibitem[Diemer and Joyce(2019)]{diemer2019accurate}
+Benedikt Diemer and Michael Joyce.
+\newblock An accurate physical model for halo concentrations.
+\newblock \emph{The Astrophysical Journal}, 871\penalty0 (2):\penalty0 168,
+  2019.
+
+\bibitem[Dike et~al.(2023)Dike, Gilman, and Treu]{dike2023strong}
+Veronica Dike, Daniel Gilman, and Tommaso Treu.
+\newblock Strong lensing constraints on primordial black holes as a dark matter
+  candidate.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  522\penalty0 (4):\penalty0 5434--5441, 2023.
+
+\bibitem[Dodelson and Widrow(1994)]{dodelson1994sterile}
+Scott Dodelson and Lawrence~M Widrow.
+\newblock Sterile neutrinos as dark matter.
+\newblock \emph{Physical Review Letters}, 72\penalty0 (1):\penalty0 17, 1994.
+
+\bibitem[D'Onghia et~al.(2010)D'Onghia, Springel, Hernquist, and
+  Keres]{d2010substructure}
+Elena D'Onghia, Volker Springel, Lars Hernquist, and Dusan Keres.
+\newblock Substructure depletion in the milky way halo by the disk.
+\newblock \emph{The Astrophysical Journal}, 709\penalty0 (2):\penalty0 1138,
+  2010.
+
+\bibitem[Dooley et~al.(2016)Dooley, Peter, Vogelsberger, Zavala, and
+  Frebel]{dooley2016enhanced}
+Gregory~A Dooley, Annika~HG Peter, Mark Vogelsberger, Jes{\'u}s Zavala, and
+  Anna Frebel.
+\newblock Enhanced tidal stripping of satellites in the galactic halo from dark
+  matter self-interactions.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  461\penalty0 (1):\penalty0 710--727, 2016.
+
+\bibitem[{Du} et~al.(2024){Du}, {Benson}, {Carton Zeng}, {Treu}, {Peter},
+  {Mace}, {Jiang}, {Yang}, {Gannon}, {Gilman}, {Nierenberg}, and
+  {Nadler}]{2024arXiv240309597D}
+Xiaolong {Du}, Andrew {Benson}, Zhichao {Carton Zeng}, Tommaso {Treu}, Annika
+  H.~G. {Peter}, Charlie {Mace}, Fangzhou {Jiang}, Shengqi {Yang}, Charles
+  {Gannon}, Daniel {Gilman}, Anna.~M. {Nierenberg}, and Ethan~O. {Nadler}.
+\newblock {Tidal evolution of cored and cuspy dark matter halos}.
+\newblock \emph{arXiv e-prints}, art. arXiv:2403.09597, March 2024.
+\newblock \doi{10.48550/arXiv.2403.09597}.
+
+\bibitem[Du et~al.(2024)Du, Benson, Zeng, Treu, Peter, Mace, Jiang, Yang,
+  Gannon, Gilman, et~al.]{du2024tidal}
+Xiaolong Du, Andrew Benson, Zhichao~Carton Zeng, Tommaso Treu, Annika~HG Peter,
+  Charlie Mace, Fangzhou Jiang, Shengqi Yang, Charles Gannon, Daniel Gilman,
+  et~al.
+\newblock Tidal evolution of cored and cuspy dark matter halos.
+\newblock \emph{Physical Review D}, 110\penalty0 (2):\penalty0 023019, 2024.
+
+\bibitem[Du et~al.(2025)Du, Gilman, Treu, Benson, and Gannon]{du2025faster}
+Xiaolong Du, Daniel Gilman, Tommaso Treu, Andrew Benson, and Charles Gannon.
+\newblock Faster than sam: An empirical model for the tidal evolution of dark
+  matter substructure around strong gravitational lenses.
+\newblock \emph{arXiv preprint arXiv:2503.07728}, 2025.
+
+\bibitem[Ebisu et~al.(2022)Ebisu, Ishiyama, and Hayashi]{ebisu2022constraining}
+Toshihiro Ebisu, Tomoaki Ishiyama, and Kohei Hayashi.
+\newblock Constraining self-interacting dark matter with dwarf spheroidal
+  galaxies and high-resolution cosmological n-body simulations.
+\newblock \emph{Physical Review D}, 105\penalty0 (2):\penalty0 023016, 2022.
+
+\bibitem[Eckert et~al.(2022)Eckert, Ettori, Robertson, Massey, Pointecouteau,
+  Harvey, and McCarthy]{eckert2022constraints}
+D~Eckert, STEFANO Ettori, A~Robertson, R~Massey, E~Pointecouteau, D~Harvey, and
+  IG~McCarthy.
+\newblock Constraints on dark matter self-interaction from the internal density
+  profiles of x-cop galaxy clusters.
+\newblock \emph{Astronomy \& Astrophysics}, 666:\penalty0 A41, 2022.
+
+\bibitem[Errani and Navarro(2021)]{errani2021asymptotic}
+Rapha{\"e}l Errani and Julio~F Navarro.
+\newblock The asymptotic tidal remnants of cold dark matter subhaloes.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  505\penalty0 (1):\penalty0 18--32, 2021.
+
+\bibitem[{Errani} and {Pe{\~n}arrubia}(2020)]{2020MNRAS.491.4591E}
+Rapha{\"e}l {Errani} and Jorge {Pe{\~n}arrubia}.
+\newblock {Can tides disrupt cold dark matter subhaloes?}
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  491\penalty0 (4):\penalty0 4591--4601, February 2020.
+\newblock \doi{10.1093/mnras/stz3349}.
+
+\bibitem[Errani and Peñarrubia(2019)]{10.1093/mnras/stz3349}
+Raphaël Errani and Jorge Peñarrubia.
+\newblock {Can tides disrupt cold dark matter subhaloes?}
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  491\penalty0 (4):\penalty0 4591--4601, 12 2019.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/stz3349}.
+\newblock URL \url{https://doi.org/10.1093/mnras/stz3349}.
+
+\bibitem[{Fiacconi} et~al.(2016){Fiacconi}, {Madau}, {Potter}, and
+  {Stadel}]{2016ApJ...824..144F}
+Davide {Fiacconi}, Piero {Madau}, Doug {Potter}, and Joachim {Stadel}.
+\newblock {Cold Dark Matter Substructures in Early-type Galaxy Halos}.
+\newblock \emph{The Astrophysical Journal}, 824\penalty0 (2):\penalty0 144,
+  June 2016.
+\newblock \doi{10.3847/0004-637X/824/2/144}.
+
+\bibitem[Gannon et~al.(2025)Gannon, Nierenberg, Benson, Keeley, Du, and
+  Gilman]{gannon2025dark}
+Charles Gannon, Anna Nierenberg, Andrew Benson, Ryan Keeley, Xiaolong Du, and
+  Daniel Gilman.
+\newblock Dark matter substructure: A lensing perspective.
+\newblock \emph{Physical Review D}, 112\penalty0 (2):\penalty0 023532, 2025.
+\newblock \doi{10.1103/kk2n-q4ps}.
+
+\bibitem[Gao et~al.(2004)Gao, White, Jenkins, Stoehr, and
+  Springel]{10.1111/j.1365-2966.2004.08360.x}
+L.~Gao, S.~D.~M. White, A.~Jenkins, F.~Stoehr, and V.~Springel.
+\newblock {The subhalo populations of $\Lambda$CDM dark haloes}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  355\penalty0 (3):\penalty0 819--834, 12 2004.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1111/j.1365-2966.2004.08360.x}.
+\newblock URL \url{https://doi.org/10.1111/j.1365-2966.2004.08360.x}.
+
+\bibitem[Gao et~al.(2012)Gao, Navarro, Frenk, Jenkins, Springel, and
+  White]{10.1111/j.1365-2966.2012.21564.x}
+L.~Gao, J.~F. Navarro, C.~S. Frenk, A.~Jenkins, V.~Springel, and S.~D.~M.
+  White.
+\newblock {The Phoenix Project: the dark side of rich Galaxy clusters}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  425\penalty0 (3):\penalty0 2169--2186, 09 2012.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1111/j.1365-2966.2012.21564.x}.
+\newblock URL \url{https://doi.org/10.1111/j.1365-2966.2012.21564.x}.
+
+\bibitem[Gilman et~al.(2019{\natexlab{a}})Gilman, Birrer, Nierenberg, Treu, Du,
+  and Benson]{gilman2019warm}
+Daniel Gilman, Simon Birrer, Anna Nierenberg, Tommaso Treu, Xiaolong Du, and
+  Andrew Benson.
+\newblock {Warm dark matter chills out: constraints on the halo mass function
+  and the free-streaming length of dark matter with eight quadruple-image
+  strong gravitational lenses}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  491\penalty0 (4):\penalty0 6077--6101, 12 2019{\natexlab{a}}.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/stz3480}.
+\newblock URL \url{https://doi.org/10.1093/mnras/stz3480}.
+
+\bibitem[Gilman et~al.(2019{\natexlab{b}})Gilman, Birrer, Treu, Nierenberg, and
+  Benson]{gilman2019probing}
+Daniel Gilman, Simon Birrer, Tommaso Treu, Anna Nierenberg, and Andrew Benson.
+\newblock Probing dark matter structure down to 107 solar masses: flux ratio
+  statistics in gravitational lenses with line-of-sight haloes.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  487\penalty0 (4):\penalty0 5721--5738, 2019{\natexlab{b}}.
+
+\bibitem[Gilman et~al.(2021)Gilman, Bovy, Treu, Nierenberg, Birrer, Benson, and
+  Sameie]{gilman2021strong}
+Daniel Gilman, Jo~Bovy, Tommaso Treu, Anna Nierenberg, Simon Birrer, Andrew
+  Benson, and Omid Sameie.
+\newblock Strong lensing signatures of self-interacting dark matter in low-mass
+  haloes.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  507\penalty0 (2):\penalty0 2432--2447, 2021.
+
+\bibitem[Gilman et~al.(2022)Gilman, Benson, Bovy, Birrer, Treu, and
+  Nierenberg]{gilman2022primordial}
+Daniel Gilman, Andrew Benson, Jo~Bovy, Simon Birrer, Tommaso Treu, and Anna
+  Nierenberg.
+\newblock The primordial matter power spectrum on sub-galactic scales.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  512\penalty0 (3):\penalty0 3163--3188, 2022.
+
+\bibitem[Gilman et~al.(2023)Gilman, Zhong, and Bovy]{gilman2023constraining}
+Daniel Gilman, Yi-Ming Zhong, and Jo~Bovy.
+\newblock Constraining resonant dark matter self-interactions with strong
+  gravitational lenses.
+\newblock \emph{Physical Review D}, 107\penalty0 (10):\penalty0 103008, 2023.
+
+\bibitem[Gilman et~al.(2024)Gilman, Birrer, Nierenberg, and
+  Oh]{gilman2024turbocharging}
+Daniel Gilman, Simon Birrer, Anna Nierenberg, and Maverick~SH Oh.
+\newblock Turbocharging constraints on dark matter substructure through a
+  synthesis of strong lensing flux ratios and extended lensed arcs.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  533\penalty0 (2):\penalty0 1687--1713, 2024.
+
+\bibitem[Gnedin et~al.(1999)Gnedin, Hernquist, and Ostriker]{gnedin1999tidal}
+Oleg~Y Gnedin, Lars Hernquist, and Jeremiah~P Ostriker.
+\newblock Tidal shocking by extended mass distributions.
+\newblock \emph{The Astrophysical Journal}, 514\penalty0 (1):\penalty0 109,
+  1999.
+
+\bibitem[Gnedin et~al.(2004)Gnedin, Kravtsov, Klypin, and
+  Nagai]{gnedin2004response}
+Oleg~Y Gnedin, Andrey~V Kravtsov, Anatoly~A Klypin, and Daisuke Nagai.
+\newblock Response of dark matter halos to condensation of baryons:
+  cosmological simulations and improved adiabatic contraction model.
+\newblock \emph{The Astrophysical Journal}, 616\penalty0 (1):\penalty0 16,
+  2004.
+
+\bibitem[Green and van den Bosch(2019)]{10.1093/mnras/stz2767}
+Sheridan~B Green and Frank~C van den Bosch.
+\newblock {The tidal evolution of dark matter substructure – I. subhalo
+  density profiles}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  490\penalty0 (2):\penalty0 2091--2101, 10 2019.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/stz2767}.
+\newblock URL \url{https://doi.org/10.1093/mnras/stz2767}.
+
+\bibitem[Griffen et~al.(2016)Griffen, Ji, Dooley, G{\'o}mez, Vogelsberger,
+  O’Shea, and Frebel]{griffen2016caterpillar}
+Brendan~F Griffen, Alexander~P Ji, Gregory~A Dooley, Facundo~A G{\'o}mez, Mark
+  Vogelsberger, Brian~W O’Shea, and Anna Frebel.
+\newblock The caterpillar project: a large suite of milky way sized halos.
+\newblock \emph{The Astrophysical Journal}, 818\penalty0 (1):\penalty0 10,
+  2016.
+
+\bibitem[Han et~al.(2016)Han, Cole, Frenk, and Jing]{10.1093/mnras/stv2900}
+Jiaxin Han, Shaun Cole, Carlos~S. Frenk, and Yipeng Jing.
+\newblock {A unified model for the spatial and mass distribution of subhaloes}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  457\penalty0 (2):\penalty0 1208--1223, 02 2016.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/stv2900}.
+\newblock URL \url{https://doi.org/10.1093/mnras/stv2900}.
+
+\bibitem[He et~al.(2025)He, Robertson, Nightingale, Amvrosiadis, Cole, Frenk,
+  Lange, Li, Li, Cao, et~al.]{he2025not}
+Qiuhan He, Andrew Robertson, James~W Nightingale, Aristeidis Amvrosiadis, Shaun
+  Cole, Carlos~S Frenk, Samuel~C Lange, Shubo Li, Ran Li, Xiaoyue Cao, et~al.
+\newblock Not so dark, not so dense: an alternative explanation for the lensing
+  subhalo in sdss j0946+ 1006.
+\newblock \emph{The Astrophysical Journal Letters}, 991\penalty0 (2):\penalty0
+  L53, 2025.
+
+\bibitem[Hernquist(1990)]{hernquist1990analytical}
+Lars Hernquist.
+\newblock An analytical model for spherical galaxies and bulges.
+\newblock \emph{Astrophysical Journal, Part 1 (ISSN 0004-637X), vol. 356, June
+  20, 1990, p. 359-364.}, 356:\penalty0 359--364, 1990.
+
+\bibitem[Jiang et~al.(2015)Jiang, Cole, Sawala, and Frenk]{jiang2015orbital}
+Lilian Jiang, Shaun Cole, Till Sawala, and Carlos~S Frenk.
+\newblock Orbital parameters of infalling satellite haloes in the hierarchical
+  $\lambda$cdm model.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  448\penalty0 (2):\penalty0 1674--1686, 2015.
+
+\bibitem[Kahlhoefer et~al.(2019)Kahlhoefer, Kaplinghat, Slatyer, and
+  Wu]{kahlhoefer2019diversity}
+Felix Kahlhoefer, Manoj Kaplinghat, Tracy~R Slatyer, and Chih-Liang Wu.
+\newblock Diversity in density profiles of self-interacting dark matter
+  satellite halos.
+\newblock \emph{Journal of Cosmology and Astroparticle Physics}, 2019\penalty0
+  (12):\penalty0 010--010, 2019.
+
+\bibitem[Kamionkowski and Sigurdson(2025)]{kamionkowski2025gravothermal}
+Marc Kamionkowski and Kris Sigurdson.
+\newblock Gravothermal collapse of self-interacting dark-matter halos with
+  anisotropic velocity distributions.
+\newblock \emph{arXiv preprint arXiv:2510.23705}, 2025.
+
+\bibitem[Kamionkowski and Sigurdson(2026)]{kamionkowski2026evolution}
+Marc Kamionkowski and Kris Sigurdson.
+\newblock Evolution of self-gravitating spherical dark-matter halos with and
+  without new physics.
+\newblock \emph{Physical Review D}, 113\penalty0 (10):\penalty0 103026, 2026.
+
+\bibitem[Kamionkowski et~al.(2026)Kamionkowski, Sigurdson, and
+  Slone]{kamionkowski2026numerical}
+Marc Kamionkowski, Kris Sigurdson, and Oren Slone.
+\newblock Numerical evolution of self-gravitating halos of self-interacting
+  dark matter.
+\newblock \emph{Physical Review Letters}, 136\penalty0 (20):\penalty0 201001,
+  2026.
+
+\bibitem[Keeley et~al.(2024)Keeley, Nierenberg, Gilman, Gannon, Birrer, Treu,
+  Benson, Du, Abazajian, Anguita, et~al.]{keeley2024jwst}
+Ryan~E Keeley, Anna~M Nierenberg, Daniel Gilman, Charles Gannon, Simon Birrer,
+  Tommaso Treu, Andrew~J Benson, Xiaolong Du, KN~Abazajian, T~Anguita, et~al.
+\newblock Jwst lensed quasar dark matter survey ii: Strongest gravitational
+  lensing limit on the dark matter free streaming length to date.
+\newblock \emph{arXiv preprint arXiv:2405.01620}, 2024.
+
+\bibitem[Klemmer et~al.(2026)Klemmer, Fischer, Boddy, Kaplinghat, and
+  Sagunski]{klemmer2026survival}
+David Klemmer, Moritz~S Fischer, Kimberly~K Boddy, Manoj Kaplinghat, and Laura
+  Sagunski.
+\newblock Survival of the most compact: the life and death of satellite halos
+  in self-interacting dark matter.
+\newblock \emph{arXiv preprint arXiv:2603.19362}, 2026.
+
+\bibitem[Ludlow et~al.(2016)Ludlow, Bose, Angulo, Wang, Hellwing, Navarro,
+  Cole, and Frenk]{ludlow2016mass}
+Aaron~D Ludlow, Sownak Bose, Ra{\'u}l~E Angulo, Lan Wang, Wojciech~A Hellwing,
+  Julio~F Navarro, Shaun Cole, and Carlos~S Frenk.
+\newblock The mass--concentration--redshift relation of cold and warm dark
+  matter haloes.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  460\penalty0 (2):\penalty0 1214--1232, 2016.
+
+\bibitem[Mansfield et~al.(2024)Mansfield, Darragh-Ford, Wang, Nadler, Diemer,
+  and Wechsler]{mansfield2024symfind}
+Philip Mansfield, Elise Darragh-Ford, Yunchong Wang, Ethan~O Nadler, Benedikt
+  Diemer, and Risa~H Wechsler.
+\newblock Symfind: Addressing the fragility of subhalo finders and revealing
+  the durability of subhalos.
+\newblock \emph{The Astrophysical Journal}, 970\penalty0 (2):\penalty0 178,
+  2024.
+
+\bibitem[Mao and Schneider(1998)]{mao1998evidence}
+Shude Mao and Peter Schneider.
+\newblock Evidence for substructure in lens galaxies?
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  295\penalty0 (3):\penalty0 587--594, 1998.
+
+\bibitem[Markevitch et~al.(2004)Markevitch, Gonzalez, Clowe, Vikhlinin, Forman,
+  Jones, Murray, and Tucker]{markevitch2004direct}
+Maxim Markevitch, Anthony~H Gonzalez, D~Clowe, Alexey Vikhlinin, W~Forman,
+  Ch~Jones, S~Murray, and W~Tucker.
+\newblock Direct constraints on the dark matter self-interaction cross section
+  from the merging galaxy cluster 1e 0657--56.
+\newblock \emph{The Astrophysical Journal}, 606\penalty0 (2):\penalty0
+  819--824, 2004.
+
+\bibitem[Minor et~al.(2021)Minor, Gad-Nasr, Kaplinghat, and
+  Vegetti]{minor2021unexpected}
+Quinn Minor, Sophia Gad-Nasr, Manoj Kaplinghat, and Simona Vegetti.
+\newblock An unexpected high concentration for the dark substructure in the
+  gravitational lens sdssj0946+ 1006.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  507\penalty0 (2):\penalty0 1662--1683, 2021.
+
+\bibitem[Nadler et~al.(2020)Nadler, Banerjee, Adhikari, Mao, and
+  Wechsler]{nadler2020signatures}
+Ethan~O Nadler, Arka Banerjee, Susmita Adhikari, Yao-Yuan Mao, and Risa~H
+  Wechsler.
+\newblock Signatures of velocity-dependent dark matter self-interactions in
+  milky way-mass halos.
+\newblock \emph{The Astrophysical Journal}, 896\penalty0 (2):\penalty0 112,
+  2020.
+
+\bibitem[Nadler et~al.(2021)Nadler, Birrer, Gilman, Wechsler, Du, Benson,
+  Nierenberg, and Treu]{nadler2021dark}
+Ethan~O Nadler, Simon Birrer, Daniel Gilman, Risa~H Wechsler, Xiaolong Du,
+  Andrew Benson, Anna~M Nierenberg, and Tommaso Treu.
+\newblock Dark matter constraints from a unified analysis of strong
+  gravitational lenses and milky way satellite galaxies.
+\newblock \emph{The Astrophysical Journal}, 917\penalty0 (1):\penalty0 7, 2021.
+
+\bibitem[Nadler et~al.(2023)Nadler, Mansfield, Wang, Du, Adhikari, Banerjee,
+  Benson, Darragh-Ford, Mao, Wagner-Carena, et~al.]{nadler2023symphony}
+Ethan~O Nadler, Philip Mansfield, Yunchong Wang, Xiaolong Du, Susmita Adhikari,
+  Arka Banerjee, Andrew Benson, Elise Darragh-Ford, Yao-Yuan Mao, Sebastian
+  Wagner-Carena, et~al.
+\newblock Symphony: Cosmological zoom-in simulation suites over four decades of
+  host halo mass.
+\newblock \emph{The Astrophysical Journal}, 945\penalty0 (2):\penalty0 159,
+  2023.
+
+\bibitem[Nadler et~al.(2025{\natexlab{a}})Nadler, An, Yang, Yu, Benson, and
+  Gluscevic]{nadler2025cozmic}
+Ethan~O Nadler, Rui An, Daneng Yang, Hai-Bo Yu, Andrew Benson, and Vera
+  Gluscevic.
+\newblock Cozmic. iii. cosmological zoom-in simulations of self-interacting
+  dark matter with suppressed initial conditions.
+\newblock \emph{The Astrophysical Journal}, 986\penalty0 (2):\penalty0 129,
+  2025{\natexlab{a}}.
+
+\bibitem[Nadler et~al.(2025{\natexlab{b}})Nadler, Kong, Yang, and
+  Yu]{nadler2025sidm}
+Ethan~O Nadler, Demao Kong, Daneng Yang, and Hai-Bo Yu.
+\newblock Sidm concerto: compilation and data release of self-interacting dark
+  matter zoom-in simulations.
+\newblock \emph{The Astrophysical Journal}, 991\penalty0 (1):\penalty0 69,
+  2025{\natexlab{b}}.
+
+\bibitem[Nishikawa et~al.(2020)Nishikawa, Boddy, and
+  Kaplinghat]{nishikawa2020accelerated}
+Hiroya Nishikawa, Kimberly~K Boddy, and Manoj Kaplinghat.
+\newblock Accelerated core collapse in tidally stripped self-interacting dark
+  matter halos.
+\newblock \emph{Physical Review D}, 101\penalty0 (6):\penalty0 063009, 2020.
+
+\bibitem[Outmezguine et~al.(2023)Outmezguine, Boddy, Gad-Nasr, Kaplinghat, and
+  Sagunski]{outmezguine2023universal}
+Nadav~Joseph Outmezguine, Kimberly~K Boddy, Sophia Gad-Nasr, Manoj Kaplinghat,
+  and Laura Sagunski.
+\newblock Universal gravothermal evolution of isolated self-interacting dark
+  matter halos for velocity-dependent cross-sections.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  523\penalty0 (3):\penalty0 4786--4800, 2023.
+
+\bibitem[Parkinson et~al.(2008)Parkinson, Cole, and
+  Helly]{parkinson2008generating}
+Hannah Parkinson, Shaun Cole, and John Helly.
+\newblock Generating dark matter halo merger trees.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  383\penalty0 (2):\penalty0 557--564, 2008.
+
+\bibitem[{Planck Collaboration}(2020{\natexlab{a}})]{2020}
+{Planck Collaboration}.
+\newblock Planck2018 results: Vi. cosmological parameters.
+\newblock \emph{Astronomy \& Astrophysics}, 641:\penalty0 A6, September
+  2020{\natexlab{a}}.
+\newblock ISSN 1432-0746.
+\newblock \doi{10.1051/0004-6361/201833910}.
+\newblock URL \url{http://dx.doi.org/10.1051/0004-6361/201833910}.
+
+\bibitem[{Planck Collaboration}(2020{\natexlab{b}})]{planck2020results}
+{Planck Collaboration}.
+\newblock Planck2018 results: Vi. cosmological parameters.
+\newblock \emph{Astronomy \& Astrophysics}, 641:\penalty0 A6, September
+  2020{\natexlab{b}}.
+\newblock ISSN 1432-0746.
+\newblock \doi{10.1051/0004-6361/201833910}.
+\newblock URL \url{http://dx.doi.org/10.1051/0004-6361/201833910}.
+
+\bibitem[Powell et~al.(2023)Powell, Vegetti, McKean, White, Ferreira, May, and
+  Spingola]{powell2023lensed}
+Devon~M Powell, Simona Vegetti, JP~McKean, Simon~DM White, Elisa~GM Ferreira,
+  Simon May, and Cristiana Spingola.
+\newblock A lensed radio jet at milli-arcsecond resolution--ii. constraints on
+  fuzzy dark matter from an extended gravitational arc.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society: Letters},
+  524\penalty0 (1):\penalty0 L84--L88, 2023.
+
+\bibitem[Press and Schechter(1974)]{press1974formation}
+William~H Press and Paul Schechter.
+\newblock Formation of galaxies and clusters of galaxies by self-similar
+  gravitational condensation.
+\newblock \emph{Astrophysical Journal, Vol. 187, pp. 425-438 (1974)},
+  187:\penalty0 425--438, 1974.
+
+\bibitem[Randall et~al.(2008)Randall, Markevitch, Clowe, Gonzalez, and
+  Brada{\v{c}}]{randall2008constraints}
+Scott~W Randall, Maxim Markevitch, Douglas Clowe, Anthony~H Gonzalez, and
+  Marusa Brada{\v{c}}.
+\newblock Constraints on the self-interaction cross section of dark matter from
+  numerical simulations of the merging galaxy cluster 1e 0657--56.
+\newblock \emph{The Astrophysical Journal}, 679\penalty0 (2):\penalty0
+  1173--1180, 2008.
+
+\bibitem[Rocha et~al.(2013)Rocha, Peter, Bullock, Kaplinghat, Garrison-Kimmel,
+  Onorbe, and Moustakas]{rocha2013cosmological}
+Miguel Rocha, Annika~HG Peter, James~S Bullock, Manoj Kaplinghat, Shea
+  Garrison-Kimmel, Jose Onorbe, and Leonidas~A Moustakas.
+\newblock Cosmological simulations with self-interacting dark matter--i.
+  constant-density cores and substructure.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  430\penalty0 (1):\penalty0 81--104, 2013.
+
+\bibitem[Sagunski et~al.(2021)Sagunski, Gad-Nasr, Colquhoun, Robertson, and
+  Tulin]{sagunski2021velocity}
+Laura Sagunski, Sophia Gad-Nasr, Brian Colquhoun, Andrew Robertson, and Sean
+  Tulin.
+\newblock Velocity-dependent self-interacting dark matter from groups and
+  clusters of galaxies.
+\newblock \emph{Journal of Cosmology and Astroparticle Physics}, 2021\penalty0
+  (01):\penalty0 024--024, 2021.
+
+\bibitem[Shah and Adhikari(2024)]{shah2024abundance}
+Neev Shah and Susmita Adhikari.
+\newblock The abundance of core-collapsed subhaloes in sidm: insights from
+  structure formation in $\lambda$cdm.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  529\penalty0 (4):\penalty0 4611--4623, 2024.
+
+\bibitem[{Shen} et~al.(2003){Shen}, {Mo}, {White}, {Blanton}, {Kauffmann},
+  {Voges}, {Brinkmann}, and {Csabai}]{2003MNRAS.343..978S}
+Shiyin {Shen}, H.~J. {Mo}, Simon D.~M. {White}, Michael~R. {Blanton}, Guinevere
+  {Kauffmann}, Wolfgang {Voges}, J.~{Brinkmann}, and Istvan {Csabai}.
+\newblock {The size distribution of galaxies in the Sloan Digital Sky Survey}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  343\penalty0 (3):\penalty0 978--994, August 2003.
+\newblock \doi{10.1046/j.1365-8711.2003.06740.x}.
+
+\bibitem[Sheth and Tormen(1999)]{sheth1999large}
+Ravi~K Sheth and Giuseppe Tormen.
+\newblock Large-scale bias and the peak background split.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  308\penalty0 (1):\penalty0 119--126, 1999.
+
+\bibitem[Shu et~al.(2017)Shu, Brownstein, Bolton, Koopmans, Treu,
+  Montero-Dorta, Auger, Czoske, Gavazzi, Marshall, et~al.]{shu2017sloan}
+Yiping Shu, Joel~R Brownstein, Adam~S Bolton, L{\'e}on~VE Koopmans, Tommaso
+  Treu, Antonio~D Montero-Dorta, Matthew~W Auger, Oliver Czoske, Rapha{\"e}l
+  Gavazzi, Philip~J Marshall, et~al.
+\newblock The sloan lens acs survey. xiii. discovery of 40 new galaxy-scale
+  strong lenses.
+\newblock \emph{The Astrophysical Journal}, 851\penalty0 (1):\penalty0 48,
+  2017.
+
+\bibitem[Springel et~al.(2008)Springel, Wang, Vogelsberger, Ludlow, Jenkins,
+  Helmi, Navarro, Frenk, and White]{10.1111/j.1365-2966.2008.14066.x}
+V.~Springel, J.~Wang, M.~Vogelsberger, A.~Ludlow, A.~Jenkins, A.~Helmi, J.~F.
+  Navarro, C.~S. Frenk, and S.~D.~M. White.
+\newblock {The Aquarius Project: the subhaloes of galactic haloes}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  391\penalty0 (4):\penalty0 1685--1711, 12 2008.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1111/j.1365-2966.2008.14066.x}.
+\newblock URL \url{https://doi.org/10.1111/j.1365-2966.2008.14066.x}.
+
+\bibitem[Tajalli et~al.(2025)Tajalli, Vegetti, O’Riordan, White, Fassnacht,
+  Powell, McKean, and Despali]{tajalli2025sharp}
+Maryam Tajalli, Simona Vegetti, Conor~M O’Riordan, Simon~DM White,
+  Christopher~D Fassnacht, Devon~M Powell, John~P McKean, and Giulia Despali.
+\newblock Sharp--ix. the dense, low-mass perturbers in b1938+ 666 and j0946+
+  1006: implications for cold and self-interacting dark matter.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  543\penalty0 (1):\penalty0 540--564, 2025.
+
+\bibitem[Tulin and Yu(2018)]{tulin2018dark}
+Sean Tulin and Hai-Bo Yu.
+\newblock Dark matter self-interactions and small scale structure.
+\newblock \emph{Physics Reports}, 730:\penalty0 1--57, 2018.
+
+\bibitem[Turner et~al.(2021)Turner, Lovell, Zavala, and
+  Vogelsberger]{turner2021onset}
+Hannah~C Turner, Mark~R Lovell, Jes{\'u}s Zavala, and Mark Vogelsberger.
+\newblock The onset of gravothermal core collapse in velocity-dependent
+  self-interacting dark matter subhaloes.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  505\penalty0 (4):\penalty0 5327--5339, 2021.
+
+\bibitem[van~den Bosch and Ogiya(2018)]{10.1093/mnras/sty084}
+Frank~C van~den Bosch and Go~Ogiya.
+\newblock {Dark matter substructure in numerical simulations: a tale of
+  discreteness noise, runaway instabilities, and artificial disruption}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  475\penalty0 (3):\penalty0 4066--4087, 01 2018.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/sty084}.
+\newblock URL \url{https://doi.org/10.1093/mnras/sty084}.
+
+\bibitem[Van~den Bosch et~al.(2005)Van~den Bosch, Tormen, and
+  Giocoli]{10.1111/j.1365-2966.2005.08964.x}
+Frank~C. Van~den Bosch, Giuseppe Tormen, and Carlo Giocoli.
+\newblock {The mass function and average mass-loss rate of dark matter
+  subhaloes}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  359\penalty0 (3):\penalty0 1029--1040, 05 2005.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1111/j.1365-2966.2005.08964.x}.
+\newblock URL \url{https://doi.org/10.1111/j.1365-2966.2005.08964.x}.
+
+\bibitem[van~den Bosch et~al.(2017)van~den Bosch, Ogiya, Hahn, and
+  Burkert]{10.1093/mnras/stx2956}
+Frank~C van~den Bosch, Go~Ogiya, Oliver Hahn, and Andreas Burkert.
+\newblock {Disruption of dark matter substructure: fact or fiction?}
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  474\penalty0 (3):\penalty0 3043--3066, 11 2017.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/stx2956}.
+\newblock URL \url{https://doi.org/10.1093/mnras/stx2956}.
+
+\bibitem[Vegetti et~al.(2010)Vegetti, Koopmans, Bolton, Treu, and
+  Gavazzi]{vegetti2010detection}
+S~Vegetti, LVE Koopmans, A~Bolton, T~Treu, and R~Gavazzi.
+\newblock Detection of a dark substructure through gravitational imaging.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  408\penalty0 (4):\penalty0 1969--1981, 2010.
+
+\bibitem[Vegetti et~al.(2018)Vegetti, Despali, Lovell, and
+  Enzi]{vegetti2018constraining}
+S~Vegetti, G~Despali, MR~Lovell, and W~Enzi.
+\newblock Constraining sterile neutrino cosmologies with strong gravitational
+  lensing observations at redshift z~ 0.2.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  481\penalty0 (3):\penalty0 3661--3669, 2018.
+
+\bibitem[Vogelsberger et~al.(2012)Vogelsberger, Zavala, and
+  Loeb]{vogelsberger2012subhaloes}
+Mark Vogelsberger, Jesus Zavala, and Abraham Loeb.
+\newblock Subhaloes in self-interacting galactic dark matter haloes.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  423\penalty0 (4):\penalty0 3740--3752, 2012.
+
+\bibitem[Webb and Bovy(2020)]{webb2020high}
+Jeremy~J Webb and Jo~Bovy.
+\newblock High-resolution simulations of dark matter subhalo disruption in a
+  milky-way-like tidal field.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  499\penalty0 (1):\penalty0 116--128, 2020.
+
+\bibitem[Weinberg et~al.(2015)Weinberg, Bullock, Governato, Kuzio~de Naray, and
+  Peter]{weinberg2015cold}
+David~H Weinberg, James~S Bullock, Fabio Governato, Rachel Kuzio~de Naray, and
+  Annika~HG Peter.
+\newblock Cold dark matter: controversies on small scales.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 112\penalty0
+  (40):\penalty0 12249--12255, 2015.
+
+\bibitem[White and Frenk(1991)]{white1991galaxy}
+Simon~DM White and Carlos~S Frenk.
+\newblock Galaxy formation through hierarchical clustering.
+\newblock \emph{Astrophysical Journal, Part 1 (ISSN 0004-637X), vol. 379, Sept.
+  20, 1991, p. 52-79. Research supported by NASA, NSF, and SERC.},
+  379:\penalty0 52--79, 1991.
+
+\bibitem[White and Rees(1978)]{white1978core}
+Simon~DM White and Martin~J Rees.
+\newblock Core condensation in heavy halos: a two-stage theory for galaxy
+  formation and clustering.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  183\penalty0 (3):\penalty0 341--358, 1978.
+
+\bibitem[Xu et~al.(2015)Xu, Sluse, Gao, Wang, Frenk, Mao, Schneider, and
+  Springel]{10.1093/mnras/stu2673}
+Dandan Xu, Dominique Sluse, Liang Gao, Jie Wang, Carlos Frenk, Shude Mao, Peter
+  Schneider, and Volker Springel.
+\newblock {How well can cold dark matter substructures account for the observed
+  radio flux-ratio anomalies}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  447\penalty0 (4):\penalty0 3189--3206, 01 2015.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/stu2673}.
+\newblock URL \url{https://doi.org/10.1093/mnras/stu2673}.
+
+\bibitem[Yang and Yu(2022)]{yang2022gravothermal}
+Daneng Yang and Hai-Bo Yu.
+\newblock Gravothermal evolution of dark matter halos with differential elastic
+  scattering.
+\newblock \emph{Journal of Cosmology and Astroparticle Physics}, 2022\penalty0
+  (09):\penalty0 077, 2022.
+
+\bibitem[Yang et~al.(2023{\natexlab{a}})Yang, Nadler, and Yu]{yang2023strong}
+Daneng Yang, Ethan~O Nadler, and Hai-Bo Yu.
+\newblock Strong dark matter self-interactions diversify halo populations
+  within and surrounding the milky way.
+\newblock \emph{The Astrophysical Journal}, 949\penalty0 (2):\penalty0 67,
+  2023{\natexlab{a}}.
+
+\bibitem[Yang et~al.(2024)Yang, Nadler, Yu, and Zhong]{yang2024parametric}
+Daneng Yang, Ethan~O Nadler, Hai-Bo Yu, and Yi-Ming Zhong.
+\newblock A parametric model for self-interacting dark matter halos.
+\newblock \emph{Journal of Cosmology and Astroparticle Physics}, 2024\penalty0
+  (02):\penalty0 032, 2024.
+
+\bibitem[Yang et~al.(2020)Yang, Du, Benson, Pullen, and
+  Peter]{10.1093/mnras/staa2496}
+Shengqi Yang, Xiaolong Du, Andrew~J Benson, Anthony~R Pullen, and Annika H~G
+  Peter.
+\newblock {A new calibration method of sub-halo orbital evolution for
+  semi-analytic models}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  498\penalty0 (3):\penalty0 3902--3913, 09 2020.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/staa2496}.
+\newblock URL \url{https://doi.org/10.1093/mnras/staa2496}.
+
+\bibitem[Yang et~al.(2023{\natexlab{b}})Yang, Du, Zeng, Benson, Jiang, Nadler,
+  and Peter]{yang2023gravothermal}
+Shengqi Yang, Xiaolong Du, Zhichao~Carton Zeng, Andrew Benson, Fangzhou Jiang,
+  Ethan~O Nadler, and Annika~HG Peter.
+\newblock Gravothermal solutions of sidm halos: Mapping from constant to
+  velocity-dependent cross section.
+\newblock \emph{The Astrophysical Journal}, 946\penalty0 (1):\penalty0 47,
+  2023{\natexlab{b}}.
+
+\bibitem[York et~al.(2000)York, Adelman, Anderson~Jr, Anderson, Annis, Bahcall,
+  Bakken, Barkhouser, Bastian, Berman, et~al.]{york2000sloan}
+Donald~G York, J~Adelman, John~E Anderson~Jr, Scott~F Anderson, James Annis,
+  Neta~A Bahcall, JA~Bakken, Robert Barkhouser, Steven Bastian, Eileen Berman,
+  et~al.
+\newblock The sloan digital sky survey: Technical summary.
+\newblock \emph{The Astronomical Journal}, 120\penalty0 (3):\penalty0 1579,
+  2000.
+
+\bibitem[Zeng et~al.(2022)Zeng, Peter, Du, Benson, Kim, Jiang, Cyr-Racine, and
+  Vogelsberger]{zeng2022core}
+Zhichao~Carton Zeng, Annika~HG Peter, Xiaolong Du, Andrew Benson, Stacy Kim,
+  Fangzhou Jiang, Francis-Yan Cyr-Racine, and Mark Vogelsberger.
+\newblock Core-collapse, evaporation, and tidal effects: the life story of a
+  self-interacting dark matter subhalo.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  513\penalty0 (4):\penalty0 4845--4868, 2022.
+
+\bibitem[Zeng et~al.(2023)Zeng, Peter, Du, Yang, Benson, Cyr-Racine, Jiang,
+  Mace, and Metcalf]{zeng2023till}
+Zhichao~Carton Zeng, Annika~HG Peter, Xiaolong Du, Shengqi Yang, Andrew Benson,
+  Francis-Yan Cyr-Racine, Fangzhou Jiang, Charlie Mace, and R~Benton Metcalf.
+\newblock Till the core collapses: The evolution and properties of
+  self-interacting dark matter subhalos.
+\newblock \emph{arXiv preprint arXiv:2310.09910}, 2023.
+
+\bibitem[Zentner et~al.(2005)Zentner, Berlind, Bullock, Kravtsov, and
+  Wechsler]{zentner2005physics}
+Andrew~R Zentner, Andreas~A Berlind, James~S Bullock, Andrey~V Kravtsov, and
+  Risa~H Wechsler.
+\newblock The physics of galaxy clustering. i. a model for subhalo populations.
+\newblock \emph{The Astrophysical Journal}, 624\penalty0 (2):\penalty0 505,
+  2005.
+
+\bibitem[Zhang et~al.(2025)Zhang, Yu, Yang, and Nadler]{zhang2025gd}
+Xingyu Zhang, Hai-Bo Yu, Daneng Yang, and Ethan~O Nadler.
+\newblock The gd-1 stellar stream perturber as a core-collapsed
+  self-interacting dark matter halo.
+\newblock \emph{The Astrophysical Journal Letters}, 978\penalty0 (2):\penalty0
+  L23, 2025.
 
 \end{thebibliography}

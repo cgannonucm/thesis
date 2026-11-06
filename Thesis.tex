@@ -24,9 +24,45 @@
 
 \usepackage{pdfpages}
 \usepackage{natbib}
+\usepackage{bibentry} % \bibentry{key}: full citation inline
 \usepackage{multibib}
+\usepackage{amsmath, amssymb}
+\usepackage{docmute} % \input of a full paper skips its preamble and \end{document}
+\usepackage{xcolor}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, calc}
 
 \newcites{publications}{Publications}
+
+% Figure paths used by the included papers (git submodules in papers/)
+\graphicspath{{papers/lensing_perspective/}{papers/t1des/}}
+
+% \inputpaper{file}: include the body of a revtex paper as the current chapter.
+% Front matter is dropped (the chapter heading replaces it), the abstract and
+% acknowledgments become unnumbered sections, appendices are lettered within
+% the chapter, and citations go to the thesis bibliography (\nocite is ignored).
+\newcommand{\inputpaper}[1]{%
+  \begingroup
+  \renewcommand{\title}[2][]{}%
+  \renewcommand{\author}[2][]{}%
+  \renewcommand{\date}[1]{}%
+  \providecommand{\preprint}{}\renewcommand{\preprint}[1]{}%
+  \providecommand{\affiliation}{}\renewcommand{\affiliation}[1]{}%
+  \providecommand{\altaffiliation}{}\renewcommand{\altaffiliation}[2][]{}%
+  \providecommand{\email}{}\renewcommand{\email}[2][]{}%
+  \def\maketitle{}%
+  \def\abstract{\section*{Abstract}}\def\endabstract{}%
+  \def\acknowledgments{\section*{Acknowledgments}}\def\endacknowledgments{}%
+  \renewcommand{\appendix}{%
+    \setcounter{section}{0}%
+    \renewcommand{\thesection}{\thechapter.\Alph{section}}%
+    \renewcommand{\theHsection}{\thechapter.app.\Alph{section}}}%
+  \renewcommand{\bibliography}[1]{}%
+  \renewcommand{\nocite}[1]{}% e.g. a paper's \nocite{*} would pull in all of mybib.bib
+  \input{#1}%
+  \endgroup}
 
 
 
@@ -121,6 +157,7 @@
 
 
 \begin{document}
+\nobibliography* % lets \bibentry read Thesis.bbl
 
 %% REQUIRED FIELDS -- Replace with the values appropriate to you
 \title{Dark Matter: The Sub-galactic Frontier, A Computational Study of The Subhalos of Lensing Systems}
